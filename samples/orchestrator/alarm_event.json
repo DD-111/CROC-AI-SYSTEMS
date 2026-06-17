@@ -1,0 +1,16 @@
+{
+  "event_id": "alarm-demo-001",
+  "device_id": "dev-campus-a12",
+  "tenant_id": "owner-admin-demo",
+  "battery": 34,
+  "rssi": -88,
+  "trigger_count": 4,
+  "snapshot_exists": false,
+  "trigger_type": "button",
+  "zone": "school-zone-north",
+  "metadata": {
+    "camera_protocol": "hikvision",
+    "snapshot_attempted": true,
+    "snapshot_error": "timeout"
+  }
+}

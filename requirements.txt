@@ -1,0 +1,2 @@
+# Public artifact — sample stubs only (no production deps)
+pydantic>=2.0

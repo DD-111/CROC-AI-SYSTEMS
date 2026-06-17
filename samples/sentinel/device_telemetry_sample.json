@@ -1,0 +1,15 @@
+{
+  "device_id": "dev-campus-a12",
+  "mac": "AABBCCDDEEFF",
+  "owner_admin": "owner-admin-demo",
+  "zone": "school-zone-north",
+  "group": "building-a-floor-2",
+  "status": {
+    "online": true,
+    "last_seen": "2026-06-19T08:14:55Z",
+    "battery_pct": 34,
+    "rssi": -88,
+    "tx_count": 1204,
+    "rx_count": 89
+  }
+}

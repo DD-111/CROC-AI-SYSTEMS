@@ -1,0 +1,10 @@
+[project]
+name = "croc-platform-artifact"
+version = "0.1.0"
+description = "Public artifact for Croc Sentinel + Croc AI Orchestrator (MAIC)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[project.scripts]
+croc-demo-assess = "src.croc_orchestrator.demo_assess:main"
