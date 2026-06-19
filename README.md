@@ -298,8 +298,8 @@ The platform uses **plugin agents + tool registry + event bus** — strong horiz
 ## Quick Sample
 
 ```bash
-git clone https://github.com/<your-org>/croc-ai-systems.git
-cd croc-ai-systems
+git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
+cd CROC-AI-SYSTEMS
 
 pip install -r requirements.txt
 python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
