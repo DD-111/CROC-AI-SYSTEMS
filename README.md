@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="assets/images/logo-croc-nexus.png" alt="Croc Nexus AI Technologies" width="420" />
+  <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="480" />
+  <br />
+  <sub><a href="assets/images/logo-croc-nexus-4k.png">4K logo · 3840×3840 PNG</a></sub>
 </p>
 
 <h1 align="center">CROC AI Systems</h1>
