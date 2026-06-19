@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $RepoRoot
 
-$RepoName = "croc-platform-artifact"
+$RepoName = "croc-ai-systems"
 
 gh auth status
 if ($LASTEXITCODE -ne 0) {
@@ -12,7 +12,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 git branch -M main
-gh repo create $RepoName --public --source . --remote origin --description "MAIC Nexus 2026 public artifact — Croc Sentinel + Croc AI Orchestrator" --push
+gh repo create $RepoName --public --source . --remote origin --description "CROC AI Systems — MAIC Nexus 2026 public artifact (Sentinel + Orchestrator)" --push
 
 Write-Host ""
 Write-Host "Published: https://github.com/$(gh api user -q .login)/$RepoName"

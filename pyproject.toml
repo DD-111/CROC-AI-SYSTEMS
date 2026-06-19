@@ -1,7 +1,7 @@
 [project]
-name = "croc-platform-artifact"
+name = "croc-ai-systems"
 version = "0.1.0"
-description = "Public artifact for Croc Sentinel + Croc AI Orchestrator (MAIC)"
+description = "CROC AI Systems — public artifact (Croc Sentinel + Croc AI Orchestrator, MAIC)"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

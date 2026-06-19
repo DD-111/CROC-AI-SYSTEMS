@@ -2,11 +2,11 @@
   <img src="assets/images/logo-croc-nexus.png" alt="Croc Nexus AI Technologies" width="420" />
 </p>
 
-<h1 align="center">Croc Sentinel — Public Artifact Repository</h1>
+<h1 align="center">CROC AI Systems</h1>
 
 <p align="center">
-  <strong>MAIC Nexus Challenge 2026</strong> · AI Public Services &amp; Smart City<br/>
-  <em>Production-ready IoT security &amp; AI emergency response platform</em>
+  <strong>MAIC Nexus Challenge 2026</strong> · Public Artifact Repository<br/>
+  <em>Croc Sentinel · Croc AI Orchestrator · cMax observability platform</em>
 </p>
 
 <p align="center">
@@ -296,8 +296,8 @@ The platform uses **plugin agents + tool registry + event bus** — strong horiz
 ## Quick Sample
 
 ```bash
-git clone https://github.com/<your-org>/croc-platform-artifact.git
-cd croc-platform-artifact
+git clone https://github.com/<your-org>/croc-ai-systems.git
+cd croc-ai-systems
 
 pip install -r requirements.txt
 python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
