@@ -1,20 +1,42 @@
 # Croc Platform — Public Artifact Repository
 
-**Croc Platform · 公开制品仓库（MAIC Artifact Link）**
+**Croc Nexus AI Technologies · MAIC Nexus Challenge 2026 Artifact Link**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > **重要声明 / Important Notice**  
-> 本仓库为 **公开制品（Public Artifact）**，仅用于 MAIC / 评审所需的 **Artifact Link** 与能力说明。  
+> 本仓库为 **公开制品（Public Artifact）**，仅用于 **MAIC Nexus Challenge 2026** 所需的 Artifact Link 与能力说明。  
 > **公司全部核心代码、固件、生产配置、密钥与商业实现均位于 Private 仓库**，不在此公开。  
-> This repository is a **curated public artifact** for competition and review purposes only.  
+> This repository is a **curated public artifact** for competition review only.  
 > **All production code, firmware, secrets, and commercial implementations remain private.**
+
+📄 **MAIC 提交文档 PDF：** [`docs/MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf`](docs/MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf)  
+📋 **PDF 结构化摘要：** [`docs/MAIC_SUBMISSION.md`](docs/MAIC_SUBMISSION.md)
+
+---
+
+## MAIC 2026 提交摘要 / Submission at a Glance
+
+| 项目 | 内容 |
+|------|------|
+| **产品** | Croc Sentinel — AI-Powered Emergency Response & Smart Monitoring Platform |
+| **赛道** | AI Public Services & Smart City |
+| **状态** | **Production-ready** — 真实 IoT 硬件 + 云端 API + iOS/Android App |
+| **告警送达** | **3–30 秒**（信号自适应），约为电话树的 **10×** |
+| **核心差异** | 唯一组合：**IoT + Interactive GIS + AI 视觉评估 + 移动指挥 App** |
+
+**目标公共设施：** 学校与校园 · 医院 · 政府楼宇 · 市政 CCTV（DBKL）· 社区中心 · 公交枢纽
+
+```text
+Trigger → Cloud+AI → Alert → Respond
+  按钮/传感器    分类+危险评分   推送全体操作员   地图/GPS/撤防
+```
 
 ---
 
 ## 关于我们 / About Us
 
-我们是一家专注于 **硬件 + 软件一体化** 的 AI 科技公司，核心方向包括：
+**Croc Nexus AI Technologies** — 专注于 **硬件 + 软件一体化** 的 AI 科技公司，核心方向包括：
 
 | 领域 | 说明 |
 |------|------|
@@ -47,13 +69,16 @@
                     └──────────────────┘
 ```
 
-### Croc Sentinel — 物联网告警与证据链
+### Croc Sentinel — 四层架构（MAIC 提交版）
 
-- **多租户 ESP32 报警平台**：设备全球接入，同组联动响铃，租户强制隔离
-- **通知通道**：FCM App 推送、邮件、Telegram（短信 Twilio 为后续扩展）
-- **摄像头证据链**：海康 Hikvision（ISAPI）/ 大华 Dahua（snapshot.cgi）经现场 ESP32 局域网抓图上传
-- **运维能力**：控制台 SPA、运维地图、OTA 固件升级、出厂登记与扫码认领
-- **安全纵深**：CMD_AUTH_KEY、OTA Token、MQTT TLS、工厂序列号 CSPRNG
+| 层级 | 内容 |
+|------|------|
+| **L1 Edge IoT** | ESP32 边缘：紧急按钮、运动传感器、警笛；QR 分钟级激活 |
+| **L2 Cloud API** | 安全 API、Live Streaming、Push Gateway、RBAC、跨机构组共享 |
+| **L3 Mobile App** | iOS/Android 原生指挥中心：GIS 地图、事件时间线、ARM ALL / DISARM ALL |
+| **L4 AI Engine** | 视觉威胁评分、最近响应人调度、超时自动电话升级 |
+
+**私有库额外能力（未公开）：** 海康 / 大华报警抓图、OTA、MQTT TLS、多租户控制台、邮件 / Telegram
 
 ### Croc AI Orchestrator — 应急事件 AI 编排
 
@@ -133,6 +158,9 @@
 
 | 路径 | 说明 |
 |------|------|
+| [`docs/MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf`](docs/MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf) | **MAIC 2026 正式提交文档（12 页）** |
+| [`docs/MAIC_SUBMISSION.md`](docs/MAIC_SUBMISSION.md) | PDF 结构化摘要（中英） |
+| [`docs/PRODUCT_OVERVIEW.md`](docs/PRODUCT_OVERVIEW.md) | 产品一页总览 |
 | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | 双系统架构说明（公开版） |
 | [`docs/EXTENSIBILITY.md`](docs/EXTENSIBILITY.md) | 扩展场景与插件接入指南 |
 | [`docs/MAIC_ARTIFACT_NOTICE.md`](docs/MAIC_ARTIFACT_NOTICE.md) | 公开制品与私有代码边界说明 |
@@ -176,11 +204,10 @@ python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.jso
 
 | 阶段 | 内容 | 状态 |
 |------|------|------|
-| Phase 0 | 报警联动、多通道通知、租户隔离 | ✅ 私有库生产路径 |
-| Phase 1 | Hik / Dahua 报警抓图、控制台证据链 | ✅ 私有库；部署需特性开关 |
-| Phase 2 | AI 规则分类 + 风险分 + Orchestrator 集成 | ✅ 私有库 staging |
-| Phase 3 | Qwen Fast/Deep + 响应人 + 15s 升级 | 📋 规划中 |
-| Phase 4 | 无人机 / 具身 / 移动 SOS / cMax 3D | 📋 架构预留 |
+| **Phase 1 · Now** | IoT 边缘、GIS Dashboard、双通道告警、移动 App、AI 视觉威胁评估、QR 激活、ARM ALL | ✅ 生产运行（MAIC 提交） |
+| **Phase 2 · 2026** | AI 异常检测、CCTV 关联、市政分析 Dashboard | 📋 规划中 |
+| **Phase 3 · 2027+** | 应急调度 API、马来西亚紧急服务集成、全国市政推广 | 📋 规划中 |
+| **平台扩展** | 无人机 / 具身智能 / 移动 SOS / cMax 3D / AI 法律 | 架构预留（Orchestrator 私有库） |
 
 ---
 
@@ -193,9 +220,12 @@ python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.jso
 
 ## 联系 / Contact
 
-- **Artifact 用途**：MAIC / Smart City 评审公开链接
-- **商业合作**：请通过公司官方渠道联系
-- **代码贡献**：本公开仓库仅接受文档与示例修正；核心开发在 Private 仓库进行
+| | |
+|--|--|
+| **公司** | Croc Nexus AI Technologies |
+| **邮箱** | partnerships@crocnexus.com |
+| **电话** | +084-349525 |
+| **Artifact** | 本公开仓库供 MAIC 评审；核心开发在 Private 仓库 |
 
 ---
 

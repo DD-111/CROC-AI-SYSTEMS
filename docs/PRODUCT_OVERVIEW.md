@@ -1,42 +1,63 @@
 # Croc Sentinel + AI — Product Overview (Public)
 
-> 整合自内部产品文档，供 MAIC / 智慧城市评审阅读。  
-> Synthesized from internal product documentation for public review.
+> 基于 [`MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf`](MAIC-Nexus-Challenge-2026-Croc-Sentinel.pdf) 与内部技术文档整理。  
+> Derived from the MAIC submission PDF and internal engineering docs.
 
 ## 一句话 / One-liner
 
-**Croc Sentinel** 是多租户联网报警平台；**Croc AI Orchestrator** 是应急事件 AI 编排层。  
-两者同机集成，为园区 / 楼宇 / 智慧城市场景提供 **设备联动 → 证据链 → AI 研判 → 人工批准** 的完整闭环。
+**Croc Sentinel** 是 Croc Nexus AI Technologies 面向公共设施的 **生产级、移动优先 IoT 安防与智慧监控平台**；**Croc AI Orchestrator** 为其 AI Engine 层提供多 Agent 编排与混合推理能力。
 
-## 现有能力（私有库已实现）
+## MAIC 2026 定位
 
-- ESP32 全球 MQTT 接入，同组设备联动响铃
-- 多租户隔离（superadmin → admin → user）
-- FCM / 邮件 / Telegram 异步通知
-- 海康 Hikvision + 大华 Dahua 报警抓图（ESP32 局域网边缘上传）
-- OTA 固件升级、出厂登记、运维地图
-- AI Enrich API 与 7-Agent 编排流水线（Orchestrator 私有库）
+- **赛事：** MAIC Nexus Challenge 2026
+- **赛道：** AI Public Services & Smart City
+- **状态：** 真实 IoT 硬件 + 云端 API + iOS/Android App **已上线运行**，非概念原型
 
-## 后续 AI 层（设计对齐）
+## 四层架构（提交文档）
 
-| 能力 | 说明 |
+1. **Edge IoT** — ESP32 边缘：按钮、传感器、警笛；QR 分钟级激活
+2. **Cloud API** — 安全 API、Live Streaming、Push、RBAC、跨机构组共享
+3. **Mobile App** — GIS 多站点地图、事件时间线、ARM ALL / DISARM ALL、GPS 巡逻
+4. **AI Engine** — 视觉威胁评分、最近响应人、电话自动升级（Orchestrator 私有库深度编排）
+
+## 核心指标
+
+| 指标 | 值 |
+|------|-----|
+| 告警送达 | 3–30 秒（信号自适应） |
+| vs 电话树 | ~10× 更快 |
+| 工具整合 | 1 App 替代 3–5 套碎片化工具 |
+| 地图规模 | 100+ 站点单图可见 |
+
+## 目标场景
+
+学校与校园 · 医院 · 政府楼宇 · 市政 CCTV（含 DBKL）· 社区中心 · 公共交通枢纽
+
+## 应急四阶段
+
+`Trigger → Cloud+AI → Alert → Respond` — 全链路审计，无电话树延迟。
+
+## 私有库已实现（未在此公开）
+
+- ESP32 MQTT 全球接入、同组联动响铃、多租户隔离
+- FCM / 邮件 / Telegram；海康 / 大华报警抓图
+- OTA、出厂登记、运维控制台与地图
+- Croc AI Orchestrator：7-Agent 流水线、CAO、Enrich API
+- cMax 2D/3D 可观测性工作台（平台方向）
+
+## 扩展路线
+
+| 时间 | 内容 |
 |------|------|
-| 事件分类 | Emergency / Security / Maintenance / Fault / Test |
-| 风险评分 | 0–100，规则可审计 |
-| Qwen 双模型 | Fast 全覆盖文案；Deep 仅高危异步 |
-| 图像分析 | Hik/Dahua JPEG，CV 模型（非 LLM） |
-| 升级 SLA | 15 秒无确认 → Tier-2（Twilio 短信扩展） |
+| Phase 2 · 2026 | AI 异常检测、CCTV 关联、市政分析 Dashboard |
+| Phase 3 · 2027+ | 应急调度 API、全国市政推广 |
+| 架构预留 | 无人机、具身智能、移动 SOS、数字孪生、AI 法律合规 |
 
-## 扩展方向
+## 联系
 
-- 无人机巡检、具身智能、移动 SOS
-- 数字孪生 + cMax 2D/3D 可观测性工作台
-- AI 法律合规审查与审批框架
-
-## 评审原则
-
-**自动建议、人工批准** — 高危调度动作默认 `Awaiting approval`。
+- **Email:** partnerships@crocnexus.com
+- **Phone:** +084-349525
 
 ---
 
-*This document is part of the public artifact. Production code remains private.*
+*Public artifact only. Production code remains private.*
