@@ -16,10 +16,11 @@
 
 <p align="center">
   <a href="#about">About</a> ·
+  <a href="#ai-today">AI today</a> ·
+  <a href="#evolving">Evolving</a> ·
   <a href="#products">Products</a> ·
   <a href="#how-it-works">How it works</a> ·
   <a href="#scenes">Scenes</a> ·
-  <a href="#roadmap">Roadmap</a> ·
   <a href="#this-repository">This repo</a> ·
   <a href="#contact">Contact</a>
 </p>
@@ -51,6 +52,72 @@ Croc Nexus closes that gap with an **AI-native** stack we **own end to end**: cl
 | One-size-fits-all | **Per-site** rules, call lists, and escalation |
 
 **Why us as a startup:** built around AI from day one — not a legacy hardware firm adding AI as marketing. Young, focused, and **customisable per site** on our platform.
+
+---
+
+<h2 id="ai-today">What our AI does today — honestly</h2>
+
+This is **live in production** on Croc Nexus–owned cloud and apps *(not in this GitHub repo)*:
+
+| Capability | What happens |
+|:-----------|:-------------|
+| **Detect & recognise** | Events from connected sites show on the map with type and context |
+| **Score urgency** | **0–100** with plain-language reasons — rules always run first |
+| **Summarise** | Short operator-facing text so staff do not read raw telemetry |
+| **Route** | AI picks **administrator or assigned agent** and triggers **phone call + app alert** |
+| **Camera context** | Linked photos support the decision when available |
+| **Escalate** | Next contact if nobody answers — no silent drop-off |
+| **Human gate** | Sensitive steps wait for a person to approve |
+| **Audit** | Every AI suggestion and human action is logged with a timestamp |
+| **Mobile** | iPhone & Android apps — map, timeline, alerts *(Croc Nexus apps only)* |
+
+**Straight talk:** today, **people still go to the site to check**. Our AI makes that faster and clearer — it does not replace on-site response yet. Early deployments depend on **staff on the ground**.
+
+---
+
+<h2 id="evolving">What we are evolving into</h2>
+
+We are actively building — not everything below is shipped yet:
+
+<table>
+<tr>
+<th>Stage</th>
+<th>Status</th>
+<th>Direction</th>
+</tr>
+<tr>
+<td valign="top"><strong>Rules + Coordination AI</strong></td>
+<td valign="top">✅ Live</td>
+<td valign="top">Production sites use proven safety rules plus Coordination features above</td>
+</tr>
+<tr>
+<td valign="top"><strong>CAO</strong> (in-house model)</td>
+<td valign="top">🔧 Training</td>
+<td valign="top">Deeper coordination, scoring, and follow-up — <strong>exclusive to Croc Nexus</strong>, not open, no weights in this repo</td>
+</tr>
+<tr>
+<td valign="top"><strong>Richer agent orchestration</strong></td>
+<td valign="top">🔧 Internal</td>
+<td valign="top">Multi-step coordination behind Croc Coordination — we publish only a <a href="src/croc_orchestrator/coordination_edge.py">non-runnable edge sketch</a>, not the runtime</td>
+</tr>
+<tr>
+<td valign="top"><strong>Embodied intelligence</strong></td>
+<td valign="top">📋 Roadmap</td>
+<td valign="top">Same AI brain could dispatch on-site systems to reach a spot or patrol — step by step per site</td>
+</tr>
+<tr>
+<td valign="top"><strong>Drones & security devices</strong></td>
+<td valign="top">📋 Roadmap</td>
+<td valign="top">Aerial check, more sensors, locks, barriers on the same alert path — when each site is ready</td>
+</tr>
+<tr>
+<td valign="top"><strong>Personal / home use</strong></td>
+<td valign="top">📋 Roadmap</td>
+<td valign="top">Same call-and-respond logic, scaled down for households</td>
+</tr>
+</table>
+
+We will not over-promise: new device types and CAO capabilities roll out **gradually**, with humans still in the loop where it matters.
 
 ---
 
@@ -94,6 +161,8 @@ Compact in-house model for deeper coordination over time. **Exclusive to Croc Ne
 | **Status** | Internal training |
 | **Role** | Sharper scoring, routing, and follow-up on top of fixed safety rules |
 | **Ownership** | Croc Nexus only |
+
+Production today = **rules + Coordination**. CAO adds depth when we are ready — still not licensed or rebranded.
 
 ---
 
@@ -148,36 +217,7 @@ We configure **urgency rules, call lists, and escalation** per site on **our pla
 | Different rules per zone | Custom scoring and call lists |
 | Mobile access | **Our apps** — your site configuration |
 | New scene types | Scoped per project |
-| Future device rollout | Same AI brain — see roadmap below |
-
----
-
-<h2 id="roadmap">Roadmap</h2>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Now — AI + people
-- AI scores and routes fast  
-- **Calls and alerts** the right person  
-- **Human confirms on site**  
-- Map and timeline guide response  
-
-</td>
-<td width="50%" valign="top">
-
-### Later — AI + machines & devices
-Same AI brain, more ways to respond *(step by step per site)*:
-
-- **Embodied intelligence** — go to spot or patrol  
-- **Drones** — aerial check and fast reach  
-- **Security devices** — more on-site equipment on the alert path  
-- Still logged, human-gated where it counts  
-
-</td>
-</tr>
-</table>
+| Future device rollout | Same AI brain — see [evolving](#evolving) |
 
 ---
 
@@ -185,13 +225,18 @@ Same AI brain, more ways to respond *(step by step per site)*:
 
 Public overview, docs, imagery, and **minimal samples** — not production code or full platform source.
 
+**What we publish here:** a tiny runnable score + summary demo, plus an **incomplete edge sketch** (`src/croc_orchestrator/coordination_edge.py`) that shows the *shape* of internal coordination — it **cannot** route calls, connect to cloud, or run CAO.
+
 ```bash
 git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
 cd CROC-AI-SYSTEMS
-python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
-```
 
-Example output: fictional urgency score + short summary from sample event data.
+# Runnable miniature demo (fictional event → score + summary)
+python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
+
+# Edge sketch only — RouteStep / FollowUpStep raise NotImplementedError
+python -c "from src.croc_orchestrator.coordination_edge import PIPELINE_SHAPE; print(PIPELINE_SHAPE)"
+```
 
 | Folder | Contents |
 |:-------|:---------|
