@@ -1,17 +1,37 @@
 # Product overview
 
-**Croc Nexus AI Technologies** — startup building connected safety for public and commercial sites.
+**Croc Nexus AI Technologies** — startup building connected safety for public, commercial, and residential sites.
 
 > **Site requirement:** reliable **network** (Wi‑Fi or wired internet) at each location.
 
 ---
 
+## Where it applies
+
+| Category | Examples |
+|:---------|:---------|
+| **Public & civic** | Government buildings, plazas, parks, roadside, traffic lights |
+| **Commercial** | Malls, business districts, campuses & industrial parks |
+| **Healthcare** | Hospitals and clinics |
+| **Residential** | Housing estates and communities today; **individual / personal use** planned |
+
+---
+
+## What happens on an event
+
+1. Something is **detected** at the site  
+2. The system **recognises** the event and scores urgency  
+3. **Phone call** and app alert go to the **administrator** or **assigned agent**  
+4. They are asked to **go and check** on site  
+5. If unanswered, the system **escalates** to the next contact  
+6. Everything is **logged** for review  
+
+---
+
 ## Croc Sentinel *(in production)*
 
-Alarm and monitoring for schools, hospitals, government buildings, and city networks.
-
 - iPhone and Android apps with live maps  
-- Fast phone alerts and event history  
+- Fast alerts and event history  
 - Photos from linked cameras when alarms fire  
 - Separate accounts per organisation; devices can work in groups  
 
@@ -19,11 +39,10 @@ Alarm and monitoring for schools, hospitals, government buildings, and city netw
 
 ## Croc Coordination
 
-Turns alerts into urgency scores, reasons, and suggested next steps.
-
-- Rule-based safety logic first; smarter layers when available  
+- Urgency scores and plain-language reasons  
+- Chooses who to call and what to suggest next  
 - Human approval for sensitive actions  
-- Complete history of suggestions and outcomes  
+- Complete history of calls, alerts, and outcomes  
 
 ---
 
@@ -35,7 +54,7 @@ Small in-house model under training at Croc Nexus — for coordination and follo
 
 ## Custom solutions
 
-We adapt workflows, device groups, alert paths, and branding per customer where it makes sense. Contact partnerships@crocnexus.com with your site layout and goals; we will confirm what is ready vs. what needs custom work.
+We adapt workflows, groups, call lists, and branding per customer. Contact partnerships@crocnexus.com with your site type and goals.
 
 ---
 

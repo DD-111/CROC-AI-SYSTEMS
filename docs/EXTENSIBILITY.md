@@ -7,6 +7,8 @@ Croc Nexus is a **startup** — we grow the platform with real customer needs, n
 | Area | Examples |
 |:-----|:---------|
 | **Alert logic** | Different groups, quiet hours, escalation paths per building |
+| **Who gets called** | Site admin, duty manager, or assigned agents per zone |
+| **Site types** | Government, mall, hospital, park, road, residential, and more |
 | **Notifications** | Phone, email, messaging — per contract |
 | **Mobile experience** | Branding and workflow screens for large rollouts |
 | **New site types** | Campuses, clinics, warehouses — mapped during discovery |
@@ -17,7 +19,8 @@ Croc Nexus is a **startup** — we grow the platform with real customer needs, n
 |:-----|:------|
 | Drone patrol | Feasibility depends on airspace, network, and ops model |
 | Field robots | Step-by-step tasks with human approval gates |
-| Mobile SOS | Phone-initiated alerts on the same escalation path |
+| Mobile SOS | Phone-initiated alerts on the same call-and-respond path |
+| Individual homes | Personal / household deployments — roadmap |
 | Deeper automation | Tied to **CAO** roadmap — early partners by invitation |
 
 ## How we decide

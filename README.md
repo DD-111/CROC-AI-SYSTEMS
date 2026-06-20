@@ -26,7 +26,7 @@
 
 ## Who we are
 
-**Croc Nexus AI Technologies** is a **startup** focused on one goal: make it easier to protect schools, hospitals, government buildings, and public facilities.
+**Croc Nexus AI Technologies** is a **startup** focused on one goal: make it easier to watch over places where people live, work, and gather — and get the right person on site when something needs eyes on it.
 
 We build the **cloud service**, **mobile apps**, and **smart coordination layer**, and we work with customers to **adapt the system to their site** — not force every site into the same box.
 
@@ -52,6 +52,7 @@ We build the **cloud service**, **mobile apps**, and **smart coordination layer*
 
 - Multi-site **map** with live markers  
 - Phone alerts in about **3–30 seconds**  
+- **Automatic calls** to admin or assigned agent to investigate  
 - **iPhone & Android** apps  
 - Linked **camera photos** on alarm  
 - Device setup via app and remote updates  
@@ -63,7 +64,7 @@ We build the **cloud service**, **mobile apps**, and **smart coordination layer*
 **From alert to clear action**
 
 - Urgency score & plain-language reasons  
-- Suggested who to notify and what to do  
+- Picks **who to call** — admin or on-site agent  
 - **Human approval** before sensitive steps  
 - Full history of what was suggested & done  
 
@@ -87,6 +88,56 @@ When CAO opens to wider use, we will announce it here. Until then, production si
 
 ---
 
+## Where it applies
+
+Our platform is built for **many kinds of locations** — one system, different layouts.
+
+| | | |
+|:--|:--|:--|
+| **Government buildings** | **Shopping malls** | **Hospitals & clinics** |
+| **Plazas & squares** | **Parks** | **Roadside & streets** |
+| **Traffic lights & junctions** | **Commercial districts** | **Campuses & industrial parks** |
+| **Residential communities** | *More site types on request* | |
+
+**Residential & personal use:** we already support **housing estates and home communities**. **Individual / household deployments** are on our roadmap — same alert and call flow, scaled down for personal use.
+
+> Tell us your location type during planning. We will confirm what is **ready now** vs. what needs **custom setup**.
+
+---
+
+## When something happens
+
+```text
+  Something is detected
+         │
+         ▼
+  System recognises the event
+  (type, urgency, camera if linked)
+         │
+         ├── Push alert to phones
+         ├── Phone call to on-duty admin or assigned agent
+         └── Log for audit
+         │
+         ▼
+  Admin or agent goes to check on site
+         │
+         ▼
+  Resolve · disarm · follow-up if needed
+```
+
+| Step | What the customer gets |
+|:-----|:------------------------|
+| **Detect** | Sensors, buttons, cameras, or linked inputs trigger an event |
+| **Recognise** | Cloud sorts the event and scores how urgent it is |
+| **Notify** | **Phone call** and/or app alert to the **site administrator** or **assigned agent** |
+| **Respond** | That person is asked to **go and look**; map and timeline show where and what |
+| **Escalate** | If nobody answers or the situation stays open, the next contact is called automatically |
+| **Record** | Full history — who was called, when, and what was done |
+
+This is how we support malls, hospitals, parks, roads, and residential areas alike: **recognise first, then call the right person to investigate**.
+
+---
+
 ## How the system fits together
 
 <p align="center">
@@ -99,7 +150,7 @@ When CAO opens to wider use, we will announce it here. Until then, production si
 | **Mobile app** | Map, events, arm/disarm, patrol view |
 | **Smart layer** | Scores urgency, routes alerts, escalates if unanswered |
 
-**Typical flow:** an event is detected → cloud processes → phones notify staff → team responds on the map.
+**Typical flow:** detect → recognise → **call admin or agent** → they check on site → log and close.
 
 ---
 
@@ -138,6 +189,7 @@ As a startup, we work **with** customers rather than only selling a fixed packag
 | Branded mobile experience | Colours, logos, and workflow screens for large deployments |
 | Extra notification channels | Email, messaging apps, on-duty call lists — scoped per contract |
 | New integrations | Drones, robots, mobile SOS, and more — scoped in a discovery call |
+| Residential & personal | Housing estates today; **individual home use** on roadmap |
 | Deeper smart automation | CAO and advanced coordination — roadmap; early partners by invitation |
 
 > **How to start:** tell us your site type, number of buildings, and how your team responds today.  
@@ -163,12 +215,14 @@ As a startup, we work **with** customers rather than only selling a fixed packag
 
 ## Smart features (summary)
 
-- Sort events: emergency, security, maintenance, and more  
+- Works across **government, retail, healthcare, public space, roads, and residential** sites  
+- Sorts events: emergency, security, maintenance, and more  
 - **0–100 urgency** with readable reasons  
 - Camera images when available  
-- Notify the nearest available responder  
-- Escalate by phone if nobody acknowledges in time  
-- **People approve** before high-impact actions  
+- **Automatic phone call** to administrator or assigned agent to **go and investigate**  
+- App alerts at the same time for faster awareness  
+- If nobody answers, **escalates to the next contact**  
+- **People approve** before high-impact automated actions  
 
 ---
 

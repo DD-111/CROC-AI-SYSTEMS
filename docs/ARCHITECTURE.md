@@ -29,21 +29,31 @@ Online service + control screen
 ## Croc Coordination — from alert to action
 
 ```text
-Alarm arrives
+Something detected
       │
       ▼
-Smart layer reads signals + photos
+Recognise event + urgency (+ camera if linked)
+      │
+      ├── phone call to admin or assigned agent
+      ├── app alert to on-duty staff
+      └── audit log
       │
       ▼
-Urgency score, reasons, suggested steps
+Person goes to check on site
       │
       ▼
-Notify staff · wait for approval · log everything
+Resolve · escalate if still open · record outcome
 ```
 
 - Fixed rules always run first; smarter layers add detail when available  
-- If smart services are offline, rule-based results still work  
-- Sensitive steps wait for a person to approve  
+- If smart services are offline, rule-based results and calls still work  
+- Sensitive automated steps wait for a person to approve  
+
+---
+
+## Where it applies
+
+Government buildings, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, and residential communities — with **individual home use** on the roadmap. Layout and call lists are configured per site.
 
 ---
 
