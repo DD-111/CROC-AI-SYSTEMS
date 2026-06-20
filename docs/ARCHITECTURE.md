@@ -1,6 +1,6 @@
 # How the platform fits together
 
-**Croc Nexus AI Technologies** is an **AI startup**. AI recognises events, scores urgency, routes calls, and escalates — people respond first; embodied intelligence later.
+**Croc Nexus AI Technologies** is an **AI startup**. AI recognises events, scores urgency, routes calls, and escalates — people respond first; **embodied systems, drones, security devices, and more** on the roadmap.
 
 ## Network first
 
@@ -48,7 +48,7 @@ Resolve · escalate if still open · record outcome
 ```
 
 **Today:** response depends on **people** — admin or agent travels to the site.  
-**Later:** same pipeline can add **embodied intelligence** to **go to the location or patrol** the area, introduced step by step per site.
+**Later:** the same pipeline can add **embodied intelligence**, **drones**, **security devices**, and other connected equipment — to **reach the location, patrol, or act on site** — introduced step by step per site.
 
 - Fixed rules always run first; smarter layers add detail when available  
 - If smart services are offline, rule-based results and calls still work  
@@ -66,15 +66,15 @@ Government buildings, malls, hospitals, plazas, parks, roads, traffic junctions,
 
 **CAO** is a compact model Croc Nexus is training for in-house coordination — alert scoring, routing, and follow-up. It is **not publicly open** today and remains **exclusive to Croc Nexus AI Technologies**.
 
-Production customers use **Croc Coordination** with rule-based safety logic plus the smart features already shipped. CAO will be offered when we are ready to open it beyond internal use.
+Production customers use **Croc Coordination** with rule-based safety logic plus the smart features already shipped. CAO stays **internal to Croc Nexus** until we choose to extend it on our own terms.
 
 ---
 
 ## Customisation
 
-We are a **startup**: many sites need small changes — extra groups, different escalation paths, branded apps, or new integrations. We review each request for **fit and timeline** before committing.
+We are a **startup**: many sites need small changes — extra groups, different escalation paths, or new integrations. All of this runs on **Croc Nexus–owned** cloud, apps, and AI — we do **not** provide branded or white-label apps. We review each request for **fit and timeline** before committing.
 
-See the main README section *Built to adapt & customize* for typical examples.
+See the main README section *Built for your site — on our platform* for typical examples.
 
 ---
 

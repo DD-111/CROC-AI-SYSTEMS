@@ -43,13 +43,19 @@ Government buildings · malls · hospitals · plazas · parks · roads · traffi
 | Phase | Response |
 |:------|:---------|
 | **Now** | AI recognises → **calls person** → person checks on site |
-| **Later** | Same AI can also route **embodied intelligence** to go or patrol |
+| **Later** | Same AI can route **embodied intelligence**, **drones**, **security devices**, and more — patrol, reach, and act on site |
+
+---
+
+## Exclusive ownership
+
+**Platform, mobile apps, cloud, coordination logic, and CAO** are **wholly owned and operated by Croc Nexus AI Technologies**. We configure workflows per site on our stack — we do **not** offer white-label or customer-branded apps.
 
 ---
 
 ## Custom AI workflows
 
-We adapt scoring, call lists, and rules per site. Contact partnerships@crocnexus.com.
+We adapt scoring, call lists, and rules per site on **our platform**. Contact partnerships@crocnexus.com.
 
 ---
 

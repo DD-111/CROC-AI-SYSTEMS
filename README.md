@@ -57,9 +57,9 @@ We are **young, focused, and built around AI from day one** — not a legacy har
 | **AI-native product** | Recognition, scoring, routing, and calls are core — not an add-on |
 | **People stay in charge** | AI suggests and automates the routine; **humans approve** what matters |
 | **Rules + AI together** | Safety rules always run first; AI never quietly lowers the urgency level |
-| **Custom per site** | As a startup we **shape the AI workflow** to your buildings and response habits |
-| **Own small model (CAO)** | We are training **CAO** in-house — exclusive to Croc Nexus, not open yet |
-| **Clear roadmap** | **People respond first** today → **embodied intelligence** for patrol and dispatch later |
+| **Own everything** | **Platform, apps, cloud, and AI** — wholly owned and operated by Croc Nexus |
+| **Own small model (CAO)** | We are training **CAO** in-house — **exclusive to Croc Nexus**, not open |
+| **Clear roadmap** | **People first** today → **embodied intelligence**, **drones**, **security devices**, and more — same AI brain, step by step |
 | **Wide scenes** | One AI stack for many place types — and **personal / home use** on the roadmap |
 
 **Talk to us:** partnerships@crocnexus.com · +084-349525
@@ -107,7 +107,7 @@ We are **indirectly training a compact model called CAO** — built only for **C
 |:--|:--|
 | **Status** | Internal training — **not publicly released** |
 | **Role** | Deeper AI coordination on top of fixed safety rules |
-| **Exclusive to** | Croc Nexus products and selected partner sites |
+| **Exclusive to** | **Croc Nexus only** — not licensed or rebranded for others |
 
 Production sites today use **proven rules + Croc Coordination AI features**. CAO opens when we are ready.
 
@@ -143,7 +143,7 @@ Production sites today use **proven rules + Croc Coordination AI features**. CAO
   Person goes to check  ← today
        │
        ▼
-  Later: embodied AI can also go / patrol  ← roadmap
+  Later: embodied AI, drones, security devices, and more  ← roadmap
 ```
 
 | AI step | Benefit |
@@ -173,13 +173,14 @@ Production sites today use **proven rules + Croc Coordination AI features**. CAO
 </td>
 <td width="50%" valign="top">
 
-### Later — AI + embodied intelligence
-**AI can also send machines to move**
+### Later — AI + machines & devices
+**Same AI brain — more ways to respond**
 
-- Same AI brain routes **embodied systems** to the spot  
-- **Patrol** parks, campuses, roads, commercial zones  
+- **Embodied intelligence** — go to the spot or patrol an area  
+- **Drones** — aerial check, patrol, and reach where people cannot go fast  
+- **Security devices** — more on-site equipment on the same alert path *(roadmap)*  
 - Still logged, still human-gated where it counts  
-- Rolled out **step by step** per site  
+- Rolled out **step by step** per site — only what fits each scene  
 
 </td>
 </tr>
@@ -201,17 +202,17 @@ Production sites today use **proven rules + Croc Coordination AI features**. CAO
 
 ---
 
-## Built for your site — AI that adapts
+## Built for your site — on our platform
 
-We are a **startup**: tell us your scene and how your team responds. We configure the AI workflow to match.
+We are a **startup**: tell us your scene and how your team responds. We configure **urgency rules, call lists, and escalation** on **our platform** — we do **not** offer customer-branded or white-label apps.
 
-| You want | We can |
-|:---------|:-------|
-| Different urgency rules per zone | Custom AI scoring and call lists |
-| Branded apps for your organisation | Your look, same AI engine |
+| You want | What we do |
+|:---------|:-----------|
+| Different urgency rules per zone | Custom AI scoring and call lists on Croc Nexus |
+| Croc Nexus mobile apps | **Our apps only** — same product, your site configuration |
 | New scene types | Government, retail, health, public space, roads, homes — scoped per project |
-| Embodied patrol later | Same AI routes people now, machines when ready |
-| Deeper CAO features | Early partners by invitation |
+| Embodied, drones, devices later | Same AI routes people now; **machines and equipment** when ready |
+| Deeper CAO features | When we open it — **Croc Nexus exclusive** |
 
 ---
 
@@ -240,7 +241,7 @@ git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
 | Folder | Contents |
 |:-------|:---------|
 | `docs/` | Product & AI architecture notes |
-| `assets/` | Brand and app imagery |
+| `assets/` | Company and app imagery |
 | `samples/` | Example event data |
 | `src/` | Shared helpers |
 
