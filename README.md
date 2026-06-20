@@ -17,7 +17,7 @@
 <br/>
 
 > **Before you start**  
-> Every site needs a **working network** — Wi‑Fi or wired internet — so on-site devices can reach our cloud and send alerts to phones.  
+> Every site needs a **working network** — Wi‑Fi or wired internet — so connected equipment can reach our cloud and staff can receive alerts on their phones.  
 > Without network coverage at the location, the system cannot operate as designed.
 
 <br/>
@@ -28,14 +28,14 @@
 
 **Croc Nexus AI Technologies** is a **startup** focused on one goal: make it easier to protect schools, hospitals, government buildings, and public facilities.
 
-We design our own field hardware, cloud service, and mobile apps, and we work with customers to **adapt the system to their site** — not force every site into the same box.
+We build the **cloud service**, **mobile apps**, and **smart coordination layer**, and we work with customers to **adapt the system to their site** — not force every site into the same box.
 
 | We care about | What that means for you |
 |:--------------|:------------------------|
-| **Field hardware** | CS-M401–M407 devices for buttons, sensors, sirens, and site control |
 | **Cloud + mobile** | Live maps, fast phone alerts, and a clear event history |
 | **Smart assistance** | Urgency scores, plain reasons, and suggested next steps — with people still in charge |
 | **Your layout** | Workflows, device groups, and alert rules shaped around how your site actually runs |
+| **Custom fit** | Solutions scoped to your buildings, teams, and response habits |
 
 **Talk to us:** partnerships@crocnexus.com · +084-349525
 
@@ -54,7 +54,7 @@ We design our own field hardware, cloud service, and mobile apps, and we work wi
 - Phone alerts in about **3–30 seconds**  
 - **iPhone & Android** apps  
 - Linked **camera photos** on alarm  
-- QR setup & remote updates for CS-M devices  
+- Device setup via app and remote updates  
 
 </td>
 <td width="50%" valign="top">
@@ -87,43 +87,26 @@ When CAO opens to wider use, we will announce it here. Until then, production si
 
 ---
 
-## On-site hardware · CS-M series
-
-| Model | Role on site |
-|:-----:|:-------------|
-| **CS-M401** | Emergency button |
-| **CS-M402** | Motion detection |
-| **CS-M403** | Siren / sound alert |
-| **CS-M404** | Site controller / relay |
-| **CS-M405** | Camera link unit |
-| **CS-M406** | Multi-sensor hub |
-| **CS-M407** | All-in-one field unit |
-
-Add devices with a **QR code** or **serial number**. Software updates can be sent remotely after a unit is online.
-
----
-
-## How the system is layered
+## How the system fits together
 
 <p align="center">
-  <img src="assets/images/architecture-four-layers.svg" alt="Four layers: on site, cloud, mobile app, smart layer" width="880" />
+  <img src="assets/images/architecture-four-layers.svg" alt="Cloud, mobile app, and smart layer" width="720" />
 </p>
 
-| Layer | Role |
-|:------|:-----|
-| **On site** | CS-M401–M407 sense and act locally |
+| Part | Role |
+|:-----|:-----|
 | **Cloud** | Secure online service, live updates, notifications |
 | **Mobile app** | Map, events, arm/disarm, patrol view |
 | **Smart layer** | Scores urgency, routes alerts, escalates if unanswered |
 
-**Typical flow:** something triggers on site → cloud processes → phones notify staff → team responds on the map.
+**Typical flow:** an event is detected → cloud processes → phones notify staff → team responds on the map.
 
 ---
 
 ## Network at each site *(required)*
 
 ```text
-  CS-M devices on site
+  Equipment at the site
          │
          │  Wi‑Fi or wired internet  ← must be available
          ▼
@@ -135,12 +118,11 @@ Add devices with a **QR code** or **serial number**. Software updates can be sen
 
 | Requirement | Notes |
 |:------------|:------|
-| **Internet at the site** | Wi‑Fi or Ethernet; devices must stay online for alerts and updates |
-| **Signal quality** | Weak signal may slow alerts; we surface battery & link health in the app |
-| **Cameras** | Usually on the same local network; photos upload through the field unit when an alarm fires |
-| **Phones** | Staff apps need mobile data or Wi‑Fi to receive push alerts |
+| **Internet at the site** | Wi‑Fi or Ethernet so connected equipment can stay online |
+| **Signal quality** | Weak signal may slow alerts; link health is visible in the app |
+| **Staff phones** | Mobile data or Wi‑Fi needed to receive push alerts |
 
-We can advise on placement and network checks during **site planning** — especially for campuses, clinics, and remote buildings.
+We can help review network readiness during **site planning** — especially for campuses, clinics, and remote buildings.
 
 ---
 
@@ -152,11 +134,10 @@ As a startup, we work **with** customers rather than only selling a fixed packag
 
 | Your idea | How we usually approach it |
 |:----------|:---------------------------|
-| Extra device types | New roles in the CS-M family or partner hardware — **if** it fits our cloud model |
 | Custom alert rules | Different groups, schedules, escalation paths per building or tenant |
 | Branded mobile experience | Colours, logos, and workflow screens for large deployments |
 | Extra notification channels | Email, messaging apps, on-duty call lists — scoped per contract |
-| Future: drones, robots, mobile SOS | Architecture allows new inputs; we scope each idea in a discovery call |
+| New integrations | Drones, robots, mobile SOS, and more — scoped in a discovery call |
 | Deeper smart automation | CAO and advanced coordination — roadmap; early partners by invitation |
 
 > **How to start:** tell us your site type, number of buildings, and how your team responds today.  
@@ -184,7 +165,7 @@ As a startup, we work **with** customers rather than only selling a fixed packag
 
 - Sort events: emergency, security, maintenance, and more  
 - **0–100 urgency** with readable reasons  
-- Camera images when a unit is linked  
+- Camera images when available  
 - Notify the nearest available responder  
 - Escalate by phone if nobody acknowledges in time  
 - **People approve** before high-impact actions  

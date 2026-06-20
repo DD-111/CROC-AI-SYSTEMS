@@ -2,14 +2,14 @@
 
 ## Network first
 
-Every deployment assumes the **site has usable internet** (Wi‑Fi or wired). Field units talk to the cloud over that link; staff phones receive alerts through the same cloud path. Plan network coverage before hardware install.
+Every deployment assumes the **site has usable internet** (Wi‑Fi or wired). Connected equipment at the site uses that network to reach the cloud; staff phones receive alerts through the same path.
 
 ---
 
-## Croc Sentinel — field to cloud
+## Croc Sentinel — connected to cloud
 
 ```text
-CS-M401–M407 on site
+Equipment at the site
         │
         │  site network (required)
         ▼
@@ -17,13 +17,12 @@ Online service + control screen
         │
         ├── phone / email / messaging alerts
         ├── linked camera photos
-        └── remote device updates
+        └── remote updates
 ```
 
 - Each organisation sees only its own devices and staff  
-- Devices in the same group can react together (e.g. sirens together)  
-- New units are registered at the factory, then claimed on site  
-- Camera passwords are not stored permanently on field hardware  
+- Devices in the same group can react together  
+- Sensitive credentials are not stored permanently on local equipment  
 
 ---
 
@@ -58,7 +57,7 @@ Production customers use **Croc Coordination** with rule-based safety logic plus
 
 ## Customisation
 
-We are a **startup**: many sites need small changes — extra groups, different escalation paths, branded apps, or new device roles. We review each request for **fit and timeline** before committing.
+We are a **startup**: many sites need small changes — extra groups, different escalation paths, branded apps, or new integrations. We review each request for **fit and timeline** before committing.
 
 See the main README section *Built to adapt & customize* for typical examples.
 
@@ -69,7 +68,7 @@ See the main README section *Built to adapt & customize* for typical examples.
 | Topic | Croc Sentinel | Croc Coordination |
 |:------|:--------------|:------------------|
 | Connection security | Encrypted links to cloud and update server | Encrypted access to coordination service |
-| Device commands | Only with authorised keys | Permission by role |
+| Commands | Only with authorised access | Permission by role |
 | Remote updates | Only from approved download locations | — |
 | Data separation | Each customer’s data kept apart | Each customer’s data kept apart |
 | History | Full event log | Full decision log |

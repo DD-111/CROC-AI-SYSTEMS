@@ -1,16 +1,11 @@
 {
   "event_id": "alarm-10042",
-  "device_id": "CS-M407-campus-a12",
+  "device_id": "site-unit-a12",
   "site_id": "site-north-wing",
   "battery": 34,
   "signal_strength": "weak",
   "trigger_count": 4,
   "photo_received": false,
   "trigger_type": "button",
-  "zone": "school-zone-north",
-  "metadata": {
-    "camera_linked": true,
-    "photo_attempted": true,
-    "photo_error": "timeout"
-  }
+  "zone": "school-zone-north"
 }

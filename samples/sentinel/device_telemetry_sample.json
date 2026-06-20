@@ -1,6 +1,5 @@
 {
-  "device_id": "CS-M407-campus-a12",
-  "model": "CS-M407",
+  "device_id": "site-unit-a12",
   "site_owner": "site-admin-north",
   "zone": "school-zone-north",
   "group": "building-a-floor-2",

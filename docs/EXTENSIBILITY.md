@@ -7,7 +7,6 @@ Croc Nexus is a **startup** — we grow the platform with real customer needs, n
 | Area | Examples |
 |:-----|:---------|
 | **Alert logic** | Different groups, quiet hours, escalation paths per building |
-| **Hardware mix** | CS-M401–M407 combinations per zone; extra roles where feasible |
 | **Notifications** | Phone, email, messaging — per contract |
 | **Mobile experience** | Branding and workflow screens for large rollouts |
 | **New site types** | Campuses, clinics, warehouses — mapped during discovery |
@@ -25,7 +24,7 @@ Croc Nexus is a **startup** — we grow the platform with real customer needs, n
 
 1. You share site layout, team structure, and response habits  
 2. We mark items as **ready now**, **custom build**, or **future roadmap**  
-3. We agree timeline and scope before hardware ships  
+3. We agree timeline and scope before rollout  
 
 ## Principles we keep
 

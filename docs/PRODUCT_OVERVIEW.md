@@ -10,7 +10,6 @@
 
 Alarm and monitoring for schools, hospitals, government buildings, and city networks.
 
-- CS-M401–M407 field hardware  
 - iPhone and Android apps with live maps  
 - Fast phone alerts and event history  
 - Photos from linked cameras when alarms fire  

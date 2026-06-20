@@ -1,6 +1,6 @@
 {
   "alarm_id": 10042,
-  "device_id": "CS-M401-office-2",
+  "device_id": "site-unit-office-2",
   "site_owner": "site-admin-north",
   "device_group": "building-a-floor-2",
   "triggered_by": "button",
