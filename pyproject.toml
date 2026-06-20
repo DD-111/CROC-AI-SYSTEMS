@@ -1,7 +1,7 @@
 [project]
 name = "croc-ai-systems"
 version = "0.1.0"
-description = "CROC AI Systems — Croc Nexus AI Technologies"
+description = "Croc Sentinel Systems — a product of Croc Nexus AI Technologies"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
