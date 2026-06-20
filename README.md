@@ -2,83 +2,75 @@
   <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="400" />
 </p>
 
-<h1 align="center">Croc Nexus AI Technologies</h1>
+<h1 align="center">Croc Sentinel Systems</h1>
 
 <p align="center">
-  <strong>AI-native site safety — every alert scored, routed, logged, and accountable</strong>
+  <strong>AI-powered site monitoring and response</strong><br/>
+  <sub>A product of <strong>Croc Nexus AI Technologies</strong></sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/AI-Startup-7c3aed" alt="AI Startup" />
-  <img src="https://img.shields.io/badge/Platform-In%20production-16a34a" alt="In production" />
+  <img src="https://img.shields.io/badge/Status-In%20production-16a34a" alt="In production" />
 </p>
 
 <p align="center">
-  <a href="#snapshot">Snapshot</a> ·
-  <a href="#problem">Problem</a> ·
-  <a href="#solution">Solution</a> ·
-  <a href="#traction">Traction</a> ·
-  <a href="#business">Business</a> ·
-  <a href="#market">Market</a> ·
-  <a href="#moat">Moat</a> ·
+  <a href="#overview">Overview</a> ·
+  <a href="#platform">Platform</a> ·
   <a href="#ai-today">AI today</a> ·
   <a href="#evolving">Evolving</a> ·
-  <a href="#investors">Investors</a> ·
-  <a href="#this-repository">Repo</a>
+  <a href="#scenes">Scenes</a> ·
+  <a href="#mobile">Mobile</a> ·
+  <a href="#repository">Repository</a> ·
+  <a href="#contact">Contact</a>
 </p>
 
 <br/>
 
-> **Investment snapshot**  
-> • **Live:** Croc Sentinel + Croc Coordination in production on our cloud & apps  
-> • **Problem:** Site alerts are noisy, unranked, and hard to assign — response breaks when nobody answers  
-> • **Moat:** Full stack we own — cloud, mobile apps, coordination, CAO *(in training, not open)*  
-> • **Talk:** partnerships@crocnexus.com · +084-349525 · [Investor brief →](docs/INVESTOR.md)
+> **Croc Sentinel Systems** turns site alerts into **scored, routed, accountable action** — detect, score urgency, call the right person, escalate, and log every step.  
+> **Humans stay in control.** Each site needs **network** (Wi‑Fi or wired internet).
 
 <br/>
 
 ---
 
-<h2 id="snapshot">At a glance</h2>
+<h2 id="overview">Overview</h2>
 
-| | |
-|:--|:--|
-| **What we do** | AI scores urgency, calls the right person, escalates, and logs every step |
-| **Who pays** | Sites that need accountable safety — government, retail, health, campuses, public space |
-| **What's live** | Monitoring, **3–30 s** alerts, auto calls, iOS/Android apps, audit trail |
-| **What's honest** | People still go on site today — we make response **faster and clearer**, not fully autonomous yet |
-| **What's not open** | CAO, deeper orchestration, embodied / drones / devices, personal home — see [evolving](#evolving) |
+Most site security still stops at a loud bell or a generic text. **Everyone gets the same alert. Nobody knows how serious it is. Someone has to guess who should go.**
+
+**Croc Sentinel Systems** is Croc Nexus’s platform for connected sites: monitoring on the map, **3–30 second** alerts, automatic calls to staff, and a full audit trail — on **Croc Nexus–owned** cloud and mobile apps.
+
+| Before | With Croc Sentinel Systems |
+|:-------|:---------------------------|
+| Every alarm feels equally urgent | **Urgency score (0–100)** with plain-language reasons |
+| Staff wait and guess | AI **calls admin or agent** to go check |
+| Wrong person gets pinged | AI **routes by role, zone, and availability** |
+| Camera footage unused | **Linked images** when available |
+| Chain breaks if no answer | **Auto-escalation** to the next contact |
+| No record | Full **audit log** of AI and human steps |
+
+**Straight talk:** today, **people still go to the site to check**. The platform makes that faster and clearer — on-site response is not fully automated yet.
 
 ---
 
-<h2 id="problem">Problem</h2>
-
-Traditional site security stops at a loud bell or a generic text.
-
-**Everyone gets the same alert. Nobody knows how serious it is. Someone has to guess who should go.** Camera footage sits unused. If nobody answers, the chain breaks. There is no record of what worked.
-
----
-
-<h2 id="solution">Solution</h2>
+<h2 id="platform">Platform</h2>
 
 <p align="center">
-  <img src="assets/images/app-overview-dashboard.jpeg" alt="Croc Nexus app" width="280" />
+  <img src="assets/images/app-overview-dashboard.jpeg" alt="App dashboard" width="280" />
   &nbsp;&nbsp;
-  <img src="assets/images/app-events-timeline.jpeg" alt="Events timeline" width="280" />
+  <img src="assets/images/app-events-timeline.jpeg" alt="Events" width="280" />
 </p>
-
-<p align="center"><sub>Croc Nexus mobile apps — map, events, alerts *(our apps only, per-site configuration)*</sub></p>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Croc Sentinel *(live)*
-AI-powered site monitoring
+### Monitoring
+**Live today**
 
-- Events on the map with context  
-- **3–30 second** alerts to phones  
+- Event recognition on the map  
+- **3–30 s** alerts to phones  
 - Automatic calls to admin or agent  
 - Camera context when linked  
 - iPhone & Android apps  
@@ -86,10 +78,10 @@ AI-powered site monitoring
 </td>
 <td width="50%" valign="top">
 
-### Croc Coordination *(live)*
-AI that turns alerts into action
+### Coordination
+**Live today**
 
-- **Urgency score 0–100** + plain reasons  
+- Urgency score + readable reasons  
 - Who to call and what to do first  
 - Escalation if nobody answers  
 - Human approval before sensitive steps  
@@ -99,126 +91,98 @@ AI that turns alerts into action
 </tr>
 </table>
 
-| Old way | With Croc Nexus AI |
-|:--------|:-------------------|
-| Every alarm feels equally urgent | **Scored urgency** with readable reasons |
-| Staff wait and guess | AI **calls admin or agent** to go check |
-| Wrong person gets pinged | AI **routes by role, zone, availability** |
-| Chain breaks if no answer | **Auto-escalation** + full **audit log** |
-
 ```text
-  Event → AI score + route → call + app alert → person checks on site → log
+  Event detected
+       │
+       ▼
+  AI recognises + scores urgency
+       │
+       ├── Call + app alert to admin or agent
+       └── Audit log
+       │
+       ▼
+  Person checks on site          ← today
+       │
+       ▼
+  Machines & devices on site     ← not open yet
 ```
 
 <p align="center">
   <img src="assets/images/architecture-four-layers.svg" alt="Cloud, mobile app, and AI layer" width="640" />
 </p>
 
----
+| Layer | Role |
+|:------|:-----|
+| **Cloud** | Recognition, scoring, routing, escalation |
+| **Mobile app** | Map, timeline, alerts, approvals — **Croc Nexus apps only** |
+| **AI** | Understand events, pick who to call, plan follow-up |
 
-<h2 id="traction">Traction</h2>
+We configure **rules, call lists, and escalation per site** on our stack. **No white-label or customer-branded apps.**
 
-| Signal | Detail |
-|:-------|:-------|
-| **In production** | Sentinel + Coordination on Croc Nexus–owned cloud and apps |
-| **Response speed** | **3–30 s** alerts; automatic phone calls to assigned staff |
-| **Mobile product** | Live iOS & Android — map, timeline, device setup, activity |
-| **Per-site rollout** | Custom rules, call lists, and escalation configured on our platform |
-| **Straight talk** | Early phase depends on **people on the ground**; AI speeds decisions, not replacement |
-
-Customer names and unreleased metrics are not published here. **Contact us for pilot and deployment details.**
+**Principles:** safety rules always run first · AI never lowers urgency silently · sensitive steps need human approval · full audit trail.
 
 ---
 
-<h2 id="business">Business model</h2>
+<h2 id="ai-today">What the AI does today</h2>
 
-**B2B site safety platform**
-
-- **Per-site deployment** on Croc Nexus cloud + mobile apps  
-- **Recurring platform service** — configuration, alerts, coordination, audit  
-- **We own the product** — no white-label, no customer-branded apps; customers use **our stack**, configured for their site  
-
-Scale = **more sites on platform** + **deeper AI over time** (CAO and future layers — not open yet).
-
----
-
-<h2 id="market">Market</h2>
-
-**One AI brain, many scenes** — same detect → score → call → log stack:
-
-Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home — not open yet*
-
-| Expansion | Logic |
-|:----------|:------|
-| **Horizontal** | Same stack across place types — configure rules per site |
-| **Vertical** | Deeper coordination (CAO) and device layers when ready — **not open yet** |
-
----
-
-<h2 id="moat">Why us / Moat</h2>
-
-| | |
-|:--|:--|
-| **AI-native** | Built around AI from day one — not legacy hardware with AI marketing |
-| **Own the stack** | Cloud, apps, coordination — **wholly Croc Nexus** |
-| **CAO** | In-house model in training — exclusive, not licensed or rebranded |
-| **Rules + AI** | Safety rules always first; AI never lowers urgency silently |
-| **Accountability** | Human gates + full audit — trust for regulated and high-stakes sites |
-
----
-
-<h2 id="ai-today">What our AI does today</h2>
-
-**Live in production** *(not in this GitHub repo)*:
+**In production** on Croc Nexus infrastructure *(full source not in this repository)*:
 
 | Capability | What happens |
 |:-----------|:-------------|
 | Detect & recognise | Events on map with type and context |
 | Score urgency | **0–100** with plain-language reasons |
-| Summarise | Short text for operators — no raw telemetry |
+| Summarise | Short operator-facing text |
 | Route | **Phone call + app alert** to admin or agent |
 | Camera context | Linked images when available |
 | Escalate | Next contact if no answer |
 | Human gate | Sensitive steps need approval |
-| Audit | Every AI and human step timestamped |
+| Audit | Every step timestamped |
 
 ---
 
-<h2 id="evolving">What we are evolving into</h2>
+<h2 id="evolving">What we are building next</h2>
 
-| Stage | Status | Direction |
-|:------|:-------|:----------|
-| **Rules + Coordination AI** | ✅ Live | Production today |
-| **CAO** (in-house model) | Not open | In training — deeper coordination; Croc Nexus exclusive |
-| **Richer agent orchestration** | Not open | Internal runtime; [edge sketch only](src/croc_orchestrator/coordination_edge.py) in repo |
-| **Embodied intelligence, drones & devices** | Not open | Planned — not available yet |
-| **Personal / home use** | Not open | Planned — not available yet |
+| Stage | Status |
+|:------|:-------|
+| **Monitoring + Coordination AI** | ✅ Live |
+| **CAO** (Croc Nexus in-house model) | Not open — in training; exclusive to Croc Nexus |
+| **Richer orchestration** | Not open — internal; [edge sketch only](src/croc_orchestrator/coordination_edge.py) here |
+| **Embodied intelligence, drones & devices** | Not open — planned |
+| **Personal / home use** | Not open — planned |
 
-We roll out **gradually**. Humans stay in the loop where it matters.
+**CAO** deepens coordination over time. Production today uses **rules + Coordination**. CAO is not licensed or rebranded.
 
-### CAO *(not open)*
-
-Compact in-house model for sharper scoring, routing, and follow-up. Production today = **rules + Coordination**. CAO adds depth when ready — still **not licensed or rebranded**.
+We ship **gradually**. Humans stay in the loop where it matters.
 
 ---
 
-<h2 id="investors">For investors</h2>
+<h2 id="scenes">Scenes</h2>
 
-**Full one-pager:** [docs/INVESTOR.md](docs/INVESTOR.md)
+Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home — not open yet*
 
-We welcome investors and strategic partners for:
-
-- Pilot and site rollout partnerships  
-- Growth capital for expansion and CAO development  
-- Demo and diligence *(NDA where needed)*  
-
-**Contact:** partnerships@crocnexus.com · +084-349525
+| You need | We provide |
+|:---------|:-----------|
+| Different rules per zone | Custom scoring and call lists on Croc Nexus |
+| Mobile access | **Our apps** — your site configuration |
+| New scene types | Scoped per project |
 
 ---
 
-<h2 id="this-repository">This repository</h2>
+<h2 id="mobile">Mobile app</h2>
 
-Public overview, docs, imagery, and **minimal samples** — not production code, CAO weights, or integration secrets.
+<p align="center">
+  <img src="assets/images/app-device-activation.jpeg" alt="Setup" width="220" />
+  &nbsp;&nbsp;
+  <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="220" />
+</p>
+
+<p align="center"><sub>Setup · activity — part of Croc Sentinel Systems</sub></p>
+
+---
+
+<h2 id="repository">This repository</h2>
+
+Public overview and **minimal samples** for **Croc Sentinel Systems** — not production code, CAO weights, or cloud backends.
 
 ```bash
 git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
@@ -228,23 +192,24 @@ python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.jso
 
 | Folder | Contents |
 |:-------|:---------|
-| [`docs/`](docs/) | [Investor brief](docs/INVESTOR.md) · [Architecture](docs/ARCHITECTURE.md) · [Product](docs/PRODUCT_OVERVIEW.md) · [Extensibility](docs/EXTENSIBILITY.md) |
-| [`assets/`](assets/) | Logo and app screenshots |
-| [`samples/`](samples/) | Example event JSON |
-| [`src/`](src/) | Minimal sample helpers + non-runnable [edge sketch](src/croc_orchestrator/coordination_edge.py) |
+| [`docs/`](docs/) | [Architecture](docs/ARCHITECTURE.md) · [Product overview](docs/PRODUCT_OVERVIEW.md) · [Extensibility](docs/EXTENSIBILITY.md) · [Coordination (brief)](docs/COORDINATION.md) |
+| [`assets/`](assets/) | Logo and app imagery |
+| [`samples/`](samples/) | Example event data |
+| [`src/`](src/) | Minimal sample helpers |
 
-See [LICENSE](LICENSE) for what is and is not covered by MIT.
+See [LICENSE](LICENSE) for scope.
 
-<p align="center">
-  <img src="assets/images/app-device-activation.jpeg" alt="Setup" width="200" />
-  &nbsp;&nbsp;
-  <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="200" />
-</p>
+---
+
+<h2 id="contact">Contact</h2>
+
+**Croc Nexus AI Technologies**  
+partnerships@crocnexus.com · +084-349525
 
 ---
 
 <p align="center">
-  <strong>Croc Nexus AI Technologies</strong> — AI startup<br/>
+  <strong>Croc Sentinel Systems</strong> · a product of <strong>Croc Nexus AI Technologies</strong><br/>
   partnerships@crocnexus.com · +084-349525<br/>
   <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a> (repo materials only)</sub>
 </p>
