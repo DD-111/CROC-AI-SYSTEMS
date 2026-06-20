@@ -138,6 +138,52 @@ This is how we support malls, hospitals, parks, roads, and residential areas ali
 
 ---
 
+## Response today · response tomorrow
+
+We grow in **two clear stages** — people first, smart machines when the site is ready.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Now — people on the ground
+**Early deployments rely on staff**
+
+- System detects and recognises the event  
+- **Calls and alerts** the administrator or assigned agent  
+- A **person goes to the site** to look, confirm, and act  
+- Map and timeline support where they are going  
+- Escalation stays on the **human call list** if no one answers  
+
+*This is our production path today.*
+
+</td>
+<td width="50%" valign="top">
+
+### Later — embodied intelligence
+**Patrol and dispatch on site**
+
+As we expand, the same platform can route some tasks to **embodied intelligence** — machines that **move to the location** instead of only asking a person to drive over.
+
+- **Go to the spot** after an alarm to look around  
+- **Scheduled or triggered patrol** across parks, campuses, roads, and commercial zones  
+- Still logged, still approval-gated where it matters  
+- Works alongside people — not a full replacement on day one  
+
+*Roadmap; rolled out site by site after feasibility review.*
+
+</td>
+</tr>
+</table>
+
+```text
+  Today:     detect → recognise → call person → person checks on site
+
+  Tomorrow:  detect → recognise → person and/or embodied patrol → verify → log
+```
+
+---
+
 ## How the system fits together
 
 <p align="center">
@@ -188,7 +234,8 @@ As a startup, we work **with** customers rather than only selling a fixed packag
 | Custom alert rules | Different groups, schedules, escalation paths per building or tenant |
 | Branded mobile experience | Colours, logos, and workflow screens for large deployments |
 | Extra notification channels | Email, messaging apps, on-duty call lists — scoped per contract |
-| New integrations | Drones, robots, mobile SOS, and more — scoped in a discovery call |
+| New integrations | Scoped per site in a discovery call |
+| **Embodied patrol** | Machines that go to location or patrol the area — **later phase**; people respond first today |
 | Residential & personal | Housing estates today; **individual home use** on roadmap |
 | Deeper smart automation | CAO and advanced coordination — roadmap; early partners by invitation |
 

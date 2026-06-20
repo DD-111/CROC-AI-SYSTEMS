@@ -19,12 +19,18 @@
 
 ## What happens on an event
 
+### Today — people respond
+
 1. Something is **detected** at the site  
 2. The system **recognises** the event and scores urgency  
 3. **Phone call** and app alert go to the **administrator** or **assigned agent**  
-4. They are asked to **go and check** on site  
+4. A **person goes to check** on site  
 5. If unanswered, the system **escalates** to the next contact  
 6. Everything is **logged** for review  
+
+### Later — embodied intelligence
+
+In later phases, the same alerts can also send **embodied systems** to **reach the location or patrol the area** — for example across parks, campuses, roads, or commercial zones. People remain in the loop; rollout is **gradual** and per-site.
 
 ---
 

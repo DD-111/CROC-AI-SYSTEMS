@@ -2,6 +2,17 @@
 
 Croc Nexus is a **startup** — we grow the platform with real customer needs, not only a fixed catalogue.
 
+## Response path over time
+
+| Phase | How sites are covered |
+|:------|:----------------------|
+| **Now** | **People first** — detect, recognise, call admin or agent, they go to check on site |
+| **Later** | **Embodied intelligence** — same alerts can also send on-site systems to **reach the spot or patrol** the area (parks, campuses, roads, commercial zones, etc.) |
+
+People stay in the loop. Embodied rollout is **gradual** and confirmed per project.
+
+---
+
 ## What we can often adapt
 
 | Area | Examples |
@@ -17,8 +28,7 @@ Croc Nexus is a **startup** — we grow the platform with real customer needs, n
 
 | Idea | Notes |
 |:-----|:------|
-| Drone patrol | Feasibility depends on airspace, network, and ops model |
-| Field robots | Step-by-step tasks with human approval gates |
+| **Embodied patrol & dispatch** | Go to alarm location or patrol a zone — **later roadmap** |
 | Mobile SOS | Phone-initiated alerts on the same call-and-respond path |
 | Individual homes | Personal / household deployments — roadmap |
 | Deeper automation | Tied to **CAO** roadmap — early partners by invitation |

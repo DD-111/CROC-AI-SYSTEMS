@@ -45,6 +45,9 @@ Person goes to check on site
 Resolve · escalate if still open · record outcome
 ```
 
+**Today:** response depends on **people** — admin or agent travels to the site.  
+**Later:** same pipeline can add **embodied intelligence** to **go to the location or patrol** the area, introduced step by step per site.
+
 - Fixed rules always run first; smarter layers add detail when available  
 - If smart services are offline, rule-based results and calls still work  
 - Sensitive automated steps wait for a person to approve  
