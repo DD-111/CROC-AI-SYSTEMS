@@ -5,6 +5,7 @@ description = "CROC AI Systems — Croc Nexus AI Technologies"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+license-files = ["LICENSE"]
 
 [project.scripts]
 croc-sample-flow = "src.croc_orchestrator.demo_assess:main"
