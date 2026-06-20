@@ -92,28 +92,23 @@ We are actively building — not everything below is shipped yet:
 </tr>
 <tr>
 <td valign="top"><strong>CAO</strong> (in-house model)</td>
-<td valign="top">🔧 Training</td>
-<td valign="top">Deeper coordination, scoring, and follow-up — <strong>exclusive to Croc Nexus</strong>, not open, no weights in this repo</td>
+<td valign="top">Not open</td>
+<td valign="top">In training — deeper coordination, scoring, and follow-up. <strong>Exclusive to Croc Nexus</strong>; no weights or runtime in this repo</td>
 </tr>
 <tr>
 <td valign="top"><strong>Richer agent orchestration</strong></td>
-<td valign="top">🔧 Internal</td>
+<td valign="top">Not open</td>
 <td valign="top">Multi-step coordination behind Croc Coordination — we publish only a <a href="src/croc_orchestrator/coordination_edge.py">non-runnable edge sketch</a>, not the runtime</td>
 </tr>
 <tr>
-<td valign="top"><strong>Embodied intelligence</strong></td>
-<td valign="top">📋 Roadmap</td>
-<td valign="top">Same AI brain could dispatch on-site systems to reach a spot or patrol — step by step per site</td>
-</tr>
-<tr>
-<td valign="top"><strong>Drones & security devices</strong></td>
-<td valign="top">📋 Roadmap</td>
-<td valign="top">Aerial check, more sensors, locks, barriers on the same alert path — when each site is ready</td>
+<td valign="top"><strong>Embodied intelligence, drones & security devices</strong></td>
+<td valign="top">Not open</td>
+<td valign="top">On-site systems, aerial check, sensors, locks, barriers on the same alert path — planned, not available yet</td>
 </tr>
 <tr>
 <td valign="top"><strong>Personal / home use</strong></td>
-<td valign="top">📋 Roadmap</td>
-<td valign="top">Same call-and-respond logic, scaled down for households</td>
+<td valign="top">Not open</td>
+<td valign="top">Same call-and-respond logic for households — planned, not available yet</td>
 </tr>
 </table>
 
@@ -181,7 +176,7 @@ Production today = **rules + Coordination**. CAO adds depth when we are ready �
   Person checks on site          ← today
        │
        ▼
-  Machines & devices on site     ← roadmap
+  Machines & devices on site     ← not open yet
 ```
 
 | Step | What AI does |
@@ -208,7 +203,7 @@ Production today = **rules + Coordination**. CAO adds depth when we are ready �
 
 <h2 id="scenes">Scenes</h2>
 
-Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home use on roadmap*
+Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home — not open yet*
 
 We configure **urgency rules, call lists, and escalation** per site on **our platform**.
 
