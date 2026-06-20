@@ -1,59 +1,50 @@
-# Extensibility
+# Adapt & extend
 
-We tune AI workflows per site and expand capability over time — all on **Croc Nexus–owned** platform and apps.
+**AI startup** — we tune the AI workflow per customer and grow capability over time.
 
----
+## AI advantage over time
 
-## Response over time
+| Phase | How sites are covered |
+|:------|:----------------------|
+| **Now** | **People first** — detect, recognise, call admin or agent, they go to check on site |
+| **Later** | Same AI can also route **embodied intelligence**, **drones**, **security devices**, and more — to **reach the spot, patrol, or respond on site** (parks, campuses, roads, commercial zones, etc.) |
 
-| Phase | Coverage |
-|:------|:---------|
-| **Now** | Detect → recognise → call admin or agent → person checks on site |
-| **Later** | Same AI routes **embodied intelligence**, **drones**, **security devices**, and more — reach, patrol, or act on site |
-
-Rollout is **gradual** and agreed per project. People stay in the loop.
-
-### Future device types *(roadmap)*
-
-| Type | Role |
-|:-----|:-----|
-| **Embodied intelligence** | Go to alarm location or patrol a zone |
-| **Drones** | Aerial check, patrol, fast reach |
-| **Security devices** | Sensors, locks, barriers, and similar on the same alert path |
-| **More** | Additional equipment as scenes require |
+People stay in the loop. New device types roll out **gradually** and are confirmed per project.
 
 ---
 
-## Per-site configuration *(now)*
+## What we can often adapt
 
 | Area | Examples |
 |:-----|:---------|
-| Alert logic | Groups, quiet hours, escalation paths |
-| Call routing | Site admin, duty manager, or agents per zone |
-| Notifications | Phone, email, messaging — per contract |
-| Mobile apps | **Croc Nexus apps only** — configuration, not customer branding |
-| Scene types | Government, retail, health, public space, roads, campuses, warehouses |
+| **Alert logic** | Different groups, quiet hours, escalation paths per building |
+| **Who gets called** | Site admin, duty manager, or assigned agents per zone |
+| **Site types** | Government, mall, hospital, park, road, residential, and more |
+| **Notifications** | Phone, email, messaging — per contract |
+| **Mobile apps** | **Croc Nexus apps only** — site configuration, not customer branding |
+| **New site types** | Campuses, clinics, warehouses — mapped during discovery |
 
-### Explored case by case
+## What we explore case by case
 
-- Mobile SOS on the same alert path  
-- Individual / household deployments  
-- Deeper automation via **CAO** — Croc Nexus exclusive  
-
----
+| Idea | Notes |
+|:-----|:------|
+| **Embodied patrol & dispatch** | Go to alarm location or patrol a zone — **later roadmap** |
+| **Drones** | Aerial check, patrol, fast reach — same AI scoring and routing — **later roadmap** |
+| **Security devices** | More on-site equipment on the alert path — sensors, locks, barriers, and similar — **later roadmap** |
+| Mobile SOS | Phone-initiated alerts on the same call-and-respond path |
+| Individual homes | Personal / household deployments — roadmap |
+| Deeper automation | Tied to **CAO** roadmap — **Croc Nexus exclusive** |
 
 ## How we decide
 
 1. You share site layout, team structure, and response habits  
-2. We mark each item **ready now**, **custom build**, or **future roadmap**  
-3. We agree scope and timeline before rollout  
+2. We mark items as **ready now**, **custom build**, or **future roadmap**  
+3. We agree timeline and scope before rollout  
 
----
-
-## Principles
+## Principles we keep
 
 1. Automated suggestions never lower the highest safety level from fixed rules  
 2. High-impact actions wait for human approval  
 3. Every step is logged with a timestamp  
 4. If smart services are unavailable, rule-based handling continues  
-5. Each customer's data stays separate  
+5. Each customer’s data stays separate  

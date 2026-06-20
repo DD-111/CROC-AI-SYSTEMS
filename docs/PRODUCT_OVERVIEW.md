@@ -1,31 +1,21 @@
 # Product overview
 
-**Croc Nexus AI Technologies** — AI startup for smarter site safety and response.
+**Croc Nexus AI Technologies** — **AI startup** building smarter site safety and response.
 
-> Network (Wi‑Fi or wired) required at each site.
-
----
-
-## In one sentence
-
-AI **understands** events, **scores** urgency, **calls** the right person, and **escalates** if needed — while **people stay in control**.
+> Each site needs **network** (Wi‑Fi or wired internet).
 
 ---
 
-## Products
+## What we believe
 
-| Product | Status | Role |
-|:--------|:-------|:-----|
-| **Croc Sentinel** | Live | Monitoring, maps, alerts, calls, camera context |
-| **Croc Coordination** | Live | Scoring, routing, escalation, approval, audit |
-| **CAO** | Internal training | Deeper coordination — **Croc Nexus exclusive, not open** |
+AI should **understand** what happened, **score** how urgent it is, **call** the right person, and **escalate** if nobody answers — while **people stay in control**.
 
 ---
 
-## AI vs traditional alerts
+## How AI changes response
 
-| Without AI | With Croc Nexus |
-|:-----------|:----------------|
+| Without AI | With our AI |
+|:-----------|:------------|
 | Same alert for everything | Urgency score + plain reasons |
 | Manual guess who to call | AI routes to admin or agent |
 | Footage ignored | Camera context when linked |
@@ -34,30 +24,38 @@ AI **understands** events, **scores** urgency, **calls** the right person, and *
 
 ---
 
-## Phases
+## Scenes we serve
 
-| | |
-|:--|:--|
-| **Now** | AI recognises → calls person → person checks on site |
-| **Later** | Same AI routes embodied systems, drones, security devices, and more |
+Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential communities · *personal use on roadmap*
 
 ---
 
-## Ownership
+## Products
 
-**Platform, mobile apps, cloud, coordination logic, and CAO** are wholly owned and operated by Croc Nexus. We configure workflows per site on our stack — **no white-label or customer-branded apps**.
-
----
-
-## Scenes
-
-Government · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal use on roadmap*
+**Croc Sentinel** — AI-powered monitoring, maps, calls, camera context *(live)*  
+**Croc Coordination** — urgency, routing, escalation, approval, audit  
+**CAO** — in-house small model, training, **not open yet**, exclusive to Croc Nexus
 
 ---
 
-**Contact:** partnerships@crocnexus.com · +084-349525
+## Today vs tomorrow
 
-Further detail: [ARCHITECTURE.md](ARCHITECTURE.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md)
+| Phase | Response |
+|:------|:---------|
+| **Now** | AI recognises → **calls person** → person checks on site |
+| **Later** | Same AI can route **embodied intelligence**, **drones**, **security devices**, and more — patrol, reach, and act on site |
+
+---
+
+## Exclusive ownership
+
+**Platform, mobile apps, cloud, coordination logic, and CAO** are **wholly owned and operated by Croc Nexus AI Technologies**. We configure workflows per site on our stack — we do **not** offer white-label or customer-branded apps.
+
+---
+
+## Custom AI workflows
+
+We adapt scoring, call lists, and rules per site on **our platform**. Contact partnerships@crocnexus.com.
 
 ---
 
