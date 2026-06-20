@@ -23,7 +23,7 @@
     <text x="360" y="200" text-anchor="middle" fill="#fdba74" font-size="11">Arm / disarm all</text>
 
     <rect x="480" y="70" width="200" height="170" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
-    <text x="580" y="105" text-anchor="middle" fill="#f3e8ff" font-size="14" font-weight="700">Smart layer</text>
+    <text x="580" y="105" text-anchor="middle" fill="#f3e8ff" font-size="14" font-weight="700">AI layer</text>
     <text x="580" y="135" text-anchor="middle" fill="#e9d5ff" font-size="11">Urgency score</text>
     <text x="580" y="155" text-anchor="middle" fill="#e9d5ff" font-size="11">Who to notify</text>
     <text x="580" y="175" text-anchor="middle" fill="#e9d5ff" font-size="11">Follow-up</text>

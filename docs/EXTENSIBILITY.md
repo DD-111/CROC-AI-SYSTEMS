@@ -1,8 +1,8 @@
 # Adapt & extend
 
-Croc Nexus is a **startup** — we grow the platform with real customer needs, not only a fixed catalogue.
+**AI startup** — we tune the AI workflow per customer and grow capability over time.
 
-## Response path over time
+## AI advantage over time
 
 | Phase | How sites are covered |
 |:------|:----------------------|

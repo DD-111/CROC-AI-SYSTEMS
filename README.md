@@ -5,68 +5,93 @@
 <h1 align="center">Croc Nexus AI Technologies</h1>
 
 <p align="center">
-  <em>A young company building connected safety systems for real-world sites</em>
+  <strong>An AI startup turning site alerts into faster, smarter, accountable action</strong>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/Stage-Startup-7c3aed" alt="Startup" />
-  <img src="https://img.shields.io/badge/Sentinel-In%20production-16a34a" alt="In production" />
+  <img src="https://img.shields.io/badge/AI-Startup-7c3aed" alt="AI Startup" />
+  <img src="https://img.shields.io/badge/Platform-In%20production-16a34a" alt="In production" />
 </p>
 
 <br/>
 
-> **Before you start**  
-> Every site needs a **working network** — Wi‑Fi or wired internet — so connected equipment can reach our cloud and staff can receive alerts on their phones.  
-> Without network coverage at the location, the system cannot operate as designed.
+> **We are an AI company first.**  
+> Not another alarm panel with a chat box bolted on — we use AI to **understand what happened**, **decide how urgent it is**, **call the right person**, and **learn what to do next** — with humans still in control.
+
+<br/>
+
+> **Site requirement**  
+> Each location needs **working network** (Wi‑Fi or wired internet) so equipment can reach our cloud and staff can receive AI-driven alerts and calls.
 
 <br/>
 
 ---
 
-## Who we are
+## How AI changes the game
 
-**Croc Nexus AI Technologies** is a **startup** focused on one goal: make it easier to watch over places where people live, work, and gather — and get the right person on site when something needs eyes on it.
+Traditional site security often stops at a loud bell or a generic text. **Everyone gets the same alert. Nobody knows how serious it is. Someone has to guess who should go.**
 
-We build the **cloud service**, **mobile apps**, and **smart coordination layer**, and we work with customers to **adapt the system to their site** — not force every site into the same box.
+**We use AI to close that gap:**
 
-| We care about | What that means for you |
-|:--------------|:------------------------|
-| **Cloud + mobile** | Live maps, fast phone alerts, and a clear event history |
-| **Smart assistance** | Urgency scores, plain reasons, and suggested next steps — with people still in charge |
-| **Your layout** | Workflows, device groups, and alert rules shaped around how your site actually runs |
-| **Custom fit** | Solutions scoped to your buildings, teams, and response habits |
+| Old way | With Croc Nexus AI |
+|:--------|:-------------------|
+| Every alarm feels equally urgent | AI **scores urgency (0–100)** and explains **why** in plain language |
+| Staff stare at screens waiting | AI **calls the administrator or agent** and tells them to **go check** |
+| No one knows who is closest or on duty | AI **picks who to notify** based on role, zone, and availability |
+| Camera footage sits unused | AI **reads linked images** when available to support the decision |
+| If nobody answers, the chain breaks | AI **escalates to the next contact** automatically |
+| No memory of what worked | Full **log** of what AI suggested and what people did |
+| One layout for every building | **Custom rules** per mall, hospital, park, road, or residential site |
+
+**Result:** less noise, faster response, clearer accountability — across government buildings, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, and housing communities.
+
+---
+
+## Why us as an AI startup
+
+We are **young, focused, and built around AI from day one** — not a legacy hardware firm adding AI as marketing.
+
+| Our edge | What it means |
+|:---------|:--------------|
+| **AI-native product** | Recognition, scoring, routing, and calls are core — not an add-on |
+| **People stay in charge** | AI suggests and automates the routine; **humans approve** what matters |
+| **Rules + AI together** | Safety rules always run first; AI never quietly lowers the urgency level |
+| **Custom per site** | As a startup we **shape the AI workflow** to your buildings and response habits |
+| **Own small model (CAO)** | We are training **CAO** in-house — exclusive to Croc Nexus, not open yet |
+| **Clear roadmap** | **People respond first** today → **embodied intelligence** for patrol and dispatch later |
+| **Wide scenes** | One AI stack for many place types — and **personal / home use** on the roadmap |
 
 **Talk to us:** partnerships@crocnexus.com · +084-349525
 
 ---
 
-## What we offer today
+## Our AI platform
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### Croc Sentinel
-**Alarm & monitoring — live today**
+**AI-powered monitoring — live today**
 
-- Multi-site **map** with live markers  
-- Phone alerts in about **3–30 seconds**  
-- **Automatic calls** to admin or assigned agent to investigate  
-- **iPhone & Android** apps  
-- Linked **camera photos** on alarm  
-- Device setup via app and remote updates  
+- AI-assisted **event recognition** on the map  
+- **3–30 second** alerts to phones  
+- AI triggers **automatic calls** to admin or agent to investigate  
+- Linked **camera context** when available  
+- iPhone & Android apps with live timeline  
 
 </td>
 <td width="50%" valign="top">
 
 ### Croc Coordination
-**From alert to clear action**
+**AI that turns alerts into action**
 
-- Urgency score & plain-language reasons  
-- Picks **who to call** — admin or on-site agent  
+- **Urgency score** + readable reasons  
+- **Who to call** and what they should do first  
+- Escalation if nobody answers  
 - **Human approval** before sensitive steps  
-- Full history of what was suggested & done  
+- Full audit of AI suggestions vs. human decisions  
 
 </td>
 </tr>
@@ -74,173 +99,119 @@ We build the **cloud service**, **mobile apps**, and **smart coordination layer*
 
 <br/>
 
-### CAO — our in-house small model *(not open yet)*
+### CAO — our in-house AI model *(not open yet)*
 
-We are **indirectly training a compact smart model called CAO**, built only for **Croc Nexus AI Technologies**. It is designed to help coordinate alerts, scoring, and follow-up inside our own stack.
+We are **indirectly training a compact model called CAO** — built only for **Croc Nexus AI Technologies** — to make coordination, scoring, and follow-up even sharper over time.
 
 | | |
 |:--|:--|
-| **Status** | Internal development — **not publicly released** |
-| **Purpose** | Smarter coordination on top of fixed safety rules |
-| **Availability** | Exclusive to Croc Nexus products and partner deployments |
+| **Status** | Internal training — **not publicly released** |
+| **Role** | Deeper AI coordination on top of fixed safety rules |
+| **Exclusive to** | Croc Nexus products and selected partner sites |
 
-When CAO opens to wider use, we will announce it here. Until then, production sites rely on **proven rules** plus the smart features already in Croc Coordination.
+Production sites today use **proven rules + Croc Coordination AI features**. CAO opens when we are ready.
 
 ---
 
-## Where it applies
-
-Our platform is built for **many kinds of locations** — one system, different layouts.
+## Where AI works — many scenes, one brain
 
 | | | |
 |:--|:--|:--|
 | **Government buildings** | **Shopping malls** | **Hospitals & clinics** |
 | **Plazas & squares** | **Parks** | **Roadside & streets** |
 | **Traffic lights & junctions** | **Commercial districts** | **Campuses & industrial parks** |
-| **Residential communities** | *More site types on request* | |
+| **Residential communities** | *More scenes on request* | |
 
-**Residential & personal use:** we already support **housing estates and home communities**. **Individual / household deployments** are on our roadmap — same alert and call flow, scaled down for personal use.
-
-> Tell us your location type during planning. We will confirm what is **ready now** vs. what needs **custom setup**.
+**Next:** **individual / household** deployments — same AI call-and-respond logic, scaled for personal use.
 
 ---
 
-## When something happens
+## AI response flow
 
 ```text
-  Something is detected
-         │
-         ▼
-  System recognises the event
-  (type, urgency, camera if linked)
-         │
-         ├── Push alert to phones
-         ├── Phone call to on-duty admin or assigned agent
-         └── Log for audit
-         │
-         ▼
-  Admin or agent goes to check on site
-         │
-         ▼
-  Resolve · disarm · follow-up if needed
+  Event detected
+       │
+       ▼
+  AI recognises + scores urgency
+  (camera context if linked)
+       │
+       ├── AI picks admin or agent to call
+       ├── Phone call + app alert
+       └── Audit log
+       │
+       ▼
+  Person goes to check  ← today
+       │
+       ▼
+  Later: embodied AI can also go / patrol  ← roadmap
 ```
 
-| Step | What the customer gets |
-|:-----|:------------------------|
-| **Detect** | Sensors, buttons, cameras, or linked inputs trigger an event |
-| **Recognise** | Cloud sorts the event and scores how urgent it is |
-| **Notify** | **Phone call** and/or app alert to the **site administrator** or **assigned agent** |
-| **Respond** | That person is asked to **go and look**; map and timeline show where and what |
-| **Escalate** | If nobody answers or the situation stays open, the next contact is called automatically |
-| **Record** | Full history — who was called, when, and what was done |
-
-This is how we support malls, hospitals, parks, roads, and residential areas alike: **recognise first, then call the right person to investigate**.
+| AI step | Benefit |
+|:--------|:--------|
+| **Understand** | Classifies the event — emergency, security, maintenance, etc. |
+| **Score** | 0–100 urgency with reasons anyone can read |
+| **Route** | Calls the right **administrator** or **assigned agent** |
+| **Escalate** | Next contact if no answer — no silent failures |
+| **Record** | Every AI decision and human action timestamped |
 
 ---
 
-## Response today · response tomorrow
-
-We grow in **two clear stages** — people first, smart machines when the site is ready.
+## Today · tomorrow
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Now — people on the ground
-**Early deployments rely on staff**
+### Now — AI + people
+**AI decides fast; people confirm on site**
 
-- System detects and recognises the event  
-- **Calls and alerts** the administrator or assigned agent  
-- A **person goes to the site** to look, confirm, and act  
-- Map and timeline support where they are going  
-- Escalation stays on the **human call list** if no one answers  
-
-*This is our production path today.*
+- AI recognises and scores the event  
+- **Calls and alerts** the right person  
+- **Human goes to look** — early phase depends on staff on the ground  
+- Map and timeline guide where to go  
 
 </td>
 <td width="50%" valign="top">
 
-### Later — embodied intelligence
-**Patrol and dispatch on site**
+### Later — AI + embodied intelligence
+**AI can also send machines to move**
 
-As we expand, the same platform can route some tasks to **embodied intelligence** — machines that **move to the location** instead of only asking a person to drive over.
-
-- **Go to the spot** after an alarm to look around  
-- **Scheduled or triggered patrol** across parks, campuses, roads, and commercial zones  
-- Still logged, still approval-gated where it matters  
-- Works alongside people — not a full replacement on day one  
-
-*Roadmap; rolled out site by site after feasibility review.*
+- Same AI brain routes **embodied systems** to the spot  
+- **Patrol** parks, campuses, roads, commercial zones  
+- Still logged, still human-gated where it counts  
+- Rolled out **step by step** per site  
 
 </td>
 </tr>
 </table>
 
-```text
-  Today:     detect → recognise → call person → person checks on site
-
-  Tomorrow:  detect → recognise → person and/or embodied patrol → verify → log
-```
-
 ---
 
-## How the system fits together
+## How it fits together
 
 <p align="center">
-  <img src="assets/images/architecture-four-layers.svg" alt="Cloud, mobile app, and smart layer" width="720" />
+  <img src="assets/images/architecture-four-layers.svg" alt="Cloud, mobile app, and AI layer" width="720" />
 </p>
 
-| Part | Role |
-|:-----|:-----|
-| **Cloud** | Secure online service, live updates, notifications |
-| **Mobile app** | Map, events, arm/disarm, patrol view |
-| **Smart layer** | Scores urgency, routes alerts, escalates if unanswered |
-
-**Typical flow:** detect → recognise → **call admin or agent** → they check on site → log and close.
+| Part | AI role |
+|:-----|:--------|
+| **Cloud** | Runs recognition, scoring, call routing, escalation |
+| **Mobile app** | Shows AI results, map, timeline, approvals |
+| **AI layer** | Understands events, picks who to call, plans follow-up |
 
 ---
 
-## Network at each site *(required)*
+## Built for your site — AI that adapts
 
-```text
-  Equipment at the site
-         │
-         │  Wi‑Fi or wired internet  ← must be available
-         ▼
-       Cloud
-         │
-         ▼
-    Phones & dashboards
-```
+We are a **startup**: tell us your scene and how your team responds. We configure the AI workflow to match.
 
-| Requirement | Notes |
-|:------------|:------|
-| **Internet at the site** | Wi‑Fi or Ethernet so connected equipment can stay online |
-| **Signal quality** | Weak signal may slow alerts; link health is visible in the app |
-| **Staff phones** | Mobile data or Wi‑Fi needed to receive push alerts |
-
-We can help review network readiness during **site planning** — especially for campuses, clinics, and remote buildings.
-
----
-
-## Built to adapt & customize
-
-As a startup, we work **with** customers rather than only selling a fixed package.
-
-**Examples of what we can tailor** *(feasibility confirmed per project)*:
-
-| Your idea | How we usually approach it |
-|:----------|:---------------------------|
-| Custom alert rules | Different groups, schedules, escalation paths per building or tenant |
-| Branded mobile experience | Colours, logos, and workflow screens for large deployments |
-| Extra notification channels | Email, messaging apps, on-duty call lists — scoped per contract |
-| New integrations | Scoped per site in a discovery call |
-| **Embodied patrol** | Machines that go to location or patrol the area — **later phase**; people respond first today |
-| Residential & personal | Housing estates today; **individual home use** on roadmap |
-| Deeper smart automation | CAO and advanced coordination — roadmap; early partners by invitation |
-
-> **How to start:** tell us your site type, number of buildings, and how your team responds today.  
-> We will come back with what is **ready now**, what needs **custom work**, and an honest timeline.
+| You want | We can |
+|:---------|:-------|
+| Different urgency rules per zone | Custom AI scoring and call lists |
+| Branded apps for your organisation | Your look, same AI engine |
+| New scene types | Government, retail, health, public space, roads, homes — scoped per project |
+| Embodied patrol later | Same AI routes people now, machines when ready |
+| Deeper CAO features | Early partners by invitation |
 
 ---
 
@@ -256,40 +227,27 @@ As a startup, we work **with** customers rather than only selling a fixed packag
   <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="220" />
 </p>
 
-<p align="center"><sub>Home · Events · Add device · Activity</sub></p>
+<p align="center"><sub>AI-assisted map · events · setup · activity</sub></p>
 
 ---
 
-## Smart features (summary)
-
-- Works across **government, retail, healthcare, public space, roads, and residential** sites  
-- Sorts events: emergency, security, maintenance, and more  
-- **0–100 urgency** with readable reasons  
-- Camera images when available  
-- **Automatic phone call** to administrator or assigned agent to **go and investigate**  
-- App alerts at the same time for faster awareness  
-- If nobody answers, **escalates to the next contact**  
-- **People approve** before high-impact automated actions  
-
----
-
-## Project layout
-
-| Folder | Contents |
-|:-------|:---------|
-| `docs/` | Product & structure notes |
-| `assets/` | Brand and app imagery |
-| `samples/` | Example event data |
-| `src/` | Shared helpers |
+## Repository
 
 ```bash
 git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
 ```
 
+| Folder | Contents |
+|:-------|:---------|
+| `docs/` | Product & AI architecture notes |
+| `assets/` | Brand and app imagery |
+| `samples/` | Example event data |
+| `src/` | Shared helpers |
+
 ---
 
 <p align="center">
-  <strong>Croc Nexus AI Technologies</strong><br/>
+  <strong>Croc Nexus AI Technologies</strong> — AI startup<br/>
   partnerships@crocnexus.com · +084-349525<br/>
   <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a></sub>
 </p>

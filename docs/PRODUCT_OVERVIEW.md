@@ -1,66 +1,55 @@
 # Product overview
 
-**Croc Nexus AI Technologies** — startup building connected safety for public, commercial, and residential sites.
+**Croc Nexus AI Technologies** — **AI startup** building smarter site safety and response.
 
-> **Site requirement:** reliable **network** (Wi‑Fi or wired internet) at each location.
-
----
-
-## Where it applies
-
-| Category | Examples |
-|:---------|:---------|
-| **Public & civic** | Government buildings, plazas, parks, roadside, traffic lights |
-| **Commercial** | Malls, business districts, campuses & industrial parks |
-| **Healthcare** | Hospitals and clinics |
-| **Residential** | Housing estates and communities today; **individual / personal use** planned |
+> Each site needs **network** (Wi‑Fi or wired internet).
 
 ---
 
-## What happens on an event
+## What we believe
 
-### Today — people respond
-
-1. Something is **detected** at the site  
-2. The system **recognises** the event and scores urgency  
-3. **Phone call** and app alert go to the **administrator** or **assigned agent**  
-4. A **person goes to check** on site  
-5. If unanswered, the system **escalates** to the next contact  
-6. Everything is **logged** for review  
-
-### Later — embodied intelligence
-
-In later phases, the same alerts can also send **embodied systems** to **reach the location or patrol the area** — for example across parks, campuses, roads, or commercial zones. People remain in the loop; rollout is **gradual** and per-site.
+AI should **understand** what happened, **score** how urgent it is, **call** the right person, and **escalate** if nobody answers — while **people stay in control**.
 
 ---
 
-## Croc Sentinel *(in production)*
+## How AI changes response
 
-- iPhone and Android apps with live maps  
-- Fast alerts and event history  
-- Photos from linked cameras when alarms fire  
-- Separate accounts per organisation; devices can work in groups  
-
----
-
-## Croc Coordination
-
-- Urgency scores and plain-language reasons  
-- Chooses who to call and what to suggest next  
-- Human approval for sensitive actions  
-- Complete history of calls, alerts, and outcomes  
+| Without AI | With our AI |
+|:-----------|:------------|
+| Same alert for everything | Urgency score + plain reasons |
+| Manual guess who to call | AI routes to admin or agent |
+| Footage ignored | Camera context when linked |
+| Chain stops if no answer | Auto-escalation |
+| No audit trail | Full log of AI + human actions |
 
 ---
 
-## CAO *(not open yet)*
+## Scenes we serve
 
-Small in-house model under training at Croc Nexus — for coordination and follow-up inside our stack. **Not publicly released.** Exclusive to Croc Nexus AI Technologies until we announce otherwise.
+Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential communities · *personal use on roadmap*
 
 ---
 
-## Custom solutions
+## Products
 
-We adapt workflows, groups, call lists, and branding per customer. Contact partnerships@crocnexus.com with your site type and goals.
+**Croc Sentinel** — AI-powered monitoring, maps, calls, camera context *(live)*  
+**Croc Coordination** — urgency, routing, escalation, approval, audit  
+**CAO** — in-house small model, training, **not open yet**, exclusive to Croc Nexus
+
+---
+
+## Today vs tomorrow
+
+| Phase | Response |
+|:------|:---------|
+| **Now** | AI recognises → **calls person** → person checks on site |
+| **Later** | Same AI can also route **embodied intelligence** to go or patrol |
+
+---
+
+## Custom AI workflows
+
+We adapt scoring, call lists, and rules per site. Contact partnerships@crocnexus.com.
 
 ---
 
