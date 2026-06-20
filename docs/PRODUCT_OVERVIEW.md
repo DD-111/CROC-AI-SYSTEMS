@@ -2,7 +2,8 @@
 
 **Croc Nexus AI Technologies** — **AI startup** building smarter site safety and response.
 
-> Each site needs **network** (Wi‑Fi or wired internet).
+> Each site needs **network** (Wi‑Fi or wired internet).  
+> **Investors:** see [INVESTOR.md](INVESTOR.md)
 
 ---
 
