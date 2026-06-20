@@ -1,26 +1,42 @@
 # Product overview
 
-## Croc Sentinel
+**Croc Nexus AI Technologies** — startup building connected safety for public and commercial sites.
+
+> **Site requirement:** reliable **network** (Wi‑Fi or wired internet) at each location.
+
+---
+
+## Croc Sentinel *(in production)*
 
 Alarm and monitoring for schools, hospitals, government buildings, and city networks.
 
-- CS-M401–M407 field hardware
-- iPhone and Android apps with live maps
-- Fast phone alerts and event history
-- Photos from linked cameras when alarms fire
-- Separate accounts per organisation; devices can work in groups
+- CS-M401–M407 field hardware  
+- iPhone and Android apps with live maps  
+- Fast phone alerts and event history  
+- Photos from linked cameras when alarms fire  
+- Separate accounts per organisation; devices can work in groups  
+
+---
 
 ## Croc Coordination
 
-Turns alerts into scores, reasons, and suggested next steps.
+Turns alerts into urgency scores, reasons, and suggested next steps.
 
-- Works with rules and optional smart models on your own machines or in the cloud
-- Human approval for sensitive actions
-- Complete history of suggestions and outcomes
+- Rule-based safety logic first; smarter layers when available  
+- Human approval for sensitive actions  
+- Complete history of suggestions and outcomes  
 
-## cMax
+---
 
-One workspace to watch sites, teams, and results in 2D and 3D.
+## CAO *(not open yet)*
+
+Small in-house model under training at Croc Nexus — for coordination and follow-up inside our stack. **Not publicly released.** Exclusive to Croc Nexus AI Technologies until we announce otherwise.
+
+---
+
+## Custom solutions
+
+We adapt workflows, device groups, alert paths, and branding per customer where it makes sense. Contact partnerships@crocnexus.com with your site layout and goals; we will confirm what is ready vs. what needs custom work.
 
 ---
 
