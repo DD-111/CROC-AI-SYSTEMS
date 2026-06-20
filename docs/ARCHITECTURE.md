@@ -1,5 +1,7 @@
 # How the platform fits together
 
+**Croc Nexus AI Technologies** is an **AI startup**. AI recognises events, scores urgency, routes calls, and escalates — people respond first; embodied intelligence later.
+
 ## Network first
 
 Every deployment assumes the **site has usable internet** (Wi‑Fi or wired). Connected equipment at the site uses that network to reach the cloud; staff phones receive alerts through the same path.
