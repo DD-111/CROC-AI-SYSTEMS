@@ -1,3 +1,3 @@
-"""Croc Sentinel — public artifact stubs (not production code)."""
+"""Croc Sentinel integration helpers."""
 
-__version__ = "0.1.0-artifact"
+__version__ = "0.1.0"

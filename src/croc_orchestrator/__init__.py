@@ -1,3 +1,3 @@
-"""Croc AI Orchestrator — public artifact stubs (not production code)."""
+"""Croc AI Orchestrator integration helpers."""
 
-__version__ = "0.1.0-artifact"
+__version__ = "0.1.0"

@@ -33,5 +33,4 @@ def run_demo_pipeline(event: dict[str, Any]) -> dict[str, Any]:
     return {
         "event_id": event.get("event_id"),
         "extensions": ctx.extensions,
-        "artifact_notice": "stub output — private repo has full 7-agent pipeline",
     }

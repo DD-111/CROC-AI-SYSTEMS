@@ -1,6 +1,4 @@
-# Croc Platform Architecture (Public Overview)
-
-> 本文档为公开版架构说明。完整实现见私有仓库。
+# Platform Architecture
 
 ## 1. Two-System Design
 
