@@ -1,26 +1,26 @@
-# Product Overview
+# Product overview
 
 ## Croc Sentinel
 
-Multi-tenant IoT alarm platform for public facilities and smart city operations.
+Alarm and monitoring for schools, hospitals, government buildings, and city networks.
 
-- ESP32 edge fleet with MQTT connectivity
-- Mobile command app (iOS / Android) with GIS map
-- Push alerts, live streaming, and audit timeline
-- Camera evidence chain (Hikvision / Dahua)
-- Multi-tenant RBAC and device group linkage
+- CS-M401–M407 field hardware
+- iPhone and Android apps with live maps
+- Fast phone alerts and event history
+- Photos from linked cameras when alarms fire
+- Separate accounts per organisation; devices can work in groups
 
-## Croc AI Orchestrator
+## Croc Coordination
 
-Agent platform for event enrichment and emergency workflows.
+Turns alerts into scores, reasons, and suggested next steps.
 
-- Multi-agent pipeline with hybrid rules + LLM inference
-- Local model discovery (Ollama, OpenAI-compatible endpoints)
-- CAO orchestration with approval and audit support
+- Works with rules and optional smart models on your own machines or in the cloud
+- Human approval for sensitive actions
+- Complete history of suggestions and outcomes
 
 ## cMax
 
-2D / 3D observability workbench for operations, digital twin views, and agent visibility.
+One workspace to watch sites, teams, and results in 2D and 3D.
 
 ---
 

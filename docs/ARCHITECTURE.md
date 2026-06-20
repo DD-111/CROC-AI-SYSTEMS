@@ -1,95 +1,60 @@
-# Platform Architecture
+# How the platform fits together
 
-## 1. Two-System Design
-
-### Croc Sentinel — Edge + Cloud IoT
+## Croc Sentinel — field to cloud
 
 ```text
-ESP32 Device ──MQTT(TLS)──► Mosquitto/EMQX
-       │                           │
-       │ LAN snapshot              ▼
-       ▼                    FastAPI API + Dashboard
-Hikvision / Dahua                   │
-       │                            ├── SQLite/PostgreSQL
-       └── JPEG upload ─────────────├── FCM / Email / Telegram
-                                     └── OTA nginx (/fw/)
+CS-M401–M407 on site
+        │
+        │ secure link to cloud
+        ▼
+Online service + control screen
+        │
+        ├── phone / email / messaging alerts
+        ├── linked camera photos
+        └── remote device updates
 ```
 
-**Key properties:**
+**Basics**
 
-- Multi-tenant isolation at API layer (`owner_admin` scope)
-- Device group linkage: same owner + same group → siren fan-out
-- Factory registration: 80-char CSPRNG serial, MAC binding
-- Camera credentials never persisted on device flash
+- Each organisation sees only its own devices and staff
+- Devices in the same group can react together (e.g. sirens together)
+- New units are registered at the factory, then claimed on site
+- Camera passwords are not stored permanently on field hardware
 
-### Croc AI Orchestrator — Agent Pipeline
+## Croc Coordination — from alert to action
 
 ```text
-Alarm Event ──► POST /v1/enrich/alarm (HMAC)
-                      │
-                      ▼
-              enrich_orchestration workflow
-                      │
-    ┌─────────────────┼─────────────────┐
-    ▼                 ▼                 ▼
-  risk ∥ vision    commander      communication
-    │                 │                 │
-    └──────── summary ┴ responder ─ follow_up
-                      │
-                      ▼
-              IncidentAssessment JSON
-                      │
-                      ▼
-              Sentinel webhook / Outbox
+Alarm arrives
+      │
+      ▼
+Smart layer reads signals + photos
+      │
+      ▼
+Risk score, reasons, suggested steps
+      │
+      ▼
+Notify staff · wait for approval · log everything
 ```
 
-**Key properties:**
+**Basics**
 
-- Self-hosted orchestration kernel (no LangGraph dependency)
-- Rules-first hybrid inference with LLM fallback
-- CAO leader for multi-model debate + consensus + review
-- Reliable queue (BRPOPLPUSH) + transactional outbox
+- Fixed rules always run first; smart text layers on top when available
+- If smart services are offline, rule-based results still work
+- A lead workflow plans, assigns, checks, and reviews before anything sensitive goes out
 
-## 2. Integration Contract
+## cMax workspace
 
-| Sentinel field | Orchestrator field |
-|----------------|-------------------|
-| `alarms.id` | `event_id` = `alarm-{id}` |
-| `owner_admin` | `tenant_id` |
-| device telemetry | `battery`, `rssi`, `trigger_count` |
-| snapshot success | `snapshot_exists=true` |
+- See which devices are online and battery or signal health
+- Watch alarms and smart results on a map or timeline
+- Follow what each automated step did and who approved it
+- Overlay buildings and campuses in 2D or 3D
 
-Enrich budget: **2.5 seconds** on same machine (`127.0.0.1:9240`).
+## Safety and access
 
-## 3. CAO — Chief Agent Orchestrator
-
-Five-layer OS model (private implementation):
-
-1. **Task Intake** — classify incident / software / integration work
-2. **Task Planning** — DAG of sub-tasks with dependencies
-3. **Agent Assignment** — model router picks best LLM per task type
-4. **Multi-Model Debate + Consensus** — threshold 0.75 default
-5. **CAO Review** — correctness, security, performance, cost, maintainability
-
-V3 adds: Event Bus, persistent memory (SQLite/PG/Redis), approval framework, security agents.
-
-## 4. cMax Observability Platform
-
-cMax provides 2D/3D views over:
-
-- Device fleet health (online/offline, RSSI, battery)
-- Alarm event streams and AI enrichment results
-- Agent team execution traces (CAO provenance)
-- Digital twin overlays for campus / building deployments
-
-This public repo does not include cMax UI assets.
-
-## 5. Security Layers
-
-| Layer | Sentinel | Orchestrator |
-|-------|----------|--------------|
-| Transport | MQTT TLS, HTTPS OTA | Nginx TLS, API Key / JWT |
-| Command auth | CMD_AUTH_KEY (64-bit) | RBAC scopes |
-| OTA | Host allowlist + token | — |
-| Tenant | owner_admin isolation | API Key → tenant_id |
-| Audit | audit_events table | audit_runs + provenance |
+| Topic | Croc Sentinel | Croc Coordination |
+|-------|---------------|-------------------|
+| Connection security | Encrypted links to cloud and update server | Encrypted access to coordination service |
+| Device commands | Only with authorised keys | Role-based permissions |
+| Remote updates | Only from approved download locations | — |
+| Data separation | Each customer’s data kept apart | Each customer’s data kept apart |
+| History | Full event log | Full decision log |

@@ -1,4 +1,4 @@
-"""MQTT alarm event stub for public artifact — not production code."""
+"""Example cloud alarm message helpers."""
 
 from __future__ import annotations
 
@@ -8,34 +8,33 @@ from typing import Any
 
 
 @dataclass
-class MqttAlarmEnvelope:
-    topic: str
+class AlarmMessage:
+    channel: str
     payload: dict[str, Any]
 
     @classmethod
-    def from_device_alarm(cls, device_id: str, owner: str, group: str) -> MqttAlarmEnvelope:
+    def from_device(cls, device_id: str, owner: str, group: str) -> AlarmMessage:
         return cls(
-            topic=f"sentinel/{device_id}/alarm",
+            channel=f"site/{device_id}/alarm",
             payload={
-                "proto": 2,
                 "type": "alarm",
                 "device_id": device_id,
-                "owner_admin": owner,
-                "notification_group": group,
+                "site_owner": owner,
+                "device_group": group,
                 "triggered_by": "button",
             },
         )
 
     def to_json(self) -> str:
-        return json.dumps({"topic": self.topic, "payload": self.payload}, ensure_ascii=False)
+        return json.dumps({"channel": self.channel, "payload": self.payload}, ensure_ascii=False)
 
 
-def fan_out_siblings(alarm: MqttAlarmEnvelope, fleet: list[dict[str, Any]]) -> list[str]:
-    """Return device IDs that would receive siren fan-out (same owner + group)."""
-    owner = alarm.payload.get("owner_admin")
-    group = alarm.payload.get("notification_group")
+def linked_devices(alarm: AlarmMessage, fleet: list[dict[str, Any]]) -> list[str]:
+    """Devices in the same organisation and group that would react together."""
+    owner = alarm.payload.get("site_owner")
+    group = alarm.payload.get("device_group")
     return [
         d["device_id"]
         for d in fleet
-        if d.get("owner_admin") == owner and d.get("group") == group
+        if d.get("site_owner") == owner and d.get("group") == group
     ]

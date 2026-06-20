@@ -1,20 +1,19 @@
 {
   "alarm_id": 10042,
-  "source_id": "dev-campus-a12",
-  "owner_admin": "owner-admin-demo",
-  "notification_group": "building-a-floor-2",
+  "device_id": "CS-M401-office-2",
+  "site_owner": "site-admin-north",
+  "device_group": "building-a-floor-2",
   "triggered_by": "button",
   "created_at": "2026-06-19T08:15:00Z",
-  "telemetry": {
+  "status": {
     "online": true,
     "battery_pct": 34,
-    "rssi": -88,
+    "signal": "weak",
     "firmware": "2.1.0"
   },
   "camera": {
-    "bound": true,
-    "protocol": "hikvision",
-    "snapshot_url": null,
-    "credential_status": "ok"
+    "linked": true,
+    "photo_url": null,
+    "link_status": "ok"
   }
 }

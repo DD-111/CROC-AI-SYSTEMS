@@ -1,10 +1,10 @@
 [project]
 name = "croc-ai-systems"
 version = "0.1.0"
-description = "CROC AI Systems — Croc Nexus AI Technologies platform libraries"
+description = "CROC AI Systems — Croc Nexus AI Technologies"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 
 [project.scripts]
-croc-demo-assess = "src.croc_orchestrator.demo_assess:main"
+croc-sample-flow = "src.croc_orchestrator.demo_assess:main"

@@ -5,7 +5,7 @@
 <h1 align="center">Croc Nexus AI Technologies</h1>
 
 <p align="center">
-  <strong>Integrated hardware, software, and AI for public safety and smart operations</strong>
+  <strong>Hardware, software, and smart assistance for safer public spaces</strong>
 </p>
 
 <p align="center">
@@ -17,133 +17,135 @@
 
 ## Company
 
-**Croc Nexus AI Technologies** builds end-to-end systems that connect field devices, cloud services, mobile operations, and AI decision support.
+**Croc Nexus AI Technologies** connects on-site equipment, cloud services, mobile apps, and smart decision support into one system.
 
-| Focus | What we do |
-|-------|------------|
-| **Hardware & IoT** | ESP32 edge devices, sensors, sirens, secure cloud connectivity |
-| **AI Agents** | Multi-agent orchestration, tool plugins, hybrid rules + LLM inference |
-| **Digital Twin** | Live maps, device state, and event streams across sites |
-| **AI Law & Compliance** | Approval workflows, audit trails, human-in-the-loop controls |
-| **cMax Platform** | 2D / 3D observability workbench for ops and analytics |
+| What we focus on | In plain terms |
+|------------------|----------------|
+| **On-site hardware** | Buttons, sensors, sirens, and site controllers that talk to the cloud |
+| **Smart workflows** | Automated steps that help staff decide faster, with people still in control |
+| **Live site views** | Maps, device status, and event history across many locations |
+| **Rules & records** | Approvals, logs, and clear reasons behind each action |
+| **cMax workspace** | A single screen to watch sites, teams, and outcomes in 2D and 3D |
 
 **Contact:** partnerships@crocnexus.com · +084-349525
 
 ---
 
-## Platform
+## Our products
 
-CROC AI Systems brings three products together:
+| Product | What it does |
+|---------|----------------|
+| **Croc Sentinel** | Alarm and monitoring — devices, cloud, and mobile app |
+| **Croc Coordination** | Turns raw alerts into clearer risk levels, next steps, and follow-up |
+| **cMax** | Big-picture view — maps, timelines, and team activity |
 
-| Product | Role |
-|---------|------|
-| **Croc Sentinel** | IoT alarm platform — devices, cloud API, mobile command app |
-| **Croc AI Orchestrator** | Event intelligence — classification, risk scoring, routing, escalation |
-| **cMax** | Observability layer — dashboards, maps, agent and system visibility |
+---
+
+## On-site hardware (CS-M series)
+
+| Model | Typical use |
+|-------|-------------|
+| **CS-M401** | Emergency button |
+| **CS-M402** | Motion detection |
+| **CS-M403** | Siren / sound alert |
+| **CS-M404** | Site controller / relay |
+| **CS-M405** | Camera link unit |
+| **CS-M406** | Multi-sensor hub |
+| **CS-M407** | All-in-one field unit |
+
+Devices are added with a QR code or serial number. Remote software updates are supported.
 
 ---
 
 ## Croc Sentinel
 
-Mobile-first security and monitoring for schools, hospitals, government sites, and municipal networks.
+Built for schools, hospitals, government sites, and city-wide networks.
 
-**Core capabilities**
+**What you get**
 
-- Multi-site **GIS dashboard** with live alarm pins
-- **3–30 second** alert delivery (push + live stream)
-- Native **iOS & Android** command app
-- Multi-tenant **RBAC** and cross-agency group sharing
-- Camera-linked evidence (Hikvision / Dahua edge capture)
-- QR device onboarding and OTA firmware management
-
-<p align="center">
-  <img src="assets/images/architecture-four-layers.svg" alt="Four-layer architecture" width="860" />
-</p>
-
-| Layer | Description |
-|-------|-------------|
-| **Edge IoT** | Panic buttons, sensors, sirens — ESP32 fleet |
-| **Cloud API** | Secure API, live streaming, push gateway, tenant isolation |
-| **Mobile App** | GIS map, event timeline, ARM ALL / DISARM ALL, GPS patrol |
-| **AI Engine** | Threat scoring, smart routing, responder dispatch, phone escalation |
-
-**Response pipeline:** Trigger → Cloud + AI → Alert → Respond
-
----
-
-## Croc AI Orchestrator
-
-Self-hosted agent platform for emergency and operational workflows.
-
-- **Agent pipeline:** risk & vision analysis → summary → commander → responder → communication → follow-up
-- **CAO (Chief Agent Orchestrator):** planning, multi-model routing, consensus, and review
-- **Hybrid inference:** rules-first baseline with LLM enhancement; graceful fallback when models are unavailable
-- **Local & cloud models:** auto-discovery of Ollama and OpenAI-compatible endpoints; task-based routing
-- **Production patterns:** reliable queues, outbox delivery, follow-up SLA, multi-tenant API keys
-
----
-
-## Mobile App
+- One **map** showing many sites and live alarm markers
+- **Fast alerts** to phones — usually within 3–30 seconds
+- **iPhone and Android** apps for daily use and emergencies
+- **Separate accounts** for different organisations; shared groups when needed
+- **Photos from linked cameras** when an alarm fires
+- Simple **add-device** flow and **remote updates** for field hardware
 
 <p align="center">
-  <img src="assets/images/app-overview-dashboard.jpeg" alt="Overview dashboard" width="240" />
-  &nbsp;
-  <img src="assets/images/app-events-timeline.jpeg" alt="Event timeline" width="240" />
-  &nbsp;
-  <img src="assets/images/app-device-activation.jpeg" alt="Device activation" width="240" />
-  &nbsp;
-  <img src="assets/images/app-signals-routing.jpeg" alt="Signals and routing" width="240" />
+  <img src="assets/images/architecture-four-layers.svg" alt="How the system is layered" width="860" />
 </p>
 
-Overview · Events · Device activation · Signals & routing
+| Layer | What it means |
+|-------|----------------|
+| **On site** | CS-M401–M407 devices — buttons, sensors, sirens |
+| **Cloud** | Secure online service, live updates, phone notifications |
+| **Mobile app** | Map, event list, arm/disarm all, patrol view |
+| **Smart layer** | Scores urgency, suggests who to notify, escalates if unanswered |
+
+**When something happens:** detect → cloud checks → notify everyone → staff responds on the map
 
 ---
 
-## AI Features
+## Croc Coordination
 
-- Event classification and **0–100 risk scoring** (auditable rules)
-- Visual threat assessment from camera captures
-- Nearest-responder notification and timed escalation
-- Explainable reasons and recommended actions
-- **Human approval** for high-impact decisions
+Helps turn alarms into clear, actionable information.
 
----
-
-## Extensibility
-
-The platform is designed to grow without rewriting the core:
-
-- Drone patrol and aerial vision
-- Embodied robotics and field automation
-- Mobile SOS and multi-channel alerts
-- Smart campus and city-wide digital twin views
-- Legal/compliance review agents
-
-Plugin agents, skills, and tools extend behavior per domain.
+- Reads device signals and camera snapshots
+- Gives a **simple risk score** and plain-language reasons
+- Suggests **who to call** and **what to do next**
+- Can use **models running on your own machines** or in the cloud — the system finds what is available
+- Important actions wait for **human approval**
+- Keeps a **full history** of what was suggested and what was done
 
 ---
 
-## Tech Stack
+## Mobile app
 
-| Area | Stack |
-|------|-------|
-| Edge | ESP32 (Arduino / ESP-IDF) |
-| Messaging | MQTT, Redis queues |
-| Backend | FastAPI, PostgreSQL / SQLite |
-| AI | Ollama, OpenAI-compatible APIs, custom agent runtime |
-| Mobile | Native iOS & Android |
-| Deploy | Docker Compose, Nginx |
-| Observability | cMax 2D/3D, Prometheus, OpenTelemetry |
+<p align="center">
+  <img src="assets/images/app-overview-dashboard.jpeg" alt="Home screen" width="240" />
+  &nbsp;
+  <img src="assets/images/app-events-timeline.jpeg" alt="Event list" width="240" />
+  &nbsp;
+  <img src="assets/images/app-device-activation.jpeg" alt="Add device" width="240" />
+  &nbsp;
+  <img src="assets/images/app-signals-routing.jpeg" alt="Activity summary" width="240" />
+</p>
+
+Home · Events · Add device · Activity summary
+
+---
+
+## Smart features
+
+- Sorts events by type (emergency, security, maintenance, and more)
+- **0–100 urgency score** with clear reasons — not a black box
+- Uses camera images when available
+- Notifies the nearest available responder
+- Calls or escalates if nobody acknowledges in time
+- **People approve** before high-impact actions run
+
+---
+
+## Room to grow
+
+The same platform can later support:
+
+- Drone patrol over large sites
+- Robots and automated field tasks
+- Mobile SOS from phones
+- Campus-wide and city-wide live models
+- Legal and compliance review steps
+
+New site types and workflows can be added without replacing the core system.
 
 ---
 
 ## Repository
 
 ```
-docs/          Architecture and product documentation
-assets/        Brand and product imagery
-samples/       Reference event payloads
-src/           Shared libraries and integration helpers
+docs/      Product and structure notes
+assets/    Logo and app images
+samples/   Example event data
+src/       Shared helpers
 ```
 
 ```bash

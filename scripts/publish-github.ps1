@@ -12,7 +12,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 git branch -M main
-gh repo create $RepoName --public --source . --remote origin --description "CROC AI Systems — Croc Nexus AI Technologies (Sentinel, Orchestrator, cMax)" --push
+gh repo create $RepoName --public --source . --remote origin --description "CROC AI Systems by Croc Nexus AI Technologies" --push
 
 Write-Host ""
 Write-Host "Published: https://github.com/$(gh api user -q .login)/$RepoName"

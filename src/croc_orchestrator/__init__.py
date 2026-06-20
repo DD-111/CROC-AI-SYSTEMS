@@ -1,3 +1,3 @@
-"""Croc AI Orchestrator integration helpers."""
+"""Croc Coordination helpers."""
 
 __version__ = "0.1.0"

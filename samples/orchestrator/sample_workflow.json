@@ -1,13 +1,13 @@
 {
   "name": "emergency_response",
   "version": "2.0",
-  "parallel_groups": [
-    ["risk", "vision"],
+  "steps": [
+    ["check_risk", "check_vision"],
     ["summary"],
     ["commander"],
     ["responder"],
-    ["communication"],
+    ["notify"],
     ["follow_up"]
   ],
-  "description": "Emergency response workflow reference"
+  "description": "Standard emergency handling flow"
 }

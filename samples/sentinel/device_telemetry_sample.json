@@ -1,15 +1,13 @@
 {
-  "device_id": "dev-campus-a12",
-  "mac": "AABBCCDDEEFF",
-  "owner_admin": "owner-admin-demo",
+  "device_id": "CS-M407-campus-a12",
+  "model": "CS-M407",
+  "site_owner": "site-admin-north",
   "zone": "school-zone-north",
   "group": "building-a-floor-2",
   "status": {
     "online": true,
     "last_seen": "2026-06-19T08:14:55Z",
     "battery_pct": 34,
-    "rssi": -88,
-    "tx_count": 1204,
-    "rx_count": 89
+    "signal": "weak"
   }
 }

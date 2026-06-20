@@ -1,16 +1,16 @@
 {
-  "event_id": "alarm-demo-001",
-  "device_id": "dev-campus-a12",
-  "tenant_id": "owner-admin-demo",
+  "event_id": "alarm-10042",
+  "device_id": "CS-M407-campus-a12",
+  "site_id": "site-north-wing",
   "battery": 34,
-  "rssi": -88,
+  "signal_strength": "weak",
   "trigger_count": 4,
-  "snapshot_exists": false,
+  "photo_received": false,
   "trigger_type": "button",
   "zone": "school-zone-north",
   "metadata": {
-    "camera_protocol": "hikvision",
-    "snapshot_attempted": true,
-    "snapshot_error": "timeout"
+    "camera_linked": true,
+    "photo_attempted": true,
+    "photo_error": "timeout"
   }
 }
