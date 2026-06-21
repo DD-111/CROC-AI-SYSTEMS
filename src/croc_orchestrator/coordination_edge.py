@@ -36,12 +36,20 @@ class FollowUpStep(OrchestratorStep):
 
 PIPELINE_SHAPE = {
     "published_here": ["score_urgency", "write_summary"],
-    "runs_with_sentinel_in_production": [
+    "trial_production_with_sentinel": [
         "score_urgency",
         "use_camera_context",
         "summarise_for_operator",
         "route_call_and_alert",
         "escalate_if_unanswered",
         "log_and_audit",
+    ],
+    "in_development_not_open": [
+        "cao_deeper_coordination",
+        "richer_agent_orchestration",
+        "embodied_intelligence",
+        "drones",
+        "security_devices",
+        "personal_home_use",
     ],
 }

@@ -11,6 +11,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/AI-Startup-7c3aed" alt="AI Startup" />
+  <img src="https://img.shields.io/badge/Status-Trial%20production-f59e0b" alt="Trial production" />
   <img src="https://img.shields.io/badge/Based%20in-Malaysia-006847" alt="Malaysia" />
   <img src="https://img.shields.io/badge/Team-2%20founders-64748b" alt="2 founders" />
 </p>
@@ -20,6 +21,7 @@
   <a href="#products">Products</a> ·
   <a href="#sentinel">Sentinel</a> ·
   <a href="#orchestrator">Orchestrator</a> ·
+  <a href="#roadmap">Roadmap</a> ·
   <a href="#scenes">Scenes</a> ·
   <a href="#repository">Repository</a> ·
   <a href="#contact">Contact</a>
@@ -50,16 +52,25 @@ Being small keeps us close to the problem: we configure each deployment ourselve
 
 | Product | Role | Status |
 |:--------|:-----|:-------|
-| **[Croc Sentinel Systems](#sentinel)** | Site monitoring — map, devices, alerts, mobile apps | **In production** |
-| **[Croc AI Orchestrator](#orchestrator)** | AI coordination — urgency, routing, escalation, audit | **In production** |
+| **[Croc Sentinel Systems](#sentinel)** | Site monitoring — map, devices, alerts, mobile apps | **Trial production** *(初步试产)* |
+| **[Croc AI Orchestrator](#orchestrator)** | AI coordination — urgency, routing, escalation, audit | **Trial production** *(初步试产)* |
 
 Both run on **Croc Nexus–owned** infrastructure. They work together: **Sentinel sees the event, Orchestrator decides and drives response.**
+
+| In development — not open *(开发中 · 未开放)* | Direction |
+|:---------------------------------------------|:----------|
+| **CAO** (in-house model) | Deeper coordination and follow-up — Croc Nexus exclusive |
+| **Richer agent orchestration** | Multi-step internal runtime — [edge sketch only](src/croc_orchestrator/coordination_edge.py) in this repo |
+| **Embodied intelligence, drones & security devices** | On-site systems, aerial check, sensors, locks, barriers on the alert path |
+| **Personal / home use** | Same stack scaled for households |
+
+See [Roadmap](#roadmap) for full status table.
 
 ---
 
 <h2 id="sentinel">Croc Sentinel Systems</h2>
 
-**AI-powered monitoring for connected sites.**
+**AI-powered monitoring for connected sites.** **Trial production** *(初步试产)* — core monitoring, map, alerts, and apps are operational; we continue hardening per deployment.
 
 <p align="center">
   <img src="assets/images/app-overview-dashboard.jpeg" alt="Dashboard" width="280" />
@@ -77,7 +88,7 @@ Both run on **Croc Nexus–owned** infrastructure. They work together: **Sentine
 
 <h2 id="orchestrator">Croc AI Orchestrator</h2>
 
-**AI that turns alerts into action** — paired with Sentinel on every deployment.
+**AI that turns alerts into action** — paired with Sentinel. **Trial production** *(初步试产)* — scoring, routing, escalation, and audit work on real sites; not fully open-sourced here.
 
 | Capability | What it does |
 |:-----------|:-------------|
@@ -101,6 +112,9 @@ Both run on **Croc Nexus–owned** infrastructure. They work together: **Sentine
        │
        ▼
   Person checks on site
+       │
+       ▼
+  Devices on site (future)       ← in development, not open
 ```
 
 This repository includes a **minimal sample** of orchestration logic — not production source. See [Repository](#repository).
@@ -120,9 +134,24 @@ This repository includes a **minimal sample** of orchestration logic — not pro
 
 ---
 
+<h2 id="roadmap">Product roadmap</h2>
+
+| Item | Status | Notes |
+|:-----|:-------|:------|
+| **Croc Sentinel Systems** | **Trial production** *(初步试产)* | Map, alerts, camera context, mobile apps |
+| **Croc AI Orchestrator** | **Trial production** *(初步试产)* | Score, route, escalate, audit |
+| **CAO** (in-house model) | **In development — not open** *(开发中 · 未开放)* | Training; exclusive to Croc Nexus |
+| **Richer agent orchestration** | **In development — not open** | Internal runtime; public [edge sketch](src/croc_orchestrator/coordination_edge.py) only |
+| **Embodied intelligence, drones & security devices** | **In development — not open** | Planned extensions on the same alert path |
+| **Personal / home use** | **In development — not open** | Planned; not available yet |
+
+We ship **gradually**. Trial production means real deployments with ongoing iteration — not a finished mass-market release. Humans stay in the loop where it matters.
+
+---
+
 <h2 id="scenes">Where we deploy</h2>
 
-Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential communities
+Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home — in development, not open*
 
 Per-site **rules, call lists, and escalation** on our platform. New scene types scoped per project.
 
