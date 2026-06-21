@@ -5,7 +5,7 @@
 <h1 align="center">Croc Nexus AI Technologies</h1>
 
 <p align="center">
-  <strong>AI-native site safety — built in Malaysia, owned end to end</strong>
+  <strong>Building AI agents, digital teams, and controllable intelligence — from Malaysia</strong>
 </p>
 
 <p align="center">
@@ -18,6 +18,7 @@
 
 <p align="center">
   <a href="#story">Our story</a> ·
+  <a href="#ai-direction">AI direction</a> ·
   <a href="#products">Products</a> ·
   <a href="#sentinel">Sentinel</a> ·
   <a href="#orchestrator">Orchestrator</a> ·
@@ -29,8 +30,8 @@
 
 <br/>
 
-> **Two founders. One stack.** We build AI that **scores urgency**, **calls the right person**, and **logs every step** — for real sites, not slide decks.  
-> **Site requirement:** working network (Wi‑Fi or wired) at each location.
+> **We are an AI company first.** Two founders in Malaysia building **agents**, **digital employee teams**, and **human-controllable AI** — with real products on real sites.  
+> **Site requirement** *(Sentinel deployments):* working network (Wi‑Fi or wired) at each location.
 
 <br/>
 
@@ -38,13 +39,30 @@
 
 <h2 id="story">Our story</h2>
 
-**Croc Nexus AI Technologies** is a **two-person AI startup based in Malaysia**.
+**Croc Nexus AI Technologies** is a **two-person AI startup in Malaysia**. We did not set out to sell another alarm panel — we set out to build **AI that can work as a team**: agents that understand tasks, coordinate with each other, stay visible on a **control panel**, and remain **under human control**.
 
-We started after seeing the same failure mode everywhere: a site alarm fires, everyone gets the same ping, nobody knows how serious it is, and response depends on whoever happens to see their phone first. Camera footage sits unused. If the first person does not answer, the chain quietly breaks.
+Site safety became our **first proving ground**: when an alert fires, nobody should guess urgency or who to call. That problem needs **orchestrated AI agents**, not a single chat box. So we built **Croc Sentinel Systems** and **Croc AI Orchestrator** — trial production today — on infrastructure we own end to end.
 
-We are not a legacy hardware company adding an AI sticker. We wrote our own **cloud, mobile apps, and orchestration** because we wanted every alert to carry a **score**, a **named contact**, and an **audit trail** — with safety rules that always run first and humans still in control.
+Our longer direction is broader: **digital employee teams** for operational work, **visual panels** where people see what AI is doing and can intervene, and a **token relay layer** so models and agents can be routed, metered, and governed in one place. Sentinel and Orchestrator are where that AI stack meets the physical world first.
 
-Being small keeps us close to the problem: we configure each deployment ourselves, iterate quickly, and keep the full product **under the Croc Nexus name** — no white-label, no rebranded apps for others.
+Being small keeps us focused: we ship, measure on site, iterate on the agent layer, and keep everything **under the Croc Nexus name** — no white-label apps for others.
+
+---
+
+<h2 id="ai-direction">What we are building in AI</h2>
+
+Everything we do routes through an **AI-first platform** we control:
+
+| Direction | What it means |
+|:----------|:--------------|
+| **AI agents** | Task-focused agents that analyse, decide, call tools, and hand off — not one monolithic bot |
+| **Digital employee teams** | Multiple agents working like a shift: score, summarise, route, follow up — with clear roles |
+| **Controllable visual panel** | Operators see agent steps, urgency, and outcomes on map and timeline — intervene when needed |
+| **Token relay** | Central routing and control for model calls — which agent uses which model, with audit and limits |
+| **Rules + humans** | Safety rules always first; sensitive steps need approval; full log of AI and human actions |
+
+**Today in trial production:** Sentinel (eyes on site) + Orchestrator (agent coordination for alerts).  
+**In development — not open:** deeper agent runtime, **CAO** in-house model, embodied systems, drones, devices, personal/home — see [Roadmap](#roadmap).
 
 ---
 
@@ -53,16 +71,18 @@ Being small keeps us close to the problem: we configure each deployment ourselve
 | Product | Role | Status |
 |:--------|:-----|:-------|
 | **[Croc Sentinel Systems](#sentinel)** | Site monitoring — map, devices, alerts, mobile apps | **Trial production** *(初步试产)* |
-| **[Croc AI Orchestrator](#orchestrator)** | AI coordination — urgency, routing, escalation, audit | **Trial production** *(初步试产)* |
+| **[Croc AI Orchestrator](#orchestrator)** | Agent coordination — urgency, routing, escalation, audit | **Trial production** *(初步试产)* |
 
-Both run on **Croc Nexus–owned** infrastructure. They work together: **Sentinel sees the event, Orchestrator decides and drives response.**
+Both are **applications of our AI agent stack** on Croc Nexus–owned infrastructure: **Sentinel observes, Orchestrator agents coordinate response.**
 
 | In development — not open *(开发中 · 未开放)* | Direction |
 |:---------------------------------------------|:----------|
-| **CAO** (in-house model) | Deeper coordination and follow-up — Croc Nexus exclusive |
-| **Richer agent orchestration** | Multi-step internal runtime — [edge sketch only](src/croc_orchestrator/coordination_edge.py) in this repo |
-| **Embodied intelligence, drones & security devices** | On-site systems, aerial check, sensors, locks, barriers on the alert path |
-| **Personal / home use** | Same stack scaled for households |
+| **CAO** (in-house model) | Core model layer for agent teams — Croc Nexus exclusive |
+| **Agent platform & digital employee teams** | Richer multi-agent runtime beyond alert coordination |
+| **AI control panel** | Deeper visual governance of agent actions and token flow |
+| **Token relay** | Unified model routing, metering, and policy for all agents |
+| **Embodied intelligence, drones & security devices** | Agents driving on-site systems on the same alert path |
+| **Personal / home use** | Same agent stack scaled for households |
 
 See [Roadmap](#roadmap) for full status table.
 
@@ -88,7 +108,7 @@ See [Roadmap](#roadmap) for full status table.
 
 <h2 id="orchestrator">Croc AI Orchestrator</h2>
 
-**AI that turns alerts into action** — paired with Sentinel. **Trial production** *(初步试产)* — scoring, routing, escalation, and audit work on real sites; not fully open-sourced here.
+**Agent coordination for alerts** — paired with Sentinel. **Trial production** *(初步试产)* — agent-style steps (score, route, escalate, audit) run on real sites; full runtime not open-sourced here.
 
 | Capability | What it does |
 |:-----------|:-------------|
@@ -139,10 +159,12 @@ This repository includes a **minimal sample** of orchestration logic — not pro
 | Item | Status | Notes |
 |:-----|:-------|:------|
 | **Croc Sentinel Systems** | **Trial production** *(初步试产)* | Map, alerts, camera context, mobile apps |
-| **Croc AI Orchestrator** | **Trial production** *(初步试产)* | Score, route, escalate, audit |
-| **CAO** (in-house model) | **In development — not open** *(开发中 · 未开放)* | Training; exclusive to Croc Nexus |
-| **Richer agent orchestration** | **In development — not open** | Internal runtime; public [edge sketch](src/croc_orchestrator/coordination_edge.py) only |
-| **Embodied intelligence, drones & security devices** | **In development — not open** | Planned extensions on the same alert path |
+| **Croc AI Orchestrator** | **Trial production** *(初步试产)* | Agent coordination — score, route, escalate, audit |
+| **CAO** (in-house model) | **In development — not open** | Agent-team model layer; Croc Nexus exclusive |
+| **Digital employee teams** | **In development — not open** | Multi-agent operational teams beyond alert flow |
+| **AI control panel** | **In development — not open** | Visual governance of agent actions and status |
+| **Token relay** | **In development — not open** | Unified model routing, metering, policy |
+| **Embodied intelligence, drones & security devices** | **In development — not open** | Agents + on-site equipment on alert path |
 | **Personal / home use** | **In development — not open** | Planned; not available yet |
 
 We ship **gradually**. Trial production means real deployments with ongoing iteration — not a finished mass-market release. Humans stay in the loop where it matters.
