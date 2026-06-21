@@ -1,6 +1,6 @@
 # Architecture
 
-**Croc Nexus AI Technologies** — AI startup, Malaysia. Platform wholly owned by Croc Nexus.
+**Croc Nexus AI Technologies** — AI startup, Malaysia. We build **AI agents**, **digital employee teams**, **visual control panels**, and **token relay** — platform wholly owned by Croc Nexus. Sentinel and Orchestrator are the first trial-production applications on this stack.
 
 > Each site needs **network** (Wi‑Fi or wired internet).
 
@@ -68,7 +68,7 @@ Resolve · escalate · record outcome
 
 **Today:** people respond on site. Orchestrator makes *who* and *how fast* clearer.
 
-**In development — not open *(开发中 · 未开放)*:** CAO in-house model; embodied intelligence, drones, and security devices on the same pipeline; personal/home use. See [EXTENSIBILITY.md](EXTENSIBILITY.md).
+**In development — not open *(开发中 · 未开放)*:** CAO; digital employee teams; AI control panel; token relay; embodied intelligence, drones, security devices; personal/home. See [EXTENSIBILITY.md](EXTENSIBILITY.md).
 
 ---
 

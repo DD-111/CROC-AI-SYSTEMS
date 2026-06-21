@@ -2,44 +2,44 @@
 
 **Croc Nexus AI Technologies** — AI startup, **Malaysia**, **two founders**.
 
-> Each site needs **network** (Wi‑Fi or wired internet).
+> Each site needs **network** (Wi‑Fi or wired internet) for Sentinel deployments.
 
 ---
 
-## Company
+## Company — AI first
 
-We build site safety software where AI **scores urgency**, **routes calls**, and **keeps a full log** — cloud, mobile apps, and orchestration owned by Croc Nexus. No white-label apps.
+We build **AI agents**, **digital employee teams**, **controllable visual panels**, and **token relay** infrastructure — owned end to end by Croc Nexus. No white-label apps.
+
+**Site safety** is our first live application: **Croc Sentinel Systems** + **Croc AI Orchestrator** in **trial production** *(初步试产)*.
 
 ---
 
-## Products
+## AI direction
 
-| Product | What it does | Status |
-|:--------|:-------------|:-------|
-| **Croc Sentinel Systems** | Monitoring — map, devices, **3–30 s** alerts, camera context, iOS/Android apps | **Trial production** *(初步试产)* |
-| **Croc AI Orchestrator** | Coordination — urgency scoring, routing, escalation, approval, audit | **Trial production** *(初步试产)* |
+| Direction | Purpose |
+|:----------|:--------|
+| **AI agents** | Task agents that analyse, decide, and hand off |
+| **Digital employee teams** | Multi-agent shifts with clear roles |
+| **Control panel** | Visual map and timeline — see and intervene |
+| **Token relay** | Route, meter, and govern model calls centrally |
+| **Rules + humans** | Safety rules first; approval gates; full audit |
 
-**Together:** Sentinel detects → Orchestrator scores and drives response → person checks on site.
+---
+
+## Products *(trial production)*
+
+| Product | Role |
+|:--------|:-----|
+| **Croc Sentinel Systems** | Monitoring — map, alerts, camera context, mobile apps |
+| **Croc AI Orchestrator** | Agent coordination — scoring, routing, escalation, audit |
+
+Sentinel observes → Orchestrator agents coordinate → person checks on site.
 
 ---
 
 ## In development — not open *(开发中 · 未开放)*
 
-| Item | Direction |
-|:-----|:----------|
-| **CAO** (in-house model) | Deeper coordination — Croc Nexus exclusive |
-| **Richer agent orchestration** | Internal multi-step runtime |
-| **Embodied intelligence, drones & security devices** | Reach, patrol, on-site equipment on alert path |
-| **Personal / home use** | Household-scale deployments |
-
----
-
-## Principles
-
-- Safety **rules first** — AI never silently lowers urgency  
-- **Humans approve** sensitive steps  
-- Full **audit trail**  
-- **Croc Nexus apps only** — per-site configuration, not customer branding  
+CAO in-house model · digital employee platform · AI control panel · token relay · embodied systems · drones · security devices · personal/home use
 
 ---
 

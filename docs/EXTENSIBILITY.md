@@ -18,12 +18,14 @@ Core monitoring and coordination run on **real deployments**; we continue harden
 
 | Item | Direction |
 |:-----|:----------|
-| **CAO** (in-house model) | Deeper coordination and follow-up — Croc Nexus exclusive |
-| **Richer agent orchestration** | Multi-step internal runtime |
-| **Embodied intelligence** | Go to alarm location or patrol a zone |
-| **Drones** | Aerial check, patrol, fast reach on same alert path |
-| **Security devices** | Sensors, locks, barriers, and similar equipment |
-| **Personal / home use** | Household deployments |
+| **CAO** (in-house model) | Agent-team model layer — Croc Nexus exclusive |
+| **Digital employee teams** | Multi-agent operational teams beyond alert coordination |
+| **AI control panel** | Visual governance of agent actions and token flow |
+| **Token relay** | Unified model routing, metering, and policy |
+| **Embodied intelligence** | Agents driving on-site movement or patrol |
+| **Drones** | Aerial check and reach on same alert path |
+| **Security devices** | Sensors, locks, barriers integrated with agents |
+| **Personal / home use** | Household-scale agent deployments |
 
 Rollout is **gradual** and agreed per project when available.
 

@@ -1,6 +1,6 @@
 # Croc AI Orchestrator (brief)
 
-**Croc AI Orchestrator** is Croc Nexus’s coordination layer: it **scores urgency**, **routes who to call**, and **keeps a full log** — working with **Croc Sentinel Systems** on every deployment.
+**Croc AI Orchestrator** is Croc Nexus’s **agent coordination layer**: AI agents **score urgency**, **route who to call**, and **keep a full log** — working with **Croc Sentinel Systems** on each deployment.
 
 | | |
 |:--|:--|

@@ -45,8 +45,10 @@ PIPELINE_SHAPE = {
         "log_and_audit",
     ],
     "in_development_not_open": [
-        "cao_deeper_coordination",
-        "richer_agent_orchestration",
+        "cao_agent_model",
+        "digital_employee_teams",
+        "ai_control_panel",
+        "token_relay",
         "embodied_intelligence",
         "drones",
         "security_devices",
