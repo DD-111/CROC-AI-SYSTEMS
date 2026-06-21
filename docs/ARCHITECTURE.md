@@ -1,89 +1,93 @@
-# How the platform fits together
+# Architecture
 
-**Croc Nexus AI Technologies** is an **AI startup**. AI recognises events, scores urgency, routes calls, and escalates — people respond first; **embodied systems, drones, security devices, and more** on the roadmap.
+**Croc Nexus AI Technologies** — AI startup, Malaysia. Platform wholly owned by Croc Nexus.
 
-## Network first
-
-Every deployment assumes the **site has usable internet** (Wi‑Fi or wired). Connected equipment at the site uses that network to reach the cloud; staff phones receive alerts through the same path.
+> Each site needs **network** (Wi‑Fi or wired internet).
 
 ---
 
-## Croc Sentinel — connected to cloud
+## Overview
 
 ```text
-Equipment at the site
-        │
-        │  site network (required)
-        ▼
-Online service + control screen
-        │
-        ├── phone / email / messaging alerts
-        ├── linked camera photos
-        └── remote updates
+Site equipment ──network──► Croc Nexus cloud
+                                  │
+                    ┌─────────────┴─────────────┐
+                    ▼                           ▼
+           Croc Sentinel Systems      Croc AI Orchestrator
+                    │                           │
+                    └─────────────┬─────────────┘
+                                  ▼
+                         Croc Nexus mobile apps
+                         phone / messaging alerts
+                         audit logs
 ```
 
-- Each organisation sees only its own devices and staff  
+| Product | Purpose |
+|:--------|:--------|
+| **Croc Sentinel Systems** | Monitoring, device groups, alerts, camera context |
+| **Croc AI Orchestrator** | Urgency scoring, routing, escalation, approval |
+
+---
+
+## Croc Sentinel Systems
+
+```text
+Equipment at site
+      │  network (required)
+      ▼
+Cloud service
+      ├── alerts to phones
+      ├── linked camera photos
+      └── remote updates
+```
+
+- Each customer sees only its own devices and staff  
 - Devices in the same group can react together  
 - Sensitive credentials are not stored permanently on local equipment  
 
 ---
 
-## Croc Coordination — from alert to action
+## Croc AI Orchestrator
 
 ```text
-Something detected
-      │
+Event from Sentinel
       ▼
-Recognise event + urgency (+ camera if linked)
-      │
-      ├── phone call to admin or assigned agent
+Score urgency (+ camera if linked)
+      ├── call admin or assigned agent
       ├── app alert to on-duty staff
       └── audit log
-      │
       ▼
-Person goes to check on site
-      │
+Person checks on site
       ▼
-Resolve · escalate if still open · record outcome
+Resolve · escalate · record outcome
 ```
 
-**Today:** response depends on **people** — admin or agent travels to the site.  
-**Later:** the same pipeline can add **embodied intelligence**, **drones**, **security devices**, and other connected equipment — to **reach the location, patrol, or act on site** — introduced step by step per site.
+- Fixed rules run first; AI layers add detail when available  
+- If smart services are offline, rule-based calls still work  
+- Sensitive automated steps wait for human approval  
 
-- Fixed rules always run first; smarter layers add detail when available  
-- If smart services are offline, rule-based results and calls still work  
-- Sensitive automated steps wait for a person to approve  
-
----
-
-## Where it applies
-
-Government buildings, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, and residential communities — with **individual home use** on the roadmap. Layout and call lists are configured per site.
+**Today:** people respond on site. Orchestrator makes *who* and *how fast* clearer.
 
 ---
 
-## CAO (internal small model)
+## Scenes
 
-**CAO** is a compact model Croc Nexus is training for in-house coordination — alert scoring, routing, and follow-up. It is **not publicly open** today and remains **exclusive to Croc Nexus AI Technologies**.
-
-Production customers use **Croc Coordination** with rule-based safety logic plus the smart features already shipped. CAO stays **internal to Croc Nexus** until we choose to extend it on our own terms.
+Government, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, residential — configured per site.
 
 ---
 
 ## Customisation
 
-We are a **startup**: many sites need small changes — extra groups, different escalation paths, or new integrations. All of this runs on **Croc Nexus–owned** cloud, apps, and AI — we do **not** provide branded or white-label apps. We review each request for **fit and timeline** before committing.
-
-See the main README section *Built for your site — on our platform* for typical examples.
+Per-site groups, escalation paths, and integrations on **Croc Nexus–owned** infrastructure only — no white-label apps. We review fit and timeline before committing.
 
 ---
 
 ## Safety and access
 
-| Topic | Croc Sentinel | Croc Coordination |
-|:------|:--------------|:------------------|
-| Connection security | Encrypted links to cloud and update server | Encrypted access to coordination service |
-| Commands | Only with authorised access | Permission by role |
-| Remote updates | Only from approved download locations | — |
-| Data separation | Each customer’s data kept apart | Each customer’s data kept apart |
+| Topic | Sentinel Systems | AI Orchestrator |
+|:------|:-----------------|:----------------|
+| Connections | Encrypted links to cloud | Encrypted access to coordination service |
+| Commands | Authorised access only | Permission by role |
+| Remote updates | Approved sources only | — |
+| Data | Per-customer separation | Per-customer separation |
 | History | Full event log | Full decision log |

@@ -1,53 +1,42 @@
-# Croc Sentinel Systems
+# Product overview
 
-**A product of Croc Nexus AI Technologies** — AI-powered site monitoring and response.
+**Croc Nexus AI Technologies** — AI startup, **Malaysia**, **two founders**.
 
 > Each site needs **network** (Wi‑Fi or wired internet).
 
 ---
 
-## What it is
+## Company
 
-**Croc Sentinel Systems** covers connected-site safety end to end:
-
-- **Monitoring** — map, alerts, camera context, mobile apps  
-- **Coordination** — urgency scoring, routing, escalation, approval, audit  
-
-One stack: **detect → score → call → log → escalate**, with humans in control.
+We build site safety software where AI **scores urgency**, **routes calls**, and **keeps a full log** — cloud, mobile apps, and orchestration owned by Croc Nexus. No white-label apps.
 
 ---
 
-## What the AI does today
+## Products
 
-| | |
-|:--|:--|
-| Score urgency | 0–100 with plain reasons |
-| Route | Call admin or assigned agent |
-| Escalate | Next contact if no answer |
-| Audit | Full log of AI + human actions |
+| Product | What it does | Status |
+|:--------|:-------------|:-------|
+| **Croc Sentinel Systems** | Monitoring — map, devices, **3–30 s** alerts, camera context, iOS/Android apps | In production |
+| **Croc AI Orchestrator** | Coordination — urgency scoring, routing, escalation, approval, audit | In production |
 
-People still **check on site** today — the platform makes response faster and clearer.
+**Together:** Sentinel detects → Orchestrator scores and drives response → person checks on site.
 
 ---
 
-## Croc Nexus family
+## Principles
 
-| | Status |
-|:--|:-------|
-| **Croc Sentinel Systems** | Live — this product |
-| **CAO** (in-house model) | Not open — in training; Croc Nexus exclusive |
-
-Embodied intelligence, drones, security devices, and personal/home use — **not open yet**. See [EXTENSIBILITY.md](EXTENSIBILITY.md).
+- Safety **rules first** — AI never silently lowers urgency  
+- **Humans approve** sensitive steps  
+- Full **audit trail**  
+- **Croc Nexus apps only** — per-site configuration, not customer branding  
 
 ---
 
-## Ownership
+## Docs
 
-Platform, mobile apps, cloud, and coordination logic are **wholly owned by Croc Nexus**. No white-label apps. Configuration per site on our stack.
+[ARCHITECTURE.md](ARCHITECTURE.md) · [ORCHESTRATOR.md](ORCHESTRATOR.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md)
 
 **Contact:** partnerships@crocnexus.com · +084-349525
-
-Further detail: [ARCHITECTURE.md](ARCHITECTURE.md) · [COORDINATION.md](COORDINATION.md)
 
 ---
 
