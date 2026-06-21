@@ -22,10 +22,10 @@ Site equipment ──network──► Croc Nexus cloud
                          audit logs
 ```
 
-| Product | Purpose |
-|:--------|:--------|
-| **Croc Sentinel Systems** | Monitoring, device groups, alerts, camera context |
-| **Croc AI Orchestrator** | Urgency scoring, routing, escalation, approval |
+| Product | Purpose | Status |
+|:--------|:--------|:-------|
+| **Croc Sentinel Systems** | Monitoring, device groups, alerts, camera context | Trial production *(初步试产)* |
+| **Croc AI Orchestrator** | Urgency scoring, routing, escalation, approval | Trial production *(初步试产)* |
 
 ---
 
@@ -68,11 +68,13 @@ Resolve · escalate · record outcome
 
 **Today:** people respond on site. Orchestrator makes *who* and *how fast* clearer.
 
+**In development — not open *(开发中 · 未开放)*:** CAO in-house model; embodied intelligence, drones, and security devices on the same pipeline; personal/home use. See [EXTENSIBILITY.md](EXTENSIBILITY.md).
+
 ---
 
 ## Scenes
 
-Government, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, residential — configured per site.
+Government, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, residential — configured per site. Personal / home — **in development, not open**.
 
 ---
 

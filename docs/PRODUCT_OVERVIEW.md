@@ -16,10 +16,21 @@ We build site safety software where AI **scores urgency**, **routes calls**, and
 
 | Product | What it does | Status |
 |:--------|:-------------|:-------|
-| **Croc Sentinel Systems** | Monitoring — map, devices, **3–30 s** alerts, camera context, iOS/Android apps | In production |
-| **Croc AI Orchestrator** | Coordination — urgency scoring, routing, escalation, approval, audit | In production |
+| **Croc Sentinel Systems** | Monitoring — map, devices, **3–30 s** alerts, camera context, iOS/Android apps | **Trial production** *(初步试产)* |
+| **Croc AI Orchestrator** | Coordination — urgency scoring, routing, escalation, approval, audit | **Trial production** *(初步试产)* |
 
 **Together:** Sentinel detects → Orchestrator scores and drives response → person checks on site.
+
+---
+
+## In development — not open *(开发中 · 未开放)*
+
+| Item | Direction |
+|:-----|:----------|
+| **CAO** (in-house model) | Deeper coordination — Croc Nexus exclusive |
+| **Richer agent orchestration** | Internal multi-step runtime |
+| **Embodied intelligence, drones & security devices** | Reach, patrol, on-site equipment on alert path |
+| **Personal / home use** | Household-scale deployments |
 
 ---
 

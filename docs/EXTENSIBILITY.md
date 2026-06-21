@@ -4,17 +4,32 @@ We tune alert logic and response workflows **per site** on Croc Nexus–owned pl
 
 ---
 
-## Today
+## Trial production today *(初步试产)*
 
 | Phase | Coverage |
 |:------|:---------|
-| **Live** | Sentinel detects → Orchestrator scores and routes → admin or agent checks on site |
+| **Now** | Sentinel detects → Orchestrator scores and routes → admin or agent checks on site |
 
-People stay in the loop. Orchestrator never bypasses human approval on sensitive steps.
+Core monitoring and coordination run on **real deployments**; we continue hardening features per site. People stay in the loop.
 
 ---
 
-## Per-site configuration
+## In development — not open *(开发中 · 未开放)*
+
+| Item | Direction |
+|:-----|:----------|
+| **CAO** (in-house model) | Deeper coordination and follow-up — Croc Nexus exclusive |
+| **Richer agent orchestration** | Multi-step internal runtime |
+| **Embodied intelligence** | Go to alarm location or patrol a zone |
+| **Drones** | Aerial check, patrol, fast reach on same alert path |
+| **Security devices** | Sensors, locks, barriers, and similar equipment |
+| **Personal / home use** | Household deployments |
+
+Rollout is **gradual** and agreed per project when available.
+
+---
+
+## Per-site configuration *(trial production)*
 
 | Area | Examples |
 |:-----|:---------|
@@ -29,7 +44,7 @@ People stay in the loop. Orchestrator never bypasses human approval on sensitive
 ## How we decide
 
 1. You share site layout, team structure, and response habits  
-2. We mark items as **ready now** or **custom build**  
+2. We mark items as **trial production**, **custom build**, or **in development — not open**  
 3. We agree scope and timeline before rollout  
 
 ---
