@@ -5,187 +5,129 @@
 <h1 align="center">Croc Nexus AI Technologies</h1>
 
 <p align="center">
-  <strong>Building AI agents, digital teams, and controllable intelligence — from Malaysia</strong>
+  <strong>We build AI that works like a small team — it looks at what happened, decides how serious it is, and calls the right person.</strong><br/>
+  <sub>A two-person startup from Malaysia.</sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/AI-Startup-7c3aed" alt="AI Startup" />
-  <img src="https://img.shields.io/badge/Status-Trial%20production-f59e0b" alt="Trial production" />
-  <img src="https://img.shields.io/badge/Based%20in-Malaysia-006847" alt="Malaysia" />
-  <img src="https://img.shields.io/badge/Team-2%20founders-64748b" alt="2 founders" />
+  <img src="https://img.shields.io/badge/Stage-Early%20(trial)-f59e0b" alt="Trial" />
+  <img src="https://img.shields.io/badge/From-Malaysia-006847" alt="Malaysia" />
 </p>
 
 <p align="center">
-  <a href="#story">Our story</a> ·
-  <a href="#ai-direction">AI direction</a> ·
-  <a href="#products">Products</a> ·
-  <a href="#sentinel">Sentinel</a> ·
-  <a href="#orchestrator">Orchestrator</a> ·
-  <a href="#roadmap">Roadmap</a> ·
-  <a href="#scenes">Scenes</a> ·
-  <a href="#repository">Repository</a> ·
+  <a href="#what">What is this</a> ·
+  <a href="#problem">The problem</a> ·
+  <a href="#different">What's different</a> ·
+  <a href="#benefits">Benefits</a> ·
+  <a href="#ai">Where the AI is</a> ·
+  <a href="#use">How to use</a> ·
+  <a href="#next">What's next</a> ·
   <a href="#contact">Contact</a>
 </p>
 
 <br/>
 
-> **We are an AI company first.** Two founders in Malaysia building **agents**, **digital employee teams**, and **human-controllable AI** — with real products on real sites.  
-> **Site requirement** *(Sentinel deployments):* working network (Wi‑Fi or wired) at each location.
+---
 
-<br/>
+<h2 id="what">What is this</h2>
+
+Most places — a mall, a hospital, a school, an office park — have alarms and cameras. When something happens, an alarm goes off. But an alarm only says *"something happened."* It does not say **how bad it is**, or **who should go look**.
+
+We built software that answers those two questions for you.
+
+When an alert comes in, our system:
+
+1. **Looks at what happened** and gives it a simple score from 0 to 100 (how urgent).
+2. **Explains why** in one plain sentence anyone can read.
+3. **Calls the right person** — by phone and app — and tells them where to go.
+4. **Keeps trying** the next person if the first one does not answer.
+5. **Writes down** every step, so later you can see exactly what happened.
+
+We have two products working together:
+
+- **Croc Sentinel** — the eyes. It watches the site and shows everything on a map.
+- **Croc AI Orchestrator** — the brain. It decides how serious something is and who to call.
+
+> Both are **early / trial stage** — they run on real sites today, and we keep improving them.
 
 ---
 
-<h2 id="story">Our story</h2>
+<h2 id="problem">What problem does it solve</h2>
 
-**Croc Nexus AI Technologies** is a **two-person AI startup in Malaysia**. We did not set out to sell another alarm panel — we set out to build **AI that can work as a team**: agents that understand tasks, coordinate with each other, stay visible on a **control panel**, and remain **under human control**.
+Today, when an alarm goes off, this is what usually happens:
 
-Site safety became our **first proving ground**: when an alert fires, nobody should guess urgency or who to call. That problem needs **orchestrated AI agents**, not a single chat box. So we built **Croc Sentinel Systems** and **Croc AI Orchestrator** — trial production today — on infrastructure we own end to end.
+- **Everything feels equally urgent.** A door left open and a real emergency sound the same.
+- **Nobody knows how serious it is.** Someone has to stop and guess.
+- **Nobody knows who should go.** People wait, or the wrong person gets bothered.
+- **If the first person misses the call, the chain breaks.** Nothing happens until someone notices.
+- **There is no record.** Afterwards, no one can say who did what, or when.
 
-Our longer direction is broader: **digital employee teams** for operational work, **visual panels** where people see what AI is doing and can intervene, and a **token relay layer** so models and agents can be routed, metered, and governed in one place. Sentinel and Orchestrator are where that AI stack meets the physical world first.
-
-Being small keeps us focused: we ship, measure on site, iterate on the agent layer, and keep everything **under the Croc Nexus name** — no white-label apps for others.
-
----
-
-<h2 id="ai-direction">What we are building in AI</h2>
-
-Everything we do routes through an **AI-first platform** we control:
-
-| Direction | What it means |
-|:----------|:--------------|
-| **AI agents** | Task-focused agents that analyse, decide, call tools, and hand off — not one monolithic bot |
-| **Digital employee teams** | Multiple agents working like a shift: score, summarise, route, follow up — with clear roles |
-| **Controllable visual panel** | Operators see agent steps, urgency, and outcomes on map and timeline — intervene when needed |
-| **Token relay** | Central routing and control for model calls — which agent uses which model, with audit and limits |
-| **Rules + humans** | Safety rules always first; sensitive steps need approval; full log of AI and human actions |
-
-**Today in trial production:** Sentinel (eyes on site) + Orchestrator (agent coordination for alerts).  
-**In development — not open:** deeper agent runtime, **CAO** in-house model, embodied systems, drones, devices, personal/home — see [Roadmap](#roadmap).
+The result: slow response, a lot of noise, and no one clearly responsible.
 
 ---
 
-<h2 id="products">Our products</h2>
+<h2 id="different">Why not just keep using what exists — and how are we different</h2>
 
-| Product | Role | Status |
-|:--------|:-----|:-------|
-| **[Croc Sentinel Systems](#sentinel)** | Site monitoring — map, devices, alerts, mobile apps | **Trial production** *(初步试产)* |
-| **[Croc AI Orchestrator](#orchestrator)** | Agent coordination — urgency, routing, escalation, audit | **Trial production** *(初步试产)* |
+Normal alarm systems were built to make **noise**. They ring, and that's it. The thinking is left entirely to people.
 
-Both are **applications of our AI agent stack** on Croc Nexus–owned infrastructure: **Sentinel observes, Orchestrator agents coordinate response.**
+We take the opposite approach: the system does the **first round of thinking** for you, then hands a clear decision to a real person.
 
-| In development — not open *(开发中 · 未开放)* | Direction |
-|:---------------------------------------------|:----------|
-| **CAO** (in-house model) | Core model layer for agent teams — Croc Nexus exclusive |
-| **Agent platform & digital employee teams** | Richer multi-agent runtime beyond alert coordination |
-| **AI control panel** | Deeper visual governance of agent actions and token flow |
-| **Token relay** | Unified model routing, metering, and policy for all agents |
-| **Embodied intelligence, drones & security devices** | Agents driving on-site systems on the same alert path |
-| **Personal / home use** | Same agent stack scaled for households |
+| The usual way | Our way |
+|:--------------|:--------|
+| Every alarm sounds the same | Each one gets a **score** and a **plain reason** |
+| People guess how urgent it is | The system suggests, a person confirms |
+| Someone has to figure out who to call | It **calls the right person automatically** |
+| If no one answers, it stops | It **moves on to the next person** |
+| No clear record afterwards | It **keeps a simple record of everything** |
 
-See [Roadmap](#roadmap) for full status table.
+**Important:** we do not try to replace people. Today, a real person still goes to check. We just make sure the **right person knows fast, and knows why.**
 
 ---
 
-<h2 id="sentinel">Croc Sentinel Systems</h2>
+<h2 id="benefits">What you get</h2>
 
-**AI-powered monitoring for connected sites.** **Trial production** *(初步试产)* — core monitoring, map, alerts, and apps are operational; we continue hardening per deployment.
+- **Less noise** — you only pay attention to what actually matters.
+- **Faster response** — alerts reach a phone in seconds, with a call if it's serious.
+- **Clear responsibility** — everyone can see who was told and what they did.
+- **Fits your place** — a hospital, a mall, and a park each get their own rules.
+- **You stay in control** — anything important waits for a human "yes."
 
-<p align="center">
-  <img src="assets/images/app-overview-dashboard.jpeg" alt="Dashboard" width="280" />
-  &nbsp;&nbsp;
-  <img src="assets/images/app-events-timeline.jpeg" alt="Events" width="280" />
-</p>
-
-- Event recognition on the map  
-- **3–30 second** alerts to phones  
-- Linked camera context when available  
-- iPhone & Android apps — map, timeline, setup, activity  
-- **Croc Nexus apps only** — configured per site, not customer-branded  
+Works for: government buildings, malls, hospitals, plazas, parks, roads, campuses, and housing areas.
 
 ---
 
-<h2 id="orchestrator">Croc AI Orchestrator</h2>
+<h2 id="ai">Where the AI is — and how we designed it</h2>
 
-**Agent coordination for alerts** — paired with Sentinel. **Trial production** *(初步试产)* — agent-style steps (score, route, escalate, audit) run on real sites; full runtime not open-sourced here.
+The AI is the part that **reads the situation and makes the first call**, instead of leaving everything to a tired person at 3 a.m.
 
-| Capability | What it does |
-|:-----------|:-------------|
-| **Score** | Urgency **0–100** with plain-language reasons |
-| **Summarise** | Short text for operators — not raw telemetry |
-| **Route** | **Phone call + app alert** to admin or assigned agent |
-| **Escalate** | Next contact if nobody answers |
-| **Approve** | Sensitive steps wait for a human |
-| **Audit** | Every AI and human step timestamped |
+Here is what it actually does:
 
-**Rules always run first.** AI adds detail; it does not silently lower urgency. If smart services are unavailable, rule-based handling continues.
+- **Understands** the event — is this an emergency, a security issue, or just maintenance?
+- **Scores** how urgent it is, and says why in one sentence.
+- **Chooses** who to call, based on their role, area, and whether they're on duty.
+- **Follows up** on its own if no one picks up.
 
-```text
-  Sentinel detects event
-       │
-       ▼
-  Orchestrator scores + routes
-       │
-       ├── Call + app alert
-       └── Audit log
-       │
-       ▼
-  Person checks on site
-       │
-       ▼
-  Devices on site (future)       ← in development, not open
-```
+### How the AI is designed — and why
 
-This repository includes a **minimal sample** of orchestration logic — not production source. See [Repository](#repository).
+We did not build one big "answer everything" robot. We built it more like a **small team of helpers**, where each helper has one job (one reads the situation, one decides urgency, one picks who to call, one follows up).
+
+We designed it this way on purpose:
+
+- **Safety rules always come first.** The AI can make things *more* urgent, but it can **never quietly make something less urgent**. That's a hard rule.
+- **A person approves anything important.** The AI suggests; people decide the big steps.
+- **If the smart part is ever unavailable, the basic rules still work.** It never goes silent.
+- **Everything is written down.** You can always see what the AI suggested and what the person chose.
+
+In short: **helpful and fast, but never reckless, and never in charge of the final call.**
 
 ---
 
-<h2 id="how-ai-helps">How AI changes response</h2>
+<h2 id="use">How to use it</h2>
 
-| Before | With Croc Nexus |
-|:-------|:----------------|
-| Every alarm feels equally urgent | **Scored urgency** with readable reasons |
-| Staff wait and guess | AI **calls admin or agent** to go check |
-| Wrong person gets pinged | AI **routes by role, zone, availability** |
-| Chain breaks if no answer | **Auto-escalation** + full **audit log** |
+For real sites, we set it up **for you** — the rules, the call list, and who gets notified are configured for your specific place. Everything runs through **our own app** (iPhone and Android); we don't put your logo on someone else's software.
 
-**Honest today:** people still **go to the site to check**. Our AI makes that faster and clearer — we do not claim full autonomy on the ground yet.
-
----
-
-<h2 id="roadmap">Product roadmap</h2>
-
-| Item | Status | Notes |
-|:-----|:-------|:------|
-| **Croc Sentinel Systems** | **Trial production** *(初步试产)* | Map, alerts, camera context, mobile apps |
-| **Croc AI Orchestrator** | **Trial production** *(初步试产)* | Agent coordination — score, route, escalate, audit |
-| **CAO** (in-house model) | **In development — not open** | Agent-team model layer; Croc Nexus exclusive |
-| **Digital employee teams** | **In development — not open** | Multi-agent operational teams beyond alert flow |
-| **AI control panel** | **In development — not open** | Visual governance of agent actions and status |
-| **Token relay** | **In development — not open** | Unified model routing, metering, policy |
-| **Embodied intelligence, drones & security devices** | **In development — not open** | Agents + on-site equipment on alert path |
-| **Personal / home use** | **In development — not open** | Planned; not available yet |
-
-We ship **gradually**. Trial production means real deployments with ongoing iteration — not a finished mass-market release. Humans stay in the loop where it matters.
-
----
-
-<h2 id="scenes">Where we deploy</h2>
-
-Government buildings · malls · hospitals · plazas · parks · roads · traffic junctions · commercial districts · campuses · residential · *personal / home — in development, not open*
-
-Per-site **rules, call lists, and escalation** on our platform. New scene types scoped per project.
-
-<p align="center">
-  <img src="assets/images/architecture-four-layers.svg" alt="Cloud, mobile, AI" width="640" />
-</p>
-
----
-
-<h2 id="repository">This repository</h2>
-
-Public overview, docs, and **small samples** for Croc Nexus products — **not** production cloud code, models, or integration secrets.
+This public page also includes a **tiny demo** so you can see the idea in action. It takes a made-up alarm and prints a score and a short summary:
 
 ```bash
 git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
@@ -193,20 +135,46 @@ cd CROC-AI-SYSTEMS
 python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
 ```
 
-| Folder | Contents |
-|:-------|:---------|
-| [`docs/`](docs/) | [Architecture](docs/ARCHITECTURE.md) · [Products](docs/PRODUCT_OVERVIEW.md) · [Orchestrator (brief)](docs/ORCHESTRATOR.md) · [Extensibility](docs/EXTENSIBILITY.md) |
-| [`assets/`](assets/) | Logo and app imagery |
-| [`samples/`](samples/) | Example event data |
-| [`src/`](src/) | Minimal orchestration sample + [edge sketch](src/croc_orchestrator/coordination_edge.py) |
+> This demo is just for illustration. The real system, the app, and the smart parts stay private.
 
-See [LICENSE](LICENSE) for scope.
+What's in this repository:
+
+| Folder | What's inside |
+|:-------|:--------------|
+| [`docs/`](docs/) | Plain explanations of how things fit together |
+| [`assets/`](assets/) | Logo and app pictures |
+| [`samples/`](samples/) | Example made-up alarms |
+| [`src/`](src/) | The tiny demo above |
 
 <p align="center">
-  <img src="assets/images/app-device-activation.jpeg" alt="Setup" width="200" />
-  &nbsp;&nbsp;
-  <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="200" />
+  <img src="assets/images/app-overview-dashboard.jpeg" alt="App home" width="220" />
+  &nbsp;
+  <img src="assets/images/app-events-timeline.jpeg" alt="Events" width="220" />
+  &nbsp;
+  <img src="assets/images/app-device-activation.jpeg" alt="Setup" width="220" />
+  &nbsp;
+  <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="220" />
 </p>
+
+<p align="center"><sub>Our app — the map, recent events, setup, and activity.</sub></p>
+
+---
+
+<h2 id="next">Why we build it this way — and what's next</h2>
+
+We started with site safety because it's a clear, real problem where a smart "first responder" genuinely helps — and where getting it wrong is not an option, so **keeping humans in control matters most.**
+
+But the bigger idea is simple: **AI that works like a reliable team member** — it does the routine thinking, stays visible so you can watch it, and always leaves the important decisions to you.
+
+Some things we're still building, and are **not open yet**:
+
+- A smarter in-house helper that gets better at deciding over time.
+- A "team of AI helpers" for everyday work beyond alarms.
+- A simple screen where you can watch what the AI is doing and step in anytime.
+- Sending the alert to on-site helpers (like patrol devices) instead of only people.
+- A version for homes and individuals.
+
+We add these **slowly and carefully**, only when they're genuinely ready.
 
 ---
 
@@ -219,7 +187,6 @@ partnerships@crocnexus.com · +084-349525
 
 <p align="center">
   <strong>Croc Nexus AI Technologies</strong><br/>
-  Croc Sentinel Systems · Croc AI Orchestrator<br/>
-  partnerships@crocnexus.com · +084-349525<br/>
-  <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a> (repo materials only)</sub>
+  Croc Sentinel · Croc AI Orchestrator<br/>
+  <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a> (this repository's materials only)</sub>
 </p>
