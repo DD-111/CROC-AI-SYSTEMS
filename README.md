@@ -69,7 +69,9 @@ Your cameras keep watching. Your alarms keep ringing. Sentinel is the calm, tire
 
 <h2 id="problem">The Problem</h2>
 
-When an alarm goes off today, this is what usually happens:
+**Detecting is the easy part. Responding is the hard part** — and it's where the real losses happen.
+
+Cameras and alarms are everywhere and cheap. But when an alarm goes off today, this is what usually happens:
 
 - **Everything feels equally urgent.** A door left open sounds the same as a real emergency.
 - **Nobody knows how serious it is.** Someone has to stop and guess.
@@ -135,6 +137,14 @@ Put simply:
 
 Because it's a layer — not a replacement — you keep your cameras, your alarms, and your investment. You just give them a brain.
 
+**It all runs as one closed loop:**
+
+```text
+  Score  →  Call  →  Follow the right steps  →  Send the nearest person  →  Coordinate  →  Keep a record
+```
+
+That full loop — not just the first "ding" — is what actually gets someone to the scene, on time, with a plan.
+
 ---
 
 <h2 id="benefits">Benefits</h2>
@@ -165,6 +175,8 @@ Here's a real-feeling example, start to finish:
 ```
 
 No guessing. No "who was supposed to handle this?" Just a clear, recorded response.
+
+**For a bigger event** — say a fire or a break-in — one person isn't enough. Sentinel can organise several responders into clear roles (one to check, one to watch the perimeter, one to record, one to coordinate), picking the nearest and best-suited for each, and adjusting as things change. That kind of **team coordination** is the part ordinary alarm systems simply don't do.
 
 ---
 
@@ -311,26 +323,33 @@ In plain terms, here's what makes it work well:
 - **Seconds, not minutes** — alerts reach a phone within a few seconds.
 - **A reason you can read** — every score comes with one plain sentence.
 - **Never a dead end** — if one person misses it, the next is called automatically.
+- **The right steps, every time** — set playbooks run the correct sequence for fire, SOS, or intrusion.
+- **Nearest person, dispatched** — finds the closest suitable responder and routes them.
+- **Team coordination for big events** — organises responders into clear roles on the fly.
+- **Silent duress / SOS** — a coercion signal raises a quiet, high-priority alert an attacker can't cancel.
+- **Doesn't give away its location** — a trigger can stay silent while quietly alerting nearby units.
+- **Warns before things break** — spots weak batteries and failing devices early.
 - **Camera-aware** — if a photo is linked to the event, the AI takes it into account.
 - **Rules plus smarts** — dependable safety rules first, AI on top for the finer judgment.
-- **One brain, many places** — the same system adapts to malls, hospitals, parks, and more.
+- **Private and separated** — each site's data is its own; every action is logged.
 - **Sits on top, not in the way** — works alongside your existing cameras and alarms instead of replacing them.
 
 ---
 
 <h2 id="roadmap">Roadmap</h2>
 
-| What | Where it stands |
-|:-----|:----------------|
-| **Croc Sentinel** (the eyes) | **Early / trial** — running on real sites |
-| **Croc AI Orchestrator** (the brain) | **Early / trial** — running on real sites |
-| A smarter in-house AI helper | **In development — not open yet** |
-| A team of AI helpers for everyday work | **In development — not open yet** |
-| A live screen to watch and steer the AI | **In development — not open yet** |
-| Sending alerts to on-site helpers (patrol devices, etc.) | **In development — not open yet** |
-| A version for homes and individuals | **In development — not open yet** |
+We label everything honestly in three tiers — and never overclaim.
 
-We add new things **slowly and carefully**, only when they're genuinely ready.
+**✅ Live now** — running on real sites today
+> Device alerts · phone calls · photos · live map · mobile apps · separated data · full activity record
+
+**🧪 Ready — turned on per site** — built and tested, switched on as we roll each site out
+> AI urgency scoring · response playbooks · nearest-responder dispatch · team coordination for big events · silent duress / SOS · predictive maintenance
+
+**🚧 In development — not open yet**
+> Visual recognition · on-site robots & drones · a version for homes and individuals · the wider Croc Nexus AI vision (see [Ecosystem](#ecosystem))
+
+We add new things **slowly and carefully**, only when they're genuinely ready. "Turned on per site" means a setting we enable for you — not a new project.
 
 ---
 
@@ -369,8 +388,8 @@ It makes the *first* suggestion and handles the routine. Anything important wait
 **Can I get the source code or put my own brand on it?**
 No. The app and the smart parts stay ours — no white-label, no rebranding. This page shares only a small demo and plain explanations.
 
-**What does "early / trial" mean?**
-It runs on real sites today, and we keep improving it. It's honest work in progress, not a finished mass-market product.
+**What does "early / trial" mean? Is it finished?**
+We're honest in three tiers (see the [Roadmap](#roadmap)): core monitoring, alerts, calls, and apps are **live now**; the AI response features (scoring, playbooks, dispatch, team coordination, predictive maintenance) are **built and tested and turned on per site** as we roll out; a few advanced pieces (visual recognition, on-site robots/drones, a home version) are still **in development**. It's honest work in progress, not a finished mass-market product.
 
 ---
 
