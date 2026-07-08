@@ -5,13 +5,15 @@
 <h1 align="center">Croc Sentinel</h1>
 
 <p align="center">
-  <strong>Turns a loud alarm into a clear answer:<br/>how serious is it, and who should go?</strong><br/>
+  <strong>The smart decision layer for the security systems you already have.</strong><br/>
+  <sub>It doesn't replace your cameras and alarms — it gives them a brain:<br/>understand, decide, coordinate, and keep a record.</sub><br/>
   <sub>By Croc Nexus AI Technologies · a two-person startup from Malaysia</sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/Stage-Early%20(trial)-f59e0b" alt="Trial" />
+  <img src="https://img.shields.io/badge/Works%20with-Your%20existing%20systems-2563eb" alt="Works with existing systems" />
   <img src="https://img.shields.io/badge/People-Always%20in%20control-16a34a" alt="Human in control" />
   <img src="https://img.shields.io/badge/From-Malaysia-006847" alt="Malaysia" />
 </p>
@@ -48,13 +50,18 @@
 
 <h2 id="what">What is Sentinel</h2>
 
-Almost every building already has alarms and cameras. The trouble is, an alarm only shouts *"something happened."* It never tells you **how bad it is** or **who should go check.**
+Almost every building already has cameras and alarms. They're good at one thing — **noticing** that something happened. But they can't tell you **how bad it is**, **who should go**, or make sure someone actually did.
 
-**Croc Sentinel** answers those two questions for you.
+**Croc Sentinel is not another alarm system.** It's a **smart layer that sits on top of the security systems you already have** and adds the part they were always missing: **judgment.**
 
-The moment an alert comes in, Sentinel gives it a simple urgency score, explains why in one plain sentence, calls the right person by phone and app, keeps trying the next person if no one answers, and writes down every step so nothing gets lost.
+The moment an alert comes in, Sentinel:
 
-Think of it as a calm, tireless helper sitting next to your alarm system — one that never panics and never forgets.
+- **Understands** what happened,
+- **Decides** how urgent it is (and says why in one plain sentence),
+- **Coordinates** the response — calls the right person, then the next if no one answers,
+- **Keeps a record** of every step.
+
+Your cameras keep watching. Your alarms keep ringing. Sentinel is the calm, tireless brain on top that turns all that noise into a clear, tracked response.
 
 > **Status:** early / trial stage. It runs on real sites today, and we keep improving it. A real person still goes to check — Sentinel makes sure the right person knows fast, and knows why.
 
@@ -88,32 +95,45 @@ We are not trying to replace people. We are trying to make sure the right person
 
 ---
 
-<h2 id="fail">Why Existing Systems Fail</h2>
+<h2 id="fail">Why Existing Systems Fall Short</h2>
 
-Traditional alarm systems were designed decades ago to do one thing: **make noise.** They ring, and all the thinking is dumped on whoever is watching.
+To be clear: cameras, alarms, and recording systems are **not bad** — they do their job well. They see, they ring, they record. The problem is that everything *after* that — the thinking — still lands on a person.
 
-That breaks down in real life:
+That's where it breaks down in real life:
 
 - A person watching ten screens **can't rank** what matters.
 - At 3 a.m., tired staff **miss or misjudge** alerts.
 - When the first contact doesn't answer, **there's no plan B.**
 - After an incident, there's **no honest trail** of what actually happened.
 
-Adding more cameras or louder sirens doesn't fix any of this. The missing piece was never more noise — it was **judgment and follow-through.**
+Adding more cameras or louder sirens doesn't fix any of this — it just adds more noise for the same tired person to sort through. The missing piece was never more equipment. It was a **brain on top** that understands, decides, coordinates, and keeps track.
+
+**That's the gap Sentinel fills — without asking you to throw anything away.**
 
 ---
 
 <h2 id="why">Why Sentinel</h2>
 
-Sentinel adds the part that was always missing: a helper that reads the situation and drives the first response.
+Sentinel sits **on top of** what you already own and adds four things your current setup can't do on its own:
 
-| The usual way | With Croc Sentinel |
-|:--------------|:-------------------|
+| | The layer Sentinel adds |
+|:--|:--|
+| **Understand** | Reads each event and works out what it actually is |
+| **Decide** | Scores how urgent it is, with a plain-language reason |
+| **Coordinate** | Calls the right person, then the next if no one answers |
+| **Track** | Keeps a simple, honest record of every step |
+
+Put simply:
+
+| The usual way | With Croc Sentinel on top |
+|:--------------|:--------------------------|
 | Every alarm sounds the same | Each one gets a **score** and a **plain reason** |
 | People guess how urgent it is | The system suggests, a person confirms |
 | Someone must figure out who to call | It **calls the right person automatically** |
 | If no one answers, it stops | It **moves to the next person** |
 | No clear record afterwards | It **keeps a simple record of everything** |
+
+Because it's a layer — not a replacement — you keep your cameras, your alarms, and your investment. You just give them a brain.
 
 ---
 
@@ -169,7 +189,16 @@ For each place, we set up its own rules — who to call, when, and how urgent di
 
 <h2 id="architecture">System Architecture</h2>
 
-Under the hood, Sentinel is made of three simple parts working together:
+Sentinel is designed as a **layer that sits on top of your existing security systems** — not a rip-and-replace.
+
+```text
+   Your existing systems  ──►   CROC SENTINEL  ──►   The right person
+   (cameras, alarms,            (the smart layer:     (phone + app,
+    sensors, recorders)          understand, decide,   with a record)
+                                 coordinate, track)
+```
+
+The smart layer itself has three simple parts working together:
 
 <p align="center">
   <img src="assets/images/architecture-four-layers.svg" alt="The cloud, the app, and the AI brain" width="720" />
@@ -183,18 +212,20 @@ Under the hood, Sentinel is made of three simple parts working together:
 
 Behind the scenes, the brain (we call it **Croc AI Orchestrator**) works like a small team where each helper has one job — one reads the event, one decides urgency, one picks who to call, one follows up. It runs on our own cloud, and everything stays under the Croc Nexus name.
 
+> We connect to your existing equipment **per project** — what fits is agreed up front. As an early-stage team, we're honest about scope rather than claiming we plug into everything on day one.
+
 ---
 
 <h2 id="how">How It Works</h2>
 
 ```text
-  Something happens on site
+  Your camera / alarm / sensor notices something
           │
           ▼
-  Sentinel sees it (the eyes)
+  Sentinel (the decision layer) picks it up
           │
           ▼
-  The AI scores it and explains why
+  It understands the event and scores how urgent — with a reason
           │
           ├──►  Calls + app alert to the right person
           └──►  Saves a record of every step
@@ -283,6 +314,7 @@ In plain terms, here's what makes it work well:
 - **Camera-aware** — if a photo is linked to the event, the AI takes it into account.
 - **Rules plus smarts** — dependable safety rules first, AI on top for the finer judgment.
 - **One brain, many places** — the same system adapts to malls, hospitals, parks, and more.
+- **Sits on top, not in the way** — works alongside your existing cameras and alarms instead of replacing them.
 
 ---
 
@@ -308,22 +340,22 @@ Croc Sentinel is the first piece of a bigger idea from **Croc Nexus AI Technolog
 
 ```text
 Croc Nexus (the bigger vision)
-   ├── Croc Sentinel        →  the eyes on your site        (trial)
-   ├── Croc AI Orchestrator →  the brain that decides       (trial)
-   └── More AI helpers      →  everyday work, coming later  (not open yet)
+   ├── Croc Sentinel        →  the decision layer for your site   (trial)
+   ├── Croc AI Orchestrator →  the engine that powers it          (trial)
+   └── More AI helpers      →  everyday work, coming later        (not open yet)
 ```
 
-Site safety is where our AI meets the real world first — but the same approach is meant to help with far more over time.
+Site safety is where our AI meets the real world first — the same "smart layer on top" approach is meant to help with far more over time.
 
 ---
 
 <h2 id="faq">FAQ</h2>
 
+**Does this replace my cameras, alarms, or recording system?**
+No — that's the whole point. Sentinel is a **smart layer on top** of what you already have. Your equipment keeps doing its job; Sentinel adds the understanding, decision, and follow-through. We review what you have and agree the connection scope per project.
+
 **Does this replace my security guards?**
 No. People still respond on site. Sentinel just makes sure the right person knows fast, and knows why.
-
-**Do I need to throw out my current cameras and alarms?**
-Generally no — Sentinel is about adding judgment on top. Each site is reviewed before setup.
 
 **What do I need at my site?**
 A working internet connection (Wi‑Fi or wired), so alerts can travel and reach phones.
