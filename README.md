@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="400" />
+  <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="320" />
+</p>
+
+<p align="center">
+  <img src="assets/images/hero-banner.png" alt="Croc Sentinel — smart response layer" width="100%" />
 </p>
 
 <h1 align="center">Croc Sentinel</h1>
@@ -39,8 +43,10 @@
 <br/>
 
 <p align="center">
-  <img src="assets/images/incident-lifecycle.svg" alt="Before, During, After — the full response journey" width="100%" />
+  <img src="assets/images/journey-before-during-after.png" alt="Before, During, After — the full response journey" width="100%" />
 </p>
+
+<p align="center"><sub>Most alarms stop at the beep. Sentinel runs the <strong>whole loop</strong>: get ready → respond together → prove what happened.</sub></p>
 
 ---
 
@@ -70,6 +76,26 @@ Your cameras keep watching. Your alarms keep ringing. Sentinel is the calm, tire
 
 Most security products stop at the beep. Croc Sentinel runs three phases — like an operating system for how your site responds:
 
+```mermaid
+flowchart TB
+    subgraph BEFORE["BEFORE — Are we ready?"]
+        B1["Response plans"]
+        B2["Readiness score"]
+        B3["Practice drills"]
+    end
+    subgraph DURING["DURING — Who goes? What happens?"]
+        D1["Score urgency"]
+        D2["Call + dispatch"]
+        D3["Team coordination"]
+    end
+    subgraph AFTER["AFTER — What really happened?"]
+        A1["Full timeline"]
+        A2["Proof of response"]
+        A3["Post-incident review"]
+    end
+    BEFORE --> DURING --> AFTER
+```
+
 | Phase | Plain question | What Sentinel does |
 |:------|:---------------|:-------------------|
 | **Before** | *Are we ready?* | Set response plans, check readiness score, run practice drills |
@@ -77,6 +103,14 @@ Most security products stop at the beep. Croc Sentinel runs three phases — lik
 | **After** | *What really happened?* | Save the full timeline, bundle proof of response, write a post-incident review |
 
 This is the heart of what we built. Not louder sirens — a **complete loop** from preparation to proof.
+
+<p align="center">
+  <img src="assets/images/comparison-ordinary-vs-sentinel.png" alt="Ordinary alarm vs Croc Sentinel" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/images/comparison-flow-table.svg" alt="Comparison flow table" width="100%" />
+</p>
 
 ---
 
@@ -161,7 +195,21 @@ That full loop — not just the first "ding" — is what actually gets someone t
 <h2 id="when">When Something Goes Wrong</h2>
 
 <p align="center">
-  <img src="assets/images/incident-flow.svg" alt="Step by step — from trigger to proof" width="100%" />
+  <strong>Watch the full flow — 9 steps, start to finish</strong>
+</p>
+
+<p align="center">
+  <img src="assets/video/incident-flow-demo.gif" alt="Animated incident flow — step by step" width="100%" />
+</p>
+
+<p align="center">
+  <a href="assets/video/incident-flow-demo.mp4">▶ Download MP4 version</a>
+  &nbsp;·&nbsp;
+  <a href="assets/images/incident-flow.svg">View static flow diagram</a>
+</p>
+
+<p align="center">
+  <img src="assets/images/incident-timeline-table.png" alt="Visual timeline table — trigger to proof" width="100%" />
 </p>
 
 Here's the same story as a timeline — the kind you'd see in the app:
@@ -188,6 +236,10 @@ No guessing. No "who was supposed to handle this?" Just a clear, recorded respon
 
 Good response doesn't start when the alarm rings. It starts **before anything happens.**
 
+<p align="center">
+  <img src="assets/images/incident-lifecycle.svg" alt="Before phase — readiness" width="720" />
+</p>
+
 | What you set up | Why it matters |
 |:----------------|:---------------|
 | **Response plans** | Pre-written steps for fire, SOS, intrusion — so nobody improvises at 3 a.m. |
@@ -203,8 +255,21 @@ Think of it like a fire drill, but for your whole digital response chain. When t
 When something actually happens, everyone needs to see the same picture — and know their job.
 
 <p align="center">
-  <img src="assets/images/command-center-mock.svg" alt="Command Center — live map and incident feed" width="100%" />
+  <img src="assets/images/command-center-hero.png" alt="Command Center — live map and incident feed" width="100%" />
 </p>
+
+```mermaid
+flowchart LR
+    A["Alert fires"] --> B["Phone knows in seconds"]
+    B --> C["AI scores urgency"]
+    C --> D["Call right person"]
+    D --> E{"Answered?"}
+    E -->|No| F["Call next person"]
+    E -->|Yes| G["Send nearest responder"]
+    F --> G
+    G --> H["Mark resolved"]
+    H --> I["Save full proof"]
+```
 
 **On the big screen (Command Center):**
 - Live map of every device and active event
@@ -231,6 +296,10 @@ Several people get clear roles at once. The system picks who's nearest and best 
 <h2 id="after">After — Proof & Learning</h2>
 
 When it's over, you shouldn't have to piece together what happened from memory or scattered logs.
+
+<p align="center">
+  <img src="assets/images/incident-timeline-table.png" alt="Proof timeline — every step saved" width="100%" />
+</p>
 
 | What you get | What it's for |
 |:-------------|:--------------|
@@ -342,7 +411,11 @@ python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.jso
 The command center is the **big-screen view** for managers and control rooms — live map, every active event, urgency at a glance.
 
 <p align="center">
-  <img src="assets/images/command-center-mock.svg" alt="Command Center illustration" width="100%" />
+  <img src="assets/images/command-center-hero.png" alt="Command Center" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/images/command-center-mock.svg" alt="Command Center UI breakdown" width="100%" />
 </p>
 
 - See every site and event on one map
