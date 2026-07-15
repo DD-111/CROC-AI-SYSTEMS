@@ -55,31 +55,34 @@
 <h2 id="watch">Watch the demo</h2>
 
 <p align="center">
-  <strong>Clear response flow · AI assist · DJI Dock drones · city patrol</strong>
+  <strong>Cinematic ops demo — glass console · map routes · live video · voice · auto RTH</strong>
 </p>
 
 <p align="center">
-  <img src="assets/video/sentinel-drone-response-demo.gif" alt="Croc Sentinel demo — people + AI + Dock drones" width="100%" />
+  <img src="assets/video/sentinel-cinematic-drone-ops.gif" alt="Cinematic Dock drone ops demo" width="100%" />
 </p>
 
 <p align="center">
-  <a href="assets/video/sentinel-drone-response-demo.mp4"><strong>▶ Download MP4</strong></a>
+  <a href="assets/video/sentinel-cinematic-drone-ops.mp4"><strong>▶ Download cinematic MP4 (~30s, 1080p)</strong></a>
   &nbsp;·&nbsp;
-  <a href="assets/images/drone-response-poster.png">Poster frame</a>
+  <a href="assets/video/sentinel-drone-response-demo.mp4">Earlier step-card MP4</a>
 </p>
 
 <p align="center">
-  <img src="assets/images/drone-response-poster.png" alt="Demo poster — Dock 3 and Matrice packages" width="100%" />
+  <img src="assets/images/cinematic-drone-ops-poster.png" alt="Cinematic poster — live map and FPV" width="100%" />
 </p>
 
-What the video shows, in plain words:
+What this film-style demo shows:
 
-1. Your real Command Center layout
-2. Alarm → phone → AI score → dispatch (step by step)
-3. Supported flight hardware: **DJI Dock 3 · Matrice 4D · Matrice 4TD**
-4. AI suggests people on the ground **and** aircraft from the nearest ready dock
-5. City patrol routes that can divert to a live incident
-6. A person still says yes before anything critical flies
+1. **Command Center glass UI** — styled like the live console
+2. **AI dispatch** — Dock 3 unlock, Matrice 4TD takeoff after human OK
+3. **Map flight path** — outbound route to the incident pin
+4. **Live video return** — FPV panel on the console in real time
+5. **Voice briefs** — AI speaks status to responders on the channel
+6. **Auto return (RTH)** — aircraft flies home and nests for charge by itself
+7. **Proof** — mission closes onto the incident timeline
+
+Hardware packages (estimate): **Dock 3 RM 55,140** · **Matrice 4D RM 18,180** · **Matrice 4TD RM 25,740**
 
 ---
 
@@ -349,6 +352,9 @@ Prices are approximate hardware list figures. Software, setup, and AI coordinati
 - Pick the **nearest ready dock** when an incident is serious
 - Choose **4D for daytime** or **4TD when heat / night eyes help**
 - Keep **city patrol routes** running, then divert to a live event
+- Stream **live video** back to the command center
+- Speak **voice briefs** on the response channel
+- Run **auto return (RTH)** — fly home and nest for charge by itself
 - Always leave the final **fly / don't fly** decision to a person
 
 ```mermaid
@@ -358,10 +364,16 @@ flowchart LR
     B --> D["Suggest nearest Dock 3"]
     D --> E{"Human OK?"}
     E -->|Yes| F["Matrice 4D / 4TD takes off"]
-    E -->|No| G["People only — still respond"]
-    C --> H["Ground + air share one timeline"]
-    F --> H
+    F --> G["Live video + voice on console"]
+    G --> H["Auto RTH → Dock nest + charge"]
+    E -->|No| I["People only — still respond"]
+    C --> J["Ground + air share one timeline"]
+    H --> J
 ```
+
+<p align="center">
+  <a href="assets/video/sentinel-cinematic-drone-ops.mp4">▶ Watch the cinematic ops film</a>
+</p>
 
 ---
 
