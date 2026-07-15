@@ -30,8 +30,10 @@
   <a href="#when">When it happens</a>
 </p>
 <p align="center">
+  <a href="#watch">Watch the demo</a> ·
   <a href="#before">Before</a> ·
   <a href="#during">During</a> ·
+  <a href="#drones">Drones</a> ·
   <a href="#after">After</a> ·
   <a href="#command-center">Command Center</a> ·
   <a href="#mobile">Mobile App</a> ·
@@ -47,6 +49,37 @@
 </p>
 
 <p align="center"><sub>Most alarms stop at the beep. Sentinel runs the <strong>whole loop</strong>: get ready → respond together → prove what happened.</sub></p>
+
+---
+
+<h2 id="watch">Watch the demo</h2>
+
+<p align="center">
+  <strong>Clear response flow · AI assist · DJI Dock drones · city patrol</strong>
+</p>
+
+<p align="center">
+  <img src="assets/video/sentinel-drone-response-demo.gif" alt="Croc Sentinel demo — people + AI + Dock drones" width="100%" />
+</p>
+
+<p align="center">
+  <a href="assets/video/sentinel-drone-response-demo.mp4"><strong>▶ Download MP4</strong></a>
+  &nbsp;·&nbsp;
+  <a href="assets/images/drone-response-poster.png">Poster frame</a>
+</p>
+
+<p align="center">
+  <img src="assets/images/drone-response-poster.png" alt="Demo poster — Dock 3 and Matrice packages" width="100%" />
+</p>
+
+What the video shows, in plain words:
+
+1. Your real Command Center layout
+2. Alarm → phone → AI score → dispatch (step by step)
+3. Supported flight hardware: **DJI Dock 3 · Matrice 4D · Matrice 4TD**
+4. AI suggests people on the ground **and** aircraft from the nearest ready dock
+5. City patrol routes that can divert to a live incident
+6. A person still says yes before anything critical flies
 
 ---
 
@@ -293,6 +326,45 @@ Several people get clear roles at once. The system picks who's nearest and best 
 
 ---
 
+<h2 id="drones">Drones — Eyes in the Air</h2>
+
+Sentinel can send **people on the ground and aircraft from a dock** as one response — AI suggests, a person confirms.
+
+<p align="center">
+  <img src="assets/images/drone-response-poster.png" alt="DJI Dock 3, Matrice 4D, Matrice 4TD support" width="100%" />
+</p>
+
+### Hardware we support (estimate, Malaysia)
+
+| Package | What it's for | Approx. price |
+|:--------|:--------------|:--------------|
+| **DJI Dock 3** | Auto nest · charge · takeoff | **RM 55,140** |
+| **Matrice 4D** | Day patrol & inspection | **RM 18,180** |
+| **Matrice 4TD** | Thermal / night eyes | **RM 25,740** |
+
+Prices are approximate hardware list figures. Software, setup, and AI coordination are provided by **Croc Nexus**.
+
+### What AI helps with
+
+- Pick the **nearest ready dock** when an incident is serious
+- Choose **4D for daytime** or **4TD when heat / night eyes help**
+- Keep **city patrol routes** running, then divert to a live event
+- Always leave the final **fly / don't fly** decision to a person
+
+```mermaid
+flowchart LR
+    A["Site alarm"] --> B["AI scores urgency"]
+    B --> C["Call nearest officer"]
+    B --> D["Suggest nearest Dock 3"]
+    D --> E{"Human OK?"}
+    E -->|Yes| F["Matrice 4D / 4TD takes off"]
+    E -->|No| G["People only — still respond"]
+    C --> H["Ground + air share one timeline"]
+    F --> H
+```
+
+---
+
 <h2 id="after">After — Proof & Learning</h2>
 
 When it's over, you shouldn't have to piece together what happened from memory or scattered logs.
@@ -411,11 +483,13 @@ python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.jso
 The command center is the **big-screen view** for managers and control rooms — live map, every active event, urgency at a glance.
 
 <p align="center">
-  <img src="assets/images/command-center-hero.png" alt="Command Center" width="100%" />
+  <img src="assets/images/dash-overview.png" alt="Live Command Center — Croc Sentinel" width="100%" />
 </p>
 
+<p align="center"><sub>Real command center from our operations console.</sub></p>
+
 <p align="center">
-  <img src="assets/images/command-center-mock.svg" alt="Command Center UI breakdown" width="100%" />
+  <img src="assets/images/command-center-hero.png" alt="Command Center concept" width="100%" />
 </p>
 
 - See every site and event on one map
@@ -495,10 +569,10 @@ We label everything in three tiers — and never overclaim.
 > Device alerts · phone calls · photos · live map · mobile apps · command center · incident list & detail · responder queue · audit log · separated data · encrypted backup
 
 **🧪 Ready — turned on per site** — built and tested, switched on as we roll each site out
-> AI urgency scoring · response plans · nearest-responder dispatch · team coordination for big events · silent duress / SOS · predictive maintenance · readiness score · practice drills · proof of response · post-incident review
+> AI urgency scoring · response plans · nearest-responder dispatch · team coordination for big events · silent duress / SOS · predictive maintenance · readiness score · practice drills · proof of response · post-incident review · **Dock drone assist (DJI Dock 3 + Matrice 4D / 4TD)** · city patrol divert
 
 **🚧 In development — not open yet**
-> Visual recognition (seeing what's in a photo) · on-site robots & drones · a version for homes and individuals · the wider Croc Nexus AI vision (see [Ecosystem](#ecosystem))
+> Visual recognition (seeing what's in a photo) · more on-site robots · a version for homes and individuals · the wider Croc Nexus AI vision (see [Ecosystem](#ecosystem))
 
 "Turned on per site" means a setting we enable for you — not a new project.
 
@@ -542,11 +616,14 @@ It makes the *first* suggestion and handles the routine. Anything important wait
 **What happens if no one answers the call?**
 It automatically escalates to the next contact — and keeps a record of every attempt.
 
+**Do you support drones?**
+Yes — we support **DJI Dock 3** with **Matrice 4D** (day) and **Matrice 4TD** (thermal / night). AI can suggest the nearest ready dock and a city-patrol divert; a person still approves before anything critical flies. See [Drones](#drones) and the [demo video](#watch).
+
 **Can I get the source code or put my own brand on it?**
 No. The app and the smart parts stay ours — no white-label, no rebranding. This page shares only a small demo and plain explanations.
 
 **What does "early / trial" mean? Is it finished?**
-We're honest in three tiers (see the [Roadmap](#roadmap)): core monitoring, alerts, calls, and apps are **live now**; the AI response features (scoring, response plans, dispatch, team coordination, readiness, proof) are **built and tested and turned on per site** as we roll out; a few advanced pieces (visual recognition, on-site robots/drones, a home version) are still **in development**. It's honest work in progress, not a finished mass-market product.
+We're honest in three tiers (see the [Roadmap](#roadmap)): core monitoring, alerts, calls, and apps are **live now**; AI response features and Dock drone assist are **built / supported and turned on per site**; visual recognition, more robots, and a home version are still **in development**. It's honest work in progress, not a finished mass-market product.
 
 ---
 
