@@ -17,7 +17,7 @@ class OrchestratorStep(ABC):
 
 
 class RouteStep(OrchestratorStep):
-    """Who to call — production logic runs on Croc Nexus cloud only."""
+    """Routing shape only — no working router is published here."""
 
     def run(self, context: dict[str, Any]) -> dict[str, Any]:
         raise NotImplementedError(
@@ -26,23 +26,26 @@ class RouteStep(OrchestratorStep):
 
 
 class FollowUpStep(OrchestratorStep):
-    """Escalation if nobody answers — not implemented in this repository."""
+    """Future follow-up shape — no automatic contact ladder is claimed."""
 
     def run(self, context: dict[str, Any]) -> dict[str, Any]:
         raise NotImplementedError(
-            "Follow-up timers are internal to Croc AI Orchestrator."
+            "Automatic contact-list escalation is not implemented here."
         )
 
 
 PIPELINE_SHAPE = {
     "published_here": ["score_urgency", "write_summary"],
-    "trial_production_with_sentinel": [
+    "optional_private_source": [
         "score_urgency",
-        "use_camera_context",
         "summarise_for_operator",
-        "route_call_and_alert",
-        "escalate_if_unanswered",
-        "log_and_audit",
+        "route_assigned_responder",
+        "emit_supported_audit_records",
+    ],
+    "not_claimed_as_complete": [
+        "computer_vision",
+        "automatic_next_contact_escalation",
+        "complete_external_action_log",
     ],
     "in_development_not_open": [
         "cao_agent_model",

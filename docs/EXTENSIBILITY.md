@@ -1,60 +1,67 @@
 # Extensibility
 
-We tune alert logic and response workflows **per site** on Croc Nexus–owned platform and apps.
+Croc Sentinel is configured per project on Croc Nexus–controlled product infrastructure. There is no white-label offering.
 
----
+## Per-site scope
 
-## Trial production today *(初步试产)*
+A trial scope can define:
 
-| Phase | Coverage |
-|:------|:---------|
-| **Now** | Sentinel detects → Orchestrator scores and routes → admin or agent checks on site |
+- Supported devices and groups
+- Alarm behavior and quiet periods
+- Notification recipients and enabled providers
+- Response rules and internally reviewed plan versions
+- Authorized users and roles
+- Optional cameras, dispatch, voice, automation, or reporting modules
 
-Core monitoring and coordination run on **real deployments**; we continue hardening features per site. People stay in the loop.
+Compatibility, provider setup, permissions, validation steps, and availability must be agreed before rollout.
 
----
+## Maturity labels
 
-## In development — not open *(开发中 · 未开放)*
+### Baseline source
 
-| Item | Direction |
-|:-----|:----------|
-| **CAO** (in-house model) | Agent-team model layer — Croc Nexus exclusive |
-| **Digital employee teams** | Multi-agent operational teams beyond alert coordination |
-| **AI control panel** | Visual governance of agent actions and token flow |
-| **Token relay** | Unified model routing, metering, and policy |
-| **Embodied intelligence** | Agents driving on-site movement or patrol |
-| **Drones** | Aerial check and reach on same alert path |
-| **Security devices** | Sensors, locks, barriers integrated with agents |
-| **Personal / home use** | Household-scale agent deployments |
+Device management, alarm records, incident views, timelines, response plans, advanced-profile readiness checks, audit records, read-only incident summaries, and post-incident reviews exist in the private source.
 
-Rollout is **gradual** and agreed per project when available.
+This does not by itself prove that a customer deployment is configured or field-ready.
 
----
+### Optional deployment integration
 
-## Per-site configuration *(trial production)*
+The source contains optional paths for:
 
-| Area | Examples |
-|:-----|:---------|
-| **Alert logic** | Groups, quiet hours, escalation paths per building |
-| **Call routing** | Site admin, duty manager, or agents per zone |
-| **Scene types** | Government, mall, hospital, park, road, campus, residential |
-| **Notifications** | Phone, email, messaging — per contract |
-| **Mobile apps** | **Croc Nexus apps only** — configuration, not customer branding |
+- Camera snapshots
+- Rules-first incident analysis and external AI enrichment
+- Responder assignments and consent-aware phone location
+- Voice calls
+- Automation
+- Advanced exports and backup workflows
 
----
+Most are disabled by default and require configuration and site validation.
 
-## How we decide
+### Experimental or contract-only
 
-1. You share site layout, team structure, and response habits  
-2. We mark items as **trial production**, **custom build**, or **in development — not open**  
-3. We agree scope and timeline before rollout  
+- Side-effect-free response simulation
+- Device-health and predictive-maintenance experiments
+- Experimental multi-responder coordination
+- Generic future-resource contracts
+- Mock drone and robot adapters with no physical execution
 
----
+### Future direction
+
+- Production computer vision
+- Real drone or robotic control
+- Verified native mobile applications
+- Broader third-party integrations
+- Personal or home use
+- Wider AI-agent and digital-team products
+
+Future items have no delivery date or availability promise unless separately agreed in writing.
 
 ## Principles
 
-1. Automated suggestions never lower the highest safety level from fixed rules  
-2. High-impact actions wait for human approval  
-3. Every step is logged with a timestamp  
-4. If smart services are unavailable, rule-based handling continues  
-5. Each customer's data stays separate  
+1. The core alarm path should not wait for optional AI analysis.
+2. Optional analysis may assist an operator; it does not replace human responsibility.
+3. Selected high-impact actions require permissions and configured approval.
+4. Supported actions can produce event and audit records; no claim is made that every external action is captured.
+5. Customer-account and device-ownership boundaries are enforced in supported paths.
+6. Deployment-specific security, privacy, retention, provider, and backup settings must be reviewed per site.
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) and [PRODUCT_OVERVIEW.md](PRODUCT_OVERVIEW.md).

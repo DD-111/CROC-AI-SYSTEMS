@@ -1,23 +1,32 @@
-# Croc AI Orchestrator (brief)
+# Croc AI Orchestrator
 
-**Croc AI Orchestrator** is Croc Nexus’s **agent coordination layer**: AI agents **score urgency**, **route who to call**, and **keep a full log** — working with **Croc Sentinel Systems** on each deployment.
+**Croc AI Orchestrator** is Croc Nexus’s private direction for optional event analysis and response coordination.
 
-| | |
-|:--|:--|
-| **Rules first** | Fixed safety rules always run; AI adds detail |
-| **People in charge** | Sensitive steps wait for human approval |
-| **Our platform** | Cloud, apps, and logic are **Croc Nexus exclusive** |
+It is not a universal, always-on AI layer. In the current private source:
 
-Production systems and full source are **not** published in this repository.
+- The core alarm path does not depend on AI.
+- Optional incident analysis is disabled by default.
+- Rules produce the baseline score and reason.
+- External AI enrichment can be added when configured.
+- Failed enrichment can fall back to rules.
+- Selected high-impact actions remain subject to permissions and configured approval.
 
----
+Optional responder dispatch, voice calls, phone location, automation, and experimental multi-responder coordination are separate modules. Their presence in source does not mean they are enabled or field-validated at a deployment.
 
-## Tiny sample
+The current computer-vision module is a placeholder and does not perform production visual recognition.
 
-A minimal illustration lives in `src/croc_orchestrator/` — fictional event in, urgency score and summary out:
+The current drone and robot adapters are mocks for a possible future interface. They do not control hardware.
+
+## Public sample
+
+The sample under `src/croc_orchestrator/` applies fixed Python rules to fictional event data:
 
 ```bash
 python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
 ```
 
-See also [PRODUCT_OVERVIEW.md](PRODUCT_OVERVIEW.md) and [ARCHITECTURE.md](ARCHITECTURE.md).
+It does not call an AI model and is not the production Orchestrator.
+
+Production systems and full private source are not published here.
+
+See [PRODUCT_OVERVIEW.md](PRODUCT_OVERVIEW.md) and [ARCHITECTURE.md](ARCHITECTURE.md).

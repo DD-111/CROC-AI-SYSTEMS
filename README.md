@@ -1,484 +1,398 @@
 <p align="center">
-  <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="320" />
+  <img src="assets/images/logo-croc-nexus-4k.png" alt="Croc Nexus AI Technologies" width="300" />
 </p>
 
 <p align="center">
-  <img src="assets/images/hero-banner.png" alt="Croc Sentinel — smart response layer" width="100%" />
+  <img src="assets/images/hero-banner.png" alt="Croc Sentinel" width="100%" />
 </p>
+
+<p align="center"><sub>Concept illustration — not a product screenshot, mobile-app claim, or certification mark.</sub></p>
 
 <h1 align="center">Croc Sentinel</h1>
 
 <p align="center">
-  <strong>The smart decision layer for the security systems you already have.</strong><br/>
-  <sub>It doesn't replace your cameras and alarms — it runs the <em>whole response</em>:<br/>get ready · respond together · prove what happened.</sub><br/>
-  <sub>By Croc Nexus AI Technologies · a two-person startup from Malaysia</sub>
+  <strong>Site alarms, incident handling, and response records in one web console.</strong><br/>
+  <sub>A trial-stage product from Croc Nexus AI Technologies · a two-person AI startup in Malaysia.</sub>
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/Stage-Early%20(trial)-f59e0b" alt="Trial" />
-  <img src="https://img.shields.io/badge/Works%20with-Your%20existing%20systems-2563eb" alt="Works with existing systems" />
-  <img src="https://img.shields.io/badge/People-Always%20in%20control-16a34a" alt="Human in control" />
-  <img src="https://img.shields.io/badge/From-Malaysia-006847" alt="Malaysia" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20(repo%20materials)-2563eb" alt="MIT license for repository materials" /></a>
+  <img src="https://img.shields.io/badge/Status-Trial%20stage-f59e0b" alt="Trial stage" />
+  <img src="https://img.shields.io/badge/Interface-Web%20%2F%20PWA-0ea5e9" alt="Web and PWA" />
+  <img src="https://img.shields.io/badge/Control-Human%20led-16a34a" alt="Human led" />
 </p>
 
 <p align="center">
-  <a href="#what">What is Sentinel</a> ·
-  <a href="#journey">The full journey</a> ·
-  <a href="#problem">The Problem</a> ·
-  <a href="#why">Why Sentinel</a> ·
-  <a href="#when">When it happens</a>
-</p>
-<p align="center">
-  <a href="#watch">Watch the demo</a> ·
-  <a href="#before">Before</a> ·
-  <a href="#during">During</a> ·
-  <a href="#drones">Drones</a> ·
-  <a href="#after">After</a> ·
+  <a href="#what-it-is">What it is</a> ·
+  <a href="#what-exists">What exists</a> ·
+  <a href="#incident-journey">Incident journey</a> ·
   <a href="#command-center">Command Center</a> ·
-  <a href="#mobile">Mobile App</a> ·
-  <a href="#roadmap">Roadmap</a> ·
-  <a href="#faq">FAQ</a> ·
-  <a href="#contact">Contact</a>
-</p>
-
-<br/>
-
-<p align="center">
-  <img src="assets/images/journey-before-during-after.png" alt="Before, During, After — the full response journey" width="100%" />
-</p>
-
-<p align="center"><sub>Most alarms stop at the beep. Sentinel runs the <strong>whole loop</strong>: get ready → respond together → prove what happened.</sub></p>
-
----
-
-<h2 id="watch">Watch the demo</h2>
-
-<p align="center">
-  <strong>Cinematic ops demo — glass console · map routes · live video · voice · auto RTH</strong>
-</p>
-
-<p align="center">
-  <img src="assets/video/sentinel-cinematic-drone-ops.gif" alt="Cinematic Dock drone ops demo" width="100%" />
-</p>
-
-<p align="center">
-  <a href="assets/video/sentinel-cinematic-drone-ops.mp4"><strong>▶ Download cinematic MP4 (~30s, 1080p)</strong></a>
-  &nbsp;·&nbsp;
-  <a href="assets/video/sentinel-drone-response-demo.mp4">Earlier step-card MP4</a>
-</p>
-
-<p align="center">
-  <img src="assets/images/cinematic-drone-ops-poster.png" alt="Cinematic poster — live map and FPV" width="100%" />
-</p>
-
-What this film-style demo shows:
-
-1. **Command Center glass UI** — styled like the live console
-2. **AI dispatch** — Dock 3 unlock, Matrice 4TD takeoff after human OK
-3. **Map flight path** — outbound route to the incident pin
-4. **Live video return** — FPV panel on the console in real time
-5. **Voice briefs** — AI speaks status to responders on the channel
-6. **Auto return (RTH)** — aircraft flies home and nests for charge by itself
-7. **Proof** — mission closes onto the incident timeline
-
-Hardware packages (estimate): **Dock 3 RM 55,140** · **Matrice 4D RM 18,180** · **Matrice 4TD RM 25,740**
-
----
-
-<h2 id="what">What is Sentinel</h2>
-
-Almost every building already has cameras and alarms. They're good at one thing — **noticing** that something happened.
-
-But that's only half the story.
-
-When something goes wrong, three questions always come up:
-
-1. **How bad is it?**
-2. **Who should go — and what should they do?**
-3. **Can we prove what we did afterwards?**
-
-Ordinary systems can't answer any of these. They beep, send a notification, and leave the rest to luck.
-
-**Croc Sentinel is not another alarm.** It's the **full response system** that sits on top of what you already have — from getting ready before anything happens, to coordinating people during an event, to keeping an honest record when it's over.
-
-Your cameras keep watching. Your alarms keep ringing. Sentinel is the calm, tireless layer on top that turns noise into a **clear, tracked, accountable response.**
-
-> **Status:** early / trial stage. It runs on real sites today. A real person still goes to check — Sentinel makes sure the right person knows fast, knows why, and every step is saved.
-
----
-
-<h2 id="journey">The Full Response Journey</h2>
-
-Most security products stop at the beep. Croc Sentinel runs three phases — like an operating system for how your site responds:
-
-```mermaid
-flowchart TB
-    subgraph BEFORE["BEFORE — Are we ready?"]
-        B1["Response plans"]
-        B2["Readiness score"]
-        B3["Practice drills"]
-    end
-    subgraph DURING["DURING — Who goes? What happens?"]
-        D1["Score urgency"]
-        D2["Call + dispatch"]
-        D3["Team coordination"]
-    end
-    subgraph AFTER["AFTER — What really happened?"]
-        A1["Full timeline"]
-        A2["Proof of response"]
-        A3["Post-incident review"]
-    end
-    BEFORE --> DURING --> AFTER
-```
-
-| Phase | Plain question | What Sentinel does |
-|:------|:---------------|:-------------------|
-| **Before** | *Are we ready?* | Set response plans, check readiness score, run practice drills |
-| **During** | *Who goes? What happens?* | Score urgency, call the right people, send the nearest, organise a team for big events |
-| **After** | *What really happened?* | Save the full timeline, bundle proof of response, write a post-incident review |
-
-This is the heart of what we built. Not louder sirens — a **complete loop** from preparation to proof.
-
-<p align="center">
-  <img src="assets/images/comparison-ordinary-vs-sentinel.png" alt="Ordinary alarm vs Croc Sentinel" width="100%" />
-</p>
-
-<p align="center">
-  <img src="assets/images/comparison-flow-table.svg" alt="Comparison flow table" width="100%" />
+  <a href="#ai-reality">AI reality</a> ·
+  <a href="#status">Status</a> ·
+  <a href="#faq">FAQ</a>
 </p>
 
 ---
 
-<h2 id="problem">The Problem</h2>
+## What Croc Nexus builds
 
-**Detecting is the easy part. Responding is the hard part** — and it's where the real losses happen.
+**Croc Nexus AI Technologies** is a Malaysia-based AI startup building two connected products:
 
-Cameras and alarms are everywhere and cheap. But when an alarm goes off today, this is what usually happens:
+- **Croc Sentinel** — the site-facing product for devices, alarms, incidents, operators, and response records.
+- **Croc AI Orchestrator** — the private coordination direction behind optional event analysis and response workflows.
 
-- **Everything feels equally urgent.** A door left open sounds the same as a real emergency.
-- **Nobody knows how serious it is.** Someone has to stop and guess.
-- **Nobody knows who should go.** People wait, or the wrong person gets bothered.
-- **If the first person misses the call, the chain breaks.** Nothing moves until someone happens to notice.
-- **There's no clear record.** Afterwards, no one can say who did what, or when.
+This public repository explains the product and includes small, fictional samples. It does **not** contain the production backend, production firmware secrets, private models, customer configuration, or deployment credentials.
 
-The result: slow response, constant noise, and no one clearly responsible.
+> **Availability today:** Croc Sentinel is a trial-stage, site-specific product, not a generally available turnkey service. Source review confirms that code paths exist; it does not confirm that every capability is enabled, release-ready, or field-validated. Each trial requires a written scope covering devices, notification channels, optional modules, and completed site tests.
 
 ---
 
-<h2 id="philosophy">Our Philosophy</h2>
+<h2 id="what-it-is">What is Croc Sentinel?</h2>
 
-We believe in a simple idea: **the machine should do the first round of thinking, and a person should make the final call.**
+An alarm can tell someone that something happened. The harder work comes next:
 
-Three rules guide everything we build:
+- Which device or area is affected?
+- What information does the operator need?
+- Which response plan applies?
+- What did people and systems do?
+- What should be reviewed afterwards?
 
-1. **Safety first, always.** The system can make something *more* urgent, but it can **never quietly make it less** urgent.
-2. **People stay in charge.** The system suggests and prepares; a human approves anything that matters.
-3. **Nothing hides.** Every decision — by the machine or the person — is written down in plain words.
+**Croc Sentinel brings these steps into one browser-based operations console.**
 
-We are not trying to replace people. We are trying to make sure the right person acts **fast, and for the right reason.**
+The current core receives supported device events, records alarms and incidents, shows them to authorized operators, runs configured alarm and notification paths, and keeps operational timelines and audit records.
 
----
-
-<h2 id="fail">Why Existing Systems Fall Short</h2>
-
-To be clear: cameras, alarms, and recording systems are **not bad** — they do their job well. They see, they ring, they record. The problem is that everything *after* that — the thinking — still lands on a person.
-
-That's where it breaks down in real life:
-
-- A person watching ten screens **can't rank** what matters.
-- At 3 a.m., tired staff **miss or misjudge** alerts.
-- When the first contact doesn't answer, **there's no plan B.**
-- After an incident, there's **no honest trail** of what actually happened.
-
-Adding more cameras or louder sirens doesn't fix any of this — it just adds more noise for the same tired person to sort through. The missing piece was never more equipment. It was a **brain on top** that understands, decides, coordinates, and keeps track.
-
-**That's the gap Sentinel fills — without asking you to throw anything away.**
+It does not remove the need for trained people, site procedures, emergency services, or site-specific validation.
 
 ---
 
-<h2 id="why">Why Sentinel</h2>
+<h2 id="what-exists">What exists in the private product source</h2>
 
-Sentinel sits **on top of** what you already own and adds four things your current setup can't do on its own:
+### Baseline source
 
-| | The layer Sentinel adds |
-|:--|:--|
-| **Understand** | Reads each event and works out what it actually is |
-| **Decide** | Scores how urgent it is, with a plain-language reason |
-| **Coordinate** | Calls the right person, then the next if no one answers |
-| **Track** | Keeps a simple, honest record of every step |
+The current private source includes:
 
-| The usual way | With Croc Sentinel on top |
-|:--------------|:--------------------------|
-| Every alarm sounds the same | Each one gets a **score** and a **plain reason** |
-| People guess how urgent it is | The system suggests, a person confirms |
-| Someone must figure out who to call | It **calls the right person automatically** |
-| If no one answers, it stops | It **moves to the next person** |
-| No clear record afterwards | It **keeps a simple record of everything** |
+- Device identification, registration, claiming, ownership, revocation, status, telemetry, and remote commands
+- Alarm event records and grouped siren behavior
+- A browser-based Command Center
+- Incident lists, incident workspaces, and timelines
+- Filterable event history and live event transports
+- Configurable notification paths
+- Response-plan import, versioning, and certification
+- Readiness scoring and gap lists
+- Audit records and CSV export
+- Read-only response-record bundles
+- Draft and submitted post-incident reviews
+- Role, tenant, and device-ownership checks
+- Firmware-update inventory, campaigns, device results, and rollback controls
 
-Because it's a layer — not a replacement — you keep your cameras, your alarms, and your investment. You just give them a brain.
+Some functions still depend on deployment configuration, external providers, compatible equipment, and site testing. Source code alone does not prove that a capability is enabled or field-validated at a particular site.
 
-**It all runs as one closed loop:**
+> Inside Sentinel, “certified response plan” means that an authorized user marked a plan version as reviewed. It is not certification by a regulator, insurer, standards body, or independent assessor.
 
-```text
-  Score  →  Call  →  Follow the right steps  →  Send the nearest person  →  Coordinate  →  Keep a record
-```
+### Optional deployment source
 
-That full loop — not just the first "ding" — is what actually gets someone to the scene, on time, with a plan.
+The private source also contains optional modules for:
 
----
+- Camera snapshots and evidence delivery
+- Rules-first incident scoring with optional AI enrichment
+- Responder phone locations and dispatch
+- Voice calls
+- Automation and scheduled actions
+- SOS and duress workflows
+- Advanced exports, backup workflows, and platform controls
 
-<h2 id="when">When Something Goes Wrong</h2>
+Most of these modules are **disabled by default**. They require configuration, permissions, external services, and deployment-specific validation.
 
-<p align="center">
-  <strong>Watch the full flow — 9 steps, start to finish</strong>
-</p>
+### Experimental or contract-only source
 
-<p align="center">
-  <img src="assets/video/incident-flow-demo.gif" alt="Animated incident flow — step by step" width="100%" />
-</p>
+The repository also contains less-mature work, including:
 
-<p align="center">
-  <a href="assets/video/incident-flow-demo.mp4">▶ Download MP4 version</a>
-  &nbsp;·&nbsp;
-  <a href="assets/images/incident-flow.svg">View static flow diagram</a>
-</p>
-
-<p align="center">
-  <img src="assets/images/incident-timeline-table.png" alt="Visual timeline table — trigger to proof" width="100%" />
-</p>
-
-Here's the same story as a timeline — the kind you'd see in the app:
-
-```text
-  10:42:03   A sensor at the north gate triggers.
-  10:42:04   Your phone gets the alert — within seconds, not minutes.
-  10:42:05   Sentinel scores it 89 / 100 — "high."
-             Reason: "Repeated triggers at north gate after hours."
-  10:42:06   It calls the on-duty officer and pings the app.
-  10:42:20   No answer. It automatically calls the backup — the site admin.
-  10:42:31   Admin answers, sees the map and reason, heads to the gate.
-  10:49:00   Admin marks it resolved in the app.
-             Every step above is saved, with the exact time.
-```
-
-No guessing. No "who was supposed to handle this?" Just a clear, recorded response.
-
-**For a bigger event** — say a fire or a break-in — one person isn't enough. Sentinel can organise several responders into clear roles (one to check, one to watch the perimeter, one to record, one to coordinate), picking the nearest and best-suited for each, and adjusting as things change. That kind of **team coordination** is the part ordinary alarm systems simply don't do.
+- Side-effect-free drill simulation using non-production executors
+- Device-health and predictive-maintenance experiments
+- Experimental multi-responder coordination
+- Generic future-resource contracts
+- Mock drone and robot adapters with no live hardware control
 
 ---
 
-<h2 id="before">Before — Are You Ready?</h2>
+<h2 id="incident-journey">Before, during, and after an incident</h2>
 
-Good response doesn't start when the alarm rings. It starts **before anything happens.**
+### Before — prepare
 
-<p align="center">
-  <img src="assets/images/incident-lifecycle.svg" alt="Before phase — readiness" width="720" />
-</p>
+**Baseline source**
 
-| What you set up | Why it matters |
-|:----------------|:---------------|
-| **Response plans** | Pre-written steps for fire, SOS, intrusion — so nobody improvises at 3 a.m. |
-| **Readiness score** | A simple number that shows gaps: missing contacts, untested devices, outdated plans |
-| **Practice drills** | Run a fake event and see how your team would respond — without waking anyone up |
+- Import, version, and certify response rules
+- Review a readiness score and configuration gaps
+- Check devices and notification recipients
 
-Think of it like a fire drill, but for your whole digital response chain. When the real thing happens, your team already knows the steps.
+**Optional source**
 
----
+- Run isolated, side-effect-free practice simulations
+- Review device-health and SOP suggestions
 
-<h2 id="during">During — Who Does What?</h2>
+The readiness page is an advanced-profile configuration score. Its checks can include disabled optional modules, and some checks only confirm configuration flags. It is not proof that a site is operationally ready and is not an independent safety certification.
 
-When something actually happens, everyone needs to see the same picture — and know their job.
+### During — see and respond
 
-<p align="center">
-  <img src="assets/images/command-center-hero.png" alt="Command Center — live map and incident feed" width="100%" />
-</p>
+**Baseline source**
 
-```mermaid
-flowchart LR
-    A["Alert fires"] --> B["Phone knows in seconds"]
-    B --> C["AI scores urgency"]
-    C --> D["Call right person"]
-    D --> E{"Answered?"}
-    E -->|No| F["Call next person"]
-    E -->|Yes| G["Send nearest responder"]
-    F --> G
-    G --> H["Mark resolved"]
-    H --> I["Save full proof"]
-```
+1. A supported device sends an event.
+2. Sentinel records the event and applies configured alarm behavior.
+3. Authorized users see the alarm or incident in the web console.
+4. Operators review the device, event history, timeline, and available evidence.
+5. Supported operator actions are recorded through the event and audit paths.
 
-**On the big screen (Command Center):**
-- Live map of every device and active event
-- Incidents sorted by urgency — serious ones rise to the top
-- A timeline of what the system did and what people decided
-- One tap to take over or confirm any step
+**Optional source**
 
-**On the incident page (one event, full detail):**
-- How urgent it is, and why — in plain words
-- Who was called, who answered, who was sent
-- Countdown clocks if nobody responds in time
-- A person in charge can be assigned, or hand off to someone else
+- Rules-first risk scoring and recommendations
+- Responder assignments and status transitions
+- Consent-aware phone-location reporting
+- Delayed voice calls to an assigned responder
+- Commander controls and SLA views
+- Experimental incident-cell and resource-cluster coordination
 
-**On the responder's phone:**
-- "You have a job" — accept, go, mark arrived, mark done
-- Live map showing where to go
-- Deep link straight from a push notification or phone call
+These optional workflows are not described as active at a site until they are enabled and validated there.
 
-**For big events — team coordination:**
-Several people get clear roles at once. The system picks who's nearest and best suited, and adjusts as the situation changes. This is built and tested — we turn it on per site as we roll out.
+### After — review and learn
+
+The source includes:
+
+- An incident timeline assembled from available records
+- A read-only response-record bundle
+- Post-incident review drafts and submissions
+- Root-cause, lessons-learned, and action-item fields
+- Supported audit export paths
+
+These are operational records from data processed by Sentinel. They are not cryptographic proof and do not promise legal, regulatory, insurance, or compliance acceptance.
 
 ---
 
-<h2 id="drones">Drones — Eyes in the Air</h2>
+<h2 id="command-center">Command Center</h2>
 
-Sentinel can send **people on the ground and aircraft from a dock** as one response — AI suggests, a person confirms.
+The Command Center is a browser-based operations console.
 
-<p align="center">
-  <img src="assets/images/drone-response-poster.png" alt="DJI Dock 3, Matrice 4D, Matrice 4TD support" width="100%" />
-</p>
+Its core views include:
 
-### Hardware we support (estimate, Malaysia)
+- Devices and groups
+- Alarms and incidents
+- Incident details and timelines
+- Readiness and response plans
+- Activity and audit history
+- Account and access settings
+- Administrative tools for authorized roles
 
-| Package | What it's for | Approx. price |
-|:--------|:--------------|:--------------|
-| **DJI Dock 3** | Auto nest · charge · takeoff | **RM 55,140** |
-| **Matrice 4D** | Day patrol & inspection | **RM 18,180** |
-| **Matrice 4TD** | Thermal / night eyes | **RM 25,740** |
+Depending on server configuration and permissions, optional views may include maps, camera snapshots, responder queues, AI analysis, automation, drills, health monitoring, orchestration, and voice settings.
 
-Prices are approximate hardware list figures. Software, setup, and AI coordination are provided by **Croc Nexus**.
+Advanced pages are hidden or shown as unavailable when their server-side capability is disabled.
 
-### What AI helps with
-
-- Pick the **nearest ready dock** when an incident is serious
-- Choose **4D for daytime** or **4TD when heat / night eyes help**
-- Keep **city patrol routes** running, then divert to a live event
-- Stream **live video** back to the command center
-- Speak **voice briefs** on the response channel
-- Run **auto return (RTH)** — fly home and nest for charge by itself
-- Always leave the final **fly / don't fly** decision to a person
-
-```mermaid
-flowchart LR
-    A["Site alarm"] --> B["AI scores urgency"]
-    B --> C["Call nearest officer"]
-    B --> D["Suggest nearest Dock 3"]
-    D --> E{"Human OK?"}
-    E -->|Yes| F["Matrice 4D / 4TD takes off"]
-    F --> G["Live video + voice on console"]
-    G --> H["Auto RTH → Dock nest + charge"]
-    E -->|No| I["People only — still respond"]
-    C --> J["Ground + air share one timeline"]
-    H --> J
-```
-
-<p align="center">
-  <a href="assets/video/sentinel-cinematic-drone-ops.mp4">▶ Watch the cinematic ops film</a>
-</p>
+> We do not publish the current operations screenshot here because it contains internal names, device identifiers, tenant labels, and location information.
 
 ---
 
-<h2 id="after">After — Proof & Learning</h2>
+## Devices and alarms
 
-When it's over, you shouldn't have to piece together what happened from memory or scattered logs.
+The private product contains firmware and server components for supported Croc Sentinel devices.
 
-<p align="center">
-  <img src="assets/images/incident-timeline-table.png" alt="Proof timeline — every step saved" width="100%" />
-</p>
+The device and alarm core covers:
 
-| What you get | What it's for |
-|:-------------|:--------------|
-| **Full timeline** | Every trigger, call, dispatch, and human action — with exact times |
-| **Proof of response** | A read-only bundle you can show managers, insurers, or auditors |
-| **Post-incident review** | A short write-up: what went well, what to improve next time |
-| **Exportable audit log** | Download history to CSV or PDF when you need it |
+- Device identity and ownership
+- Status and telemetry
+- Authenticated server communication
+- Alarm triggers
+- Grouped siren behavior
+- Command tracking
+- Event and alarm records
+- Remote software-update controls
+- Role-based access to device functions
 
-This isn't just "we have logs somewhere." It's a **complete, honest story** of what your site did — ready when someone asks.
+Camera snapshots are optional and disabled by default. Connections to third-party cameras, alarms, or recorders are assessed per project.
 
----
-
-<h2 id="where">Where It Works</h2>
-
-Croc Sentinel is useful anywhere people need to respond to real events:
-
-<p align="center">
-
-| | | |
-|:-:|:-:|:-:|
-| Government buildings | Shopping malls | Hospitals & clinics |
-| Plazas & squares | Parks | Roads & streets |
-| Traffic junctions | Commercial districts | Campuses & industrial parks |
-| Housing communities | *(Homes — in development, not open yet)* | |
-
-</p>
-
-For each place, we set up its own rules — who to call, when, and how urgent different events should be.
+Croc Sentinel is **not** presented as plug-and-play with every existing security system.
 
 ---
 
-<h2 id="architecture">System Architecture</h2>
+## Notifications and calls
 
-Sentinel is designed as a **layer that sits on top of your existing security systems** — not a rip-and-replace.
+The backend includes configurable paths for email, Telegram, FCM push, and Twilio voice.
 
-```text
-   Your existing systems  ──►   CROC SENTINEL  ──►   The right person
-   (cameras, alarms,            (the smart layer:     (phone + app,
-    sensors, recorders)          understand, decide,   with a record)
-                                 coordinate, track)
-```
+Actual delivery depends on:
 
-The smart layer itself has three simple parts working together:
+- The channel being enabled
+- Valid provider credentials
+- Recipient configuration
+- Provider and network availability
+- Device-level and site-level testing
 
-<p align="center">
-  <img src="assets/images/architecture-four-layers.svg" alt="The cloud, the app, and the AI brain" width="720" />
-</p>
-
-| Part | In plain words |
-|:-----|:---------------|
-| **The cloud** | The always-on service that receives events and does the thinking |
-| **The app** | What people see — the map, the alerts, the buttons — on iPhone and Android |
-| **The AI brain** | The helper that scores urgency, picks who to call, and follows up |
-
-Behind the scenes, the brain (we call it **Croc AI Orchestrator**) works like a small team where each helper has one job — one reads the event, one decides urgency, one picks who to call, one follows up. It runs on our own cloud, and everything stays under the Croc Nexus name.
-
-> We connect to your existing equipment **per project** — what fits is agreed up front. As an early-stage team, we're honest about scope rather than claiming we plug into everything on day one.
+The source records call outcomes such as answered, busy, failed, or no-answer. This README does **not** claim a complete automatic “call the next contact” escalation chain.
 
 ---
 
-<h2 id="how">How It Works — Five Things the AI Does</h2>
+<h2 id="ai-reality">Where AI fits — and where it does not</h2>
 
-```text
-  Your camera / alarm / sensor notices something
-          │
-          ▼
-  Your phone knows within seconds (alert never waits for AI)
-          │
-          ▼
-  Sentinel scores how urgent — with a one-line reason
-          │
-          ├──►  Calls + app alert to the right person
-          ├──►  Runs the right response plan for this event type
-          └──►  Saves a record of every step
-          │
-          ▼
-  A real person goes to check
-          │
-          ▼
-  Resolved — or passed to the next person if still open
-```
+The core alarm path does **not** depend on AI.
 
-1. **Understands** the event — emergency, security, or maintenance?
-2. **Scores** how urgent it is, with a one-line reason anyone can read.
-3. **Chooses** who to call, based on role, area, and who's on duty.
-4. **Follows up** on its own if no one answers — and sends the nearest person when it's serious.
-5. **Records** everything, with exact times — for proof afterwards.
+An optional, default-off incident-analysis pipeline can produce:
+
+- A rules-based risk score from 0 to 100
+- A category
+- A plain-language reason
+- A recommended action
+- Optional external AI enrichment when configured
+
+If optional enrichment fails, the design can fall back to rules.
+
+Important limits:
+
+- AI incident handling is disabled by default.
+- The current computer-vision module is a stub; no visual-recognition capability is claimed.
+- A score or recommendation does not replace an operator.
+- High-impact actions remain subject to permissions and configured approval.
+- The public sample is fixed Python logic. It does not call an AI model.
 
 ---
 
-<h2 id="use">How To Use</h2>
+## Responder dispatch and coordination
 
-**For a real site**, we set it up for you — the rules, the call list, response plans, and who gets notified are all configured for your specific place. Everything runs through **our own app**; we don't put your logo on someone else's software.
+The private source contains a default-off responder workflow that can:
 
-**To see the idea yourself**, this page includes a tiny demo. It takes a made-up alarm and prints a score and a short summary:
+- Select a candidate from available, consented location records
+- Create an assignment
+- Send a configured push payload
+- Track `pending → accepted → en route → on scene → resolved`
+- Display personal and tenant-wide response queues
+
+Current limitations:
+
+- It is disabled by default.
+- Candidate selection uses straight-line distance by default or as a fallback; an optional external route provider requires separate configuration.
+- Location-freshness filtering is configurable and must be validated for each deployment.
+- Phone permissions, fresh location data, backend configuration, and field testing are required.
+- It is not claimed to dispatch the nearest responder automatically at every site.
+
+Experimental, default-off incident-cell code can also form and rebalance resource clusters using capability, distance, health, and load signals. It is repository-level work, not a claim of a live automatic response team.
+
+---
+
+## Mobile and PWA
+
+Croc Sentinel includes a responsive, installable web application, also called a **Progressive Web App (PWA)**.
+
+The audited source contains:
+
+- A web application manifest
+- A service worker for the static interface shell
+- Web deep-link handling
+- Server-side contracts that can create alarm and responder push payloads
+
+API and authentication responses are not intentionally cached by the service worker.
+
+This repository does **not** prove an end-to-end web-push flow or a native iPhone or Android application. No native mobile source repository was available in the audited code. Notification receipt, notification-tap navigation, background location, and long-running phone behavior require separate device testing.
+
+---
+
+## Privacy, security, and human control
+
+The current source includes named controls such as:
+
+- Tenant and device-ownership boundaries
+- Role-based access
+- Scoped access to incidents and devices
+- CSRF protection and login lockout controls
+- Signed device-event and command paths
+- Security checks around sensitive operations
+- Audit events for supported workflows
+- Human approval gates for selected advanced actions
+- Fail-closed or degraded paths for several optional dependencies
+- Encrypted manual backup export/import paths
+
+We do not claim that:
+
+- Every action is always captured without exception
+- Audit records are cryptographically tamper-evident
+- The product has a public compliance certification
+- The repository proves the security of a production deployment
+
+Every deployment still requires secure configuration, access review, backup planning, compatible equipment, and site-specific validation.
+
+---
+
+## Data and third-party services
+
+Cloud-connected operation requires supported device and incident data to reach the configured Sentinel server.
+
+Optional modules may also process:
+
+- Camera snapshots, when a compatible camera workflow is enabled
+- Responder location, when the user has consented and the location workflow is enabled
+- Notification content sent through configured email, messaging, push, or phone providers
+- Selected event context sent to an external AI service, only when optional enrichment is enabled
+
+Hosting location, retention periods, deletion rules, subprocessors, backup destinations, and external-AI payloads are deployment and contract decisions. This public repository does not claim one universal policy for every site.
+
+---
+
+<h2 id="status">Honest status labels</h2>
+
+We use four labels:
+
+### 1. Baseline source
+
+Present in the current private product source as a baseline workflow. This still does not mean a customer deployment is configured or field-validated.
+
+Examples: device management, alarm records, incident views, timelines, response plans, readiness checks, audit records, response-record assembly, and post-incident reviews.
+
+### 2. Optional deployment integration
+
+Implemented but disabled by default, provider-dependent, role-gated, or requiring site validation.
+
+Examples: AI analysis, cameras, responder dispatch, phone locations, voice calls, automation, and advanced exports.
+
+### 3. Experimental or contract-only
+
+A dry-run, experiment, contract, safety boundary, or placeholder exists, but maturity or operational integration is incomplete.
+
+Examples: simulation executors, predictive-maintenance experiments, multi-responder coordination, generic future actuator resources, and mock drone or robot adapters.
+
+### 4. Future
+
+Not available today.
+
+Examples: production computer vision, real drone or robot control, native mobile releases verified from this repository, broader third-party integrations, and personal/home use.
+
+Passing repository tests does not by itself mean a feature is deployed, field-proven, or release-ready. Current advanced release, staging, security, performance, mobile-field, and soak evidence remains incomplete.
+
+---
+
+## No production drone integration today
+
+Croc Sentinel does **not** currently integrate with DJI Dock, Matrice aircraft, or another production drone system.
+
+The private source contains a generic future-resource interface and mock drone/robot adapters. The mock adapter does not control hardware, stream live aircraft video, plan city patrols, perform return-to-home, land in a dock, or report charging telemetry.
+
+DJI Dock 3 and Matrice 4D/4TD are possible future integration targets only. No compatibility or delivery promise is made.
+
+---
+
+## Where it may fit
+
+Croc Sentinel may be relevant to managed sites such as:
+
+- Commercial buildings
+- Campuses
+- Clinics
+- Industrial locations
+- Public facilities
+- Managed residential sites
+
+Suitability depends on the site's equipment, network, response team, procedures, and local requirements. Integration scope is reviewed per project.
+
+A working network connection is required for cloud-connected operation.
+
+---
+
+## Public sample
+
+Run the small fictional scoring sample:
 
 ```bash
 git clone https://github.com/DD-111/CROC-AI-SYSTEMS.git
@@ -486,168 +400,71 @@ cd CROC-AI-SYSTEMS
 python -m src.croc_orchestrator.demo_assess samples/orchestrator/alarm_event.json
 ```
 
-> This demo is just for illustration. The real system and app stay private.
+Python 3.11 or newer is required.
 
----
+The sample applies fixed Python rules to fictional data. It is:
 
-<h2 id="command-center">Command Center</h2>
-
-The command center is the **big-screen view** for managers and control rooms — live map, every active event, urgency at a glance.
-
-<p align="center">
-  <img src="assets/images/dash-overview.png" alt="Live Command Center — Croc Sentinel" width="100%" />
-</p>
-
-<p align="center"><sub>Real command center from our operations console.</sub></p>
-
-<p align="center">
-  <img src="assets/images/command-center-hero.png" alt="Command Center concept" width="100%" />
-</p>
-
-- See every site and event on one map
-- Sort by urgency automatically — the serious ones rise to the top
-- Watch a live timeline of what the AI did and what people decided
-- Take over or confirm any step yourself
-- Dispatch the nearest responder with one action
-
----
-
-<h2 id="mobile">Mobile App</h2>
-
-<p align="center">
-  <img src="assets/images/mobile-app-mock.svg" alt="Mobile app flow — alert, map, respond, record" width="100%" />
-</p>
-
-<p align="center">
-  <img src="assets/images/app-overview-dashboard.jpeg" alt="Home" width="200" />
-  &nbsp;
-  <img src="assets/images/app-events-timeline.jpeg" alt="Events" width="200" />
-  &nbsp;
-  <img src="assets/images/app-device-activation.jpeg" alt="Setup" width="200" />
-  &nbsp;
-  <img src="assets/images/app-signals-routing.jpeg" alt="Activity" width="200" />
-</p>
-
-<p align="center"><sub>Home map · recent events · quick setup · live activity — on iPhone and Android.</sub></p>
-
-The app is what most people use day to day:
-
-- **Get the alert** — push notification plus a real phone call when it's urgent
-- **See where and why** — map, photo, plain-language reason
-- **Do your part** — accept a dispatch, mark arrived, mark resolved
-- **Full record** — timeline of every event you've been part of
-
-Tap a notification and you land straight on the right screen — the incident or your assigned job.
-
----
-
-<h2 id="trust">Built For Trust</h2>
-
-Safety software only works if you can trust it. So we built trust in from the start:
-
-- **Alert first, think second.** Your phone knows within seconds. AI scoring never blocks the first notification.
-- **The machine never overrules safety.** It can raise urgency, never quietly lower it.
-- **People approve the big steps.** The AI prepares; a human decides.
-- **Everything is written down.** A full, honest record of every event.
-- **It keeps working even if the smart part is down.** Basic rules still ring the right phones.
-- **Your data stays yours.** Each customer's information is kept separate.
-
----
-
-<h2 id="highlights">What Makes It Different</h2>
-
-In plain terms:
-
-- **Seconds, not minutes** — alerts reach a phone within a few seconds.
-- **A reason you can read** — every score comes with one plain sentence.
-- **Never a dead end** — if one person misses it, the next is called automatically.
-- **The right steps, every time** — response plans run the correct sequence for fire, SOS, or intrusion.
-- **Nearest person, dispatched** — finds the closest suitable responder and routes them.
-- **Team coordination for big events** — organises responders into clear roles on the fly.
-- **Silent duress / SOS** — a coercion signal raises a quiet, high-priority alert an attacker can't cancel.
-- **Doesn't give away its location** — a trigger can stay silent while quietly alerting nearby units.
-- **Warns before things break** — spots weak batteries and failing devices early.
-- **Get ready before it happens** — readiness score, certified plans, practice drills.
-- **Prove it afterwards** — full timeline, proof bundle, post-incident review.
-- **Sits on top, not in the way** — works alongside your existing cameras and alarms instead of replacing them.
-
----
-
-<h2 id="roadmap">Roadmap — Honest Status</h2>
-
-We label everything in three tiers — and never overclaim.
-
-**✅ Live now** — running on real sites today
-> Device alerts · phone calls · photos · live map · mobile apps · command center · incident list & detail · responder queue · audit log · separated data · encrypted backup
-
-**🧪 Ready — turned on per site** — built and tested, switched on as we roll each site out
-> AI urgency scoring · response plans · nearest-responder dispatch · team coordination for big events · silent duress / SOS · predictive maintenance · readiness score · practice drills · proof of response · post-incident review · **Dock drone assist (DJI Dock 3 + Matrice 4D / 4TD)** · city patrol divert
-
-**🚧 In development — not open yet**
-> Visual recognition (seeing what's in a photo) · more on-site robots · a version for homes and individuals · the wider Croc Nexus AI vision (see [Ecosystem](#ecosystem))
-
-"Turned on per site" means a setting we enable for you — not a new project.
-
----
-
-<h2 id="ecosystem">Ecosystem</h2>
-
-Croc Sentinel is the first piece of a bigger idea from **Croc Nexus AI Technologies**: **AI that works like a reliable team member** — doing the routine thinking, staying visible so you can watch it, and always leaving the important decisions to you.
-
-```text
-Croc Nexus (the bigger vision)
-   ├── Croc Sentinel        →  the full response system for your site   (trial)
-   ├── Croc AI Orchestrator →  the engine that powers it                (trial)
-   └── More AI helpers      →  everyday work, coming later            (not open yet)
-```
-
-Site safety is where our AI meets the real world first — the same "smart layer on top" approach is meant to help with far more over time.
+- Not an AI model
+- Not the production Orchestrator
+- Not connected to customer data
+- Not a release of the private platform
 
 ---
 
 <h2 id="faq">FAQ</h2>
 
-**Does this replace my cameras, alarms, or recording system?**
-No — that's the whole point. Sentinel is a **smart layer on top** of what you already have. Your equipment keeps doing its job; Sentinel adds the understanding, decision, and follow-through. We review what you have and agree the connection scope per project.
+### Does Sentinel replace existing cameras or alarms?
 
-**Is this just an alarm?**
-No. Detection is the easy part. Croc Sentinel runs the **full response** — before (readiness), during (coordinate), and after (proof). Ordinary alarms stop at the beep.
+Not automatically. Sentinel is intended to work with supported Croc devices and selected integrations. Compatibility and scope are reviewed per project.
 
-**Does this replace my security guards?**
-No. People still respond on site. Sentinel just makes sure the right person knows fast, knows why, and every step is saved.
+### Is Sentinel fully autonomous?
 
-**What do I need at my site?**
-A working internet connection (Wi‑Fi or wired), so alerts can travel and reach phones.
+No. People remain responsible for response decisions and on-site action. Optional analysis can assist an operator but does not remove human responsibility.
 
-**Can it fit my specific building?**
-Yes. We set the rules, urgency levels, response plans, and call list for your place.
+### Does AI have to be available for an alarm to work?
 
-**Is the AI making decisions on its own?**
-It makes the *first* suggestion and handles the routine. Anything important waits for a human "yes."
+No. The core alarm path is designed not to depend on optional AI analysis.
 
-**What happens if no one answers the call?**
-It automatically escalates to the next contact — and keeps a record of every attempt.
+### Does Sentinel automatically call the next person if nobody answers?
 
-**Do you support drones?**
-Yes — we support **DJI Dock 3** with **Matrice 4D** (day) and **Matrice 4TD** (thermal / night). AI can suggest the nearest ready dock and a city-patrol divert; a person still approves before anything critical flies. See [Drones](#drones) and the [demo video](#watch).
+Not as a generally available capability today. Voice and delayed-call components exist, but this README does not claim a completed automatic contact-list escalation chain.
 
-**Can I get the source code or put my own brand on it?**
-No. The app and the smart parts stay ours — no white-label, no rebranding. This page shares only a small demo and plain explanations.
+### Is nearest-responder dispatch available?
 
-**What does "early / trial" mean? Is it finished?**
-We're honest in three tiers (see the [Roadmap](#roadmap)): core monitoring, alerts, calls, and apps are **live now**; AI response features and Dock drone assist are **built / supported and turned on per site**; visual recognition, more robots, and a home version are still **in development**. It's honest work in progress, not a finished mass-market product.
+The source contains an optional dispatch module. It is disabled by default and depends on location consent, current phone data, configuration, permissions, and site validation.
+
+### Is there an iPhone or Android app?
+
+The audited product includes a mobile-friendly PWA. No native iOS or Android source repository was available for verification.
+
+### Do you support DJI drones?
+
+No production DJI integration is available. The current drone code is a stub for a possible future interface.
+
+### Is computer vision available?
+
+No production computer-vision capability is claimed. The current vision module is a stub.
+
+### Are all optional modules production-ready?
+
+No. Some have code and focused tests but remain disabled by default, staging-gated, field-unverified, or experimental.
+
+### Is the production source public?
+
+No. This repository contains public documentation, fictional data, and small samples only. See the license for its exact scope.
 
 ---
 
-<h2 id="contact">Contact</h2>
+## Contact
 
-**Croc Nexus AI Technologies** · Malaysia  
-partnerships@crocnexus.com · +084-349525
+**Croc Nexus AI Technologies**<br/>
+Malaysia<br/>
+partnerships@crocnexus.com
 
 ---
 
 <p align="center">
   <strong>Croc Nexus AI Technologies</strong><br/>
   Croc Sentinel · Croc AI Orchestrator<br/>
-  <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a> (this repository's materials only)</sub>
+  <sub>© Croc Nexus AI Technologies · <a href="LICENSE">MIT License</a> for this repository's materials only</sub>
 </p>

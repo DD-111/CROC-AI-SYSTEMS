@@ -1,95 +1,72 @@
 # Architecture
 
-**Croc Nexus AI Technologies** — AI startup, Malaysia. We build **AI agents**, **digital employee teams**, **visual control panels**, and **token relay** — platform wholly owned by Croc Nexus. Sentinel and Orchestrator are the first trial-production applications on this stack.
+**Croc Nexus AI Technologies** is a two-person AI startup in Malaysia. Croc Sentinel is its trial-stage site alarm and incident-response product.
 
-> Each site needs **network** (Wi‑Fi or wired internet).
+> A cloud-connected deployment requires a working network. Equipment compatibility and integration scope are assessed per project.
 
----
-
-## Overview
+## High-level shape
 
 ```text
-Site equipment ──network──► Croc Nexus cloud
-                                  │
-                    ┌─────────────┴─────────────┐
-                    ▼                           ▼
-           Croc Sentinel Systems      Croc AI Orchestrator
-                    │                           │
-                    └─────────────┬─────────────┘
-                                  ▼
-                         Croc Nexus mobile apps
-                         phone / messaging alerts
-                         audit logs
+Supported site devices
+        │
+        ▼
+Croc Sentinel server
+        │
+        ├── browser Command Center / PWA
+        ├── configured notification providers
+        └── incident and audit records
+
+Optional, default-off modules
+        ├── rules-first incident analysis
+        ├── camera snapshots
+        ├── responder dispatch and phone location
+        ├── voice calls and automation
+        └── experimental multi-responder coordination
 ```
 
-| Product | Purpose | Status |
-|:--------|:--------|:-------|
-| **Croc Sentinel Systems** | Monitoring, device groups, alerts, camera context | Trial production *(初步试产)* |
-| **Croc AI Orchestrator** | Urgency scoring, routing, escalation, approval | Trial production *(初步试产)* |
+## Baseline source
 
----
+The private source includes:
 
-## Croc Sentinel Systems
+- Device identity, ownership, status, telemetry, and commands
+- Alarm records and grouped siren behavior
+- Incident lists, workspaces, and timelines
+- Response-plan versioning and internal review marking
+- Advanced-profile readiness configuration checks
+- Audit records, read-only incident summaries, and post-incident reviews
+- Account, role, customer-account, and device-ownership boundaries
 
-```text
-Equipment at site
-      │  network (required)
-      ▼
-Cloud service
-      ├── alerts to phones
-      ├── linked camera photos
-      └── remote updates
-```
+“Certified response plan” means an authorized Sentinel user marked that version as reviewed. It is not third-party or regulatory certification.
 
-- Each customer sees only its own devices and staff  
-- Devices in the same group can react together  
-- Sensitive credentials are not stored permanently on local equipment  
+## Optional deployment integrations
 
----
+Camera snapshots, AI enrichment, responder dispatch, phone location, voice calls, automation, health, simulations, and coordination are separate capabilities. Most are disabled by default and require configuration, permissions, external services, and field validation.
 
-## Croc AI Orchestrator
+The basic alarm path is designed not to depend on optional AI analysis.
 
-```text
-Event from Sentinel
-      ▼
-Score urgency (+ camera if linked)
-      ├── call admin or assigned agent
-      ├── app alert to on-duty staff
-      └── audit log
-      ▼
-Person checks on site
-      ▼
-Resolve · escalate · record outcome
-```
+## Interfaces that are not operational integrations
 
-- Fixed rules run first; AI layers add detail when available  
-- If smart services are offline, rule-based calls still work  
-- Sensitive automated steps wait for human approval  
+The source includes generic future-resource contracts and mock drone/robot adapters. They do not control physical hardware.
 
-**Today:** people respond on site. Orchestrator makes *who* and *how fast* clearer.
+There is currently no production DJI Dock or Matrice integration, live drone video, city-patrol routing, return-to-home control, docking, or charging telemetry.
 
-**In development — not open *(开发中 · 未开放)*:** CAO; digital employee teams; AI control panel; token relay; embodied intelligence, drones, security devices; personal/home. See [EXTENSIBILITY.md](EXTENSIBILITY.md).
+## Mobile
 
----
+The audited product includes a responsive browser application and installable PWA shell. This repository does not prove a native iOS or Android application or an end-to-end mobile push deployment.
 
-## Scenes
+## Records and security boundaries
 
-Government, malls, hospitals, plazas, parks, roads, traffic junctions, commercial zones, campuses, residential — configured per site. Personal / home — **in development, not open**.
+Supported workflows can emit event and audit records. These records are not claimed to be cryptographically tamper-evident or legally sufficient proof.
 
----
+Security depends on deployment configuration. The source contains role and ownership checks, CSRF and login controls, signed device paths, selected approval gates, and encrypted manual backup paths; it does not establish a public compliance certification.
 
-## Customisation
+## Status
 
-Per-site groups, escalation paths, and integrations on **Croc Nexus–owned** infrastructure only — no white-label apps. We review fit and timeline before committing.
+- **Baseline source** — code path exists; this does not prove deployment.
+- **Optional deployment integration** — disabled by default or provider/site dependent.
+- **Experimental or contract-only** — mock, dry-run, or incomplete operational integration.
+- **Future** — not available today.
 
----
+Advanced staging, security, performance, mobile-field, and extended live-environment validation remains incomplete.
 
-## Safety and access
-
-| Topic | Sentinel Systems | AI Orchestrator |
-|:------|:-----------------|:----------------|
-| Connections | Encrypted links to cloud | Encrypted access to coordination service |
-| Commands | Authorised access only | Permission by role |
-| Remote updates | Approved sources only | — |
-| Data | Per-customer separation | Per-customer separation |
-| History | Full event log | Full decision log |
+See [PRODUCT_OVERVIEW.md](PRODUCT_OVERVIEW.md), [ORCHESTRATOR.md](ORCHESTRATOR.md), and [EXTENSIBILITY.md](EXTENSIBILITY.md).

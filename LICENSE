@@ -1,7 +1,6 @@
 MIT License
 
 Copyright (c) 2026 Croc Nexus AI Technologies
-All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -40,7 +39,7 @@ and are not licensed under MIT, whether or not they are described in this
 repository:
 
 - Croc Sentinel Systems and Croc AI Orchestrator production systems and services
-- Croc Nexus mobile applications (iOS and Android)
+- Any production mobile clients or applications provided separately by Croc Nexus
 - In-house AI models, weights, and training assets
 - Cloud infrastructure, coordination logic, and operational backends
 - White-label, rebranded, or sublicensed derivatives of the above
