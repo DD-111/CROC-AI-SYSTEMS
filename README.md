@@ -6,12 +6,13 @@
   <img src="assets/images/hero-banner.png" alt="Croc Sentinel" width="100%" />
 </p>
 
-<p align="center"><sub>Concept illustration — not a product screenshot, mobile-app claim, or certification mark.</sub></p>
+<p align="center"><sub>Concept hero illustration.</sub></p>
 
 <h1 align="center">Croc Sentinel</h1>
 
 <p align="center">
-  <strong>Site alarms, incident handling, and response records in one web console.</strong><br/>
+  <strong>A browser-based incident-response platform for site operators, with optional AI assistance.</strong><br/>
+  <sub>Turn device alerts into clearer context, guided response, and reviewable records.</sub><br/>
   <sub>A trial-stage product from Croc Nexus AI Technologies · a two-person AI startup in Malaysia.</sub>
 </p>
 
@@ -24,10 +25,12 @@
 
 <p align="center">
   <a href="#what-it-is">What it is</a> ·
+  <a href="#ai-collaboration">AI collaboration</a> ·
+  <a href="#helps">What it helps</a> ·
+  <a href="#difference">Why different</a> ·
   <a href="#what-exists">What exists</a> ·
   <a href="#incident-journey">Incident journey</a> ·
   <a href="#command-center">Command Center</a> ·
-  <a href="#ai-reality">AI reality</a> ·
   <a href="#status">Status</a> ·
   <a href="#future-vision">Future vision</a> ·
   <a href="#faq">FAQ</a>
@@ -41,10 +44,6 @@
 
 - **Croc Sentinel** — the site-facing product for devices, alarms, incidents, operators, and response records.
 - **Croc AI Orchestrator** — the private coordination direction behind optional event analysis and response workflows.
-
-This public repository explains the product and includes small, fictional samples. It does **not** contain the production backend, production firmware secrets, private models, customer configuration, or deployment credentials.
-
-> **Availability today:** Croc Sentinel is a trial-stage, site-specific product, not a generally available turnkey service. Source review confirms that code paths exist; it does not confirm that every capability is enabled, release-ready, or field-validated. Each trial requires a written scope covering devices, notification channels, optional modules, and completed site tests.
 
 ---
 
@@ -63,6 +62,86 @@ An alarm can tell someone that something happened. The harder work comes next:
 The current core receives supported device events, records alarms and incidents, shows them to authorized operators, runs configured alarm and notification paths, and keeps operational timelines and audit records.
 
 It does not remove the need for trained people, site procedures, emergency services, or site-specific validation.
+
+---
+
+<h2 id="ai-collaboration">How Sentinel and AI collaborate</h2>
+
+Croc Sentinel and Croc AI Orchestrator have different jobs:
+
+- **Sentinel is the operational foundation.** It receives device events, records the alarm, applies configured alarm behavior, and gives operators a shared incident workspace.
+- **Sentinel’s optional analysis runs rules first.** When enabled, it can produce a risk score, category, plain-language reason, and recommendation.
+- **Croc AI Orchestrator can add optional enrichment.** When separately configured, it can enrich the human-readable summary and recommendation.
+- **People remain responsible.** Operators review the context and use the response tools allowed for their role and site.
+- **The system keeps the working record.** Available event, operator, dispatch, and audit activity can appear in the incident workspace, alongside a separate post-incident review.
+
+```mermaid
+flowchart LR
+    A["Supported device event"] --> B["Sentinel records the alarm"]
+    B --> C["Configured alert path"]
+    B --> D["Incident workspace"]
+    B -. "optional" .-> E["Rules-first analysis"]
+    E -. "if configured" .-> F["External AI enrichment"]
+    E --> G["Score · reason · recommendation"]
+    F --> G
+    G -. "optional context" .-> H["Operator reviews"]
+    D --> H
+    H -. "enabled tools" .-> I["Assign · notify · track status"]
+    H --> J["Resolve and review"]
+    I --> J
+```
+
+The important design choice is that **the alarm path does not wait for AI**. AI can help add context and recommendations, but it is not the alarm itself and does not replace the operator.
+
+### Why we designed it this way
+
+1. **Alert first** — optional analysis should not delay the basic alarm path.
+2. **Rules before model output** — the baseline score remains visible and reviewable.
+3. **Explain the recommendation** — operators need a reason, not only a number.
+4. **Keep people in control** — permissions and configured approval remain part of high-impact actions.
+5. **Use AI as a module** — a site can use the core without enabling every advanced capability.
+6. **Support follow-up from the record** — timelines and reviews help teams identify lessons and actions.
+
+---
+
+<h2 id="helps">What the product can help with</h2>
+
+Croc Sentinel is designed to help operators and site managers:
+
+- **See the event in context** — device, area, history, available evidence, and related actions in one workspace.
+- **Reduce ad-hoc decisions** — use versioned, internally reviewed response rules instead of relying only on memory.
+- **Prioritize attention** — when optional analysis is enabled, add a risk score, reason, and recommendation.
+- **Give teams one shared picture** — incidents, devices, timelines, and supported response status in one console.
+- **Track supported response steps** — see assignments and status changes when optional dispatch is enabled.
+- **Review what happened** — assemble available incident records and write a post-incident review.
+- **Find preparation gaps** — use configuration-readiness checks before an incident.
+- **Add capabilities gradually** — enable cameras, dispatch, voice, automation, or analysis only where the site is ready.
+
+These are product goals and supported workflows, not promises of a specific response-time improvement or outcome at every site.
+
+---
+
+<h2 id="difference">How it differs from a basic alarm workflow</h2>
+
+This comparison is with **basic alarm deployments**, not every security product on the market.
+
+| Area | Basic alarm workflow | Croc Sentinel approach | Practical benefit |
+|:-----|:---------------------|:-----------------------|:------------------|
+| **Alert** | A siren or isolated notification | Alarm record plus a shared incident view | Provides the starting context in one view |
+| **Context** | Operator may need to check separate systems | Device, history, available evidence, and timeline together | Puts related incident information together |
+| **Decision support** | Interpretation may rely mainly on the operator | Optional rules-first score, reason, and recommendation | Gives the operator an additional prioritization signal |
+| **Response plan** | Procedure may be verbal, on paper, or remembered | Versioned response rules marked as reviewed inside Sentinel | Supports a reviewable procedure between shifts |
+| **Response tracking** | Calls and actions may be recorded separately | Optional assignment and status workflow | Provides a common view of supported response progress |
+| **After the incident** | Logs may require manual reconstruction | Timeline, read-only incident summary, audit records, and review | Keeps available records together for operational review |
+| **AI dependency** | Usually none | Core alarm still works without optional AI | AI can assist without becoming a single point of failure |
+| **Human control** | Depends on local procedure | Roles, permissions, and workflow-specific approval gates where configured | Makes supported responsibilities and controls visible |
+| **Expansion** | May be tied to one fixed workflow | Optional modules selected and validated for each deployment | Adopt modules according to the agreed scope |
+
+### The main advantage
+
+The goal is not simply to create a louder alarm or another AI label. It is to connect **detection, operator context, guided response, and reviewable records** while keeping AI optional and people accountable.
+
+> **Availability today:** Croc Sentinel is a trial-stage, site-specific product, not a generally available turnkey service. Source review confirms that code paths exist; it does not confirm that every capability is enabled, release-ready, or field-validated. Each trial requires a written scope covering devices, notification channels, optional modules, and completed site tests.
 
 ---
 

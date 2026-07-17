@@ -11,6 +11,28 @@ Its current product direction includes:
 
 Croc Sentinel helps operators move from a device alarm to an organized incident record.
 
+## How Sentinel and AI work together
+
+- **Sentinel handles the operational core:** device events, alarms, incidents, the web console, response rules, timelines, and records.
+- **Sentinel’s optional analysis runs rules first:** when enabled, it can produce a score, category, reason, and recommendation.
+- **Croc AI Orchestrator is separately optional:** when configured, it can enrich the human-readable summary and recommendation.
+- **Operators stay responsible:** AI provides context and recommendations; permissions and configured approval still control high-impact actions.
+- **The alarm does not wait for AI:** optional analysis is not the foundation of the alert path.
+
+This combination is intended to help sites bring event context, guided response, and reviewable records into one operational view.
+
+## Practical benefits
+
+- Designed to bring related incident context into one workspace
+- Supports more consistent handling through versioned response rules
+- Optional prioritization support without making AI mandatory
+- A shared incident view for authorized operators
+- Supported response-status tracking when dispatch is enabled
+- Brings available records together for operational review
+- Gradual adoption of optional modules per site
+
+Compared with a basic alarm workflow, Sentinel adds an incident workspace, response-plan lifecycle, optional decision support, and structured after-incident review. It does not claim to replace people, emergency procedures, or every existing security product.
+
 The private baseline source includes:
 
 - Device identity, ownership, status, telemetry, and commands
