@@ -63,7 +63,7 @@ Future work includes production computer vision, real physical-resource integrat
 
 ## Docs
 
-[ARCHITECTURE.md](ARCHITECTURE.md) · [ORCHESTRATOR.md](ORCHESTRATOR.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md)
+[ARCHITECTURE.md](ARCHITECTURE.md) · [ORCHESTRATOR.md](ORCHESTRATOR.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md) · [VISION_AND_CONCEPTS.md](VISION_AND_CONCEPTS.md)
 
 **Contact:** partnerships@crocnexus.com
 

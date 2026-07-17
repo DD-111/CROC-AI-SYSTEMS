@@ -29,6 +29,7 @@
   <a href="#command-center">Command Center</a> ·
   <a href="#ai-reality">AI reality</a> ·
   <a href="#status">Status</a> ·
+  <a href="#future-vision">Future vision</a> ·
   <a href="#faq">FAQ</a>
 </p>
 
@@ -370,6 +371,68 @@ Croc Sentinel does **not** currently integrate with DJI Dock, Matrice aircraft, 
 The private source contains a generic future-resource interface and mock drone/robot adapters. The mock adapter does not control hardware, stream live aircraft video, plan city patrols, perform return-to-home, land in a dock, or report charging telemetry.
 
 DJI Dock 3 and Matrice 4D/4TD are possible future integration targets only. No compatibility or delivery promise is made.
+
+---
+
+<h2 id="future-vision">Future vision and concept design</h2>
+
+Future plans remain important to Croc Nexus. We publish them separately from current capabilities so readers can see the direction without mistaking it for a finished product.
+
+### Drone-response concept
+
+<p align="center">
+  <a href="assets/video/sentinel-future-drone-concept.mp4">
+    <img src="assets/images/cinematic-drone-ops-poster.png" alt="Future drone-response concept simulation" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="assets/video/sentinel-future-drone-concept.mp4"><strong>▶ Watch the future drone-response concept</strong></a>
+  &nbsp;·&nbsp;
+  <a href="assets/video/sentinel-future-drone-concept.gif">GIF preview</a>
+</p>
+
+> **Concept simulation — no current drone integration.** The film uses generated backgrounds and animated interface elements. It is not connected to DJI hardware, live video, flight telemetry, or a production deployment.
+
+The concept explores a possible future workflow:
+
+1. An incident appears in the Command Center.
+2. Optional analysis suggests whether an aerial check may help.
+3. An authorized person reviews and approves the proposed mission.
+4. A future dock integration could launch a compatible aircraft.
+5. A map could show the approved route and mission state.
+6. Live video and telemetry could return to the Command Center.
+7. Voice summaries could inform authorized responders.
+8. The aircraft could return, land, and charge under the hardware vendor’s safety controls.
+9. Mission records could be linked to the incident timeline.
+
+Possible evaluation targets include **DJI Dock 3**, **Matrice 4D**, and **Matrice 4TD**. These names identify research targets, not supported products.
+
+Before this could become a product capability, Croc Nexus would need:
+
+- Approved vendor APIs, SDKs, accounts, and licensing
+- A real hardware adapter rather than the current mock
+- Flight-permission and local regulatory review
+- Human approval, mission cancellation, and emergency-stop controls
+- Route, weather, geofence, battery, link-loss, and return-to-home safeguards
+- Authenticated telemetry and video transport
+- Hardware-in-the-loop, failure, recovery, and field tests
+- Clear data-retention, privacy, and operator-responsibility rules
+
+### Wider Croc Nexus direction
+
+Other future concepts include:
+
+- AI agents with narrow, visible responsibilities
+- Digital employee teams for non-safety operational work
+- A controllable visual panel for watching and approving AI actions
+- Token relay for model routing, metering, and policy
+- More security devices and selected embodied systems
+- Personal and home use
+
+These are product directions, not current availability or delivery promises.
+
+See [Vision and concepts](docs/VISION_AND_CONCEPTS.md) for the staged plan.
 
 ---
 
