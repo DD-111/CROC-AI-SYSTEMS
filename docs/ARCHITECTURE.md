@@ -16,6 +16,11 @@ Croc Sentinel server
         ├── configured notification providers
         └── incident and audit records
 
+Incident OS (product spine)
+        ├── Before  → response plans · readiness · optional drills
+        ├── During  → incident workspace · alerts · optional AI/dispatch
+        └── After   → timeline · response summary · post-incident review
+
 Optional, default-off modules
         ├── rules-first incident analysis
         ├── camera snapshots
@@ -23,6 +28,8 @@ Optional, default-off modules
         ├── voice calls and automation
         └── experimental multi-responder coordination
 ```
+
+For the detailed Incident OS concept, artifacts, and architecture, see [INCIDENT_OS.md](INCIDENT_OS.md).
 
 ## Baseline source
 

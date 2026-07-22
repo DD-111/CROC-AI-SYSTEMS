@@ -28,6 +28,7 @@
   <a href="#ai-collaboration">AI collaboration</a> ·
   <a href="#helps">What it helps</a> ·
   <a href="#difference">Why different</a> ·
+  <a href="#incident-os">Incident OS</a> ·
   <a href="#what-exists">What exists</a> ·
   <a href="#incident-journey">Incident journey</a> ·
   <a href="#command-center">Command Center</a> ·
@@ -43,6 +44,7 @@
 **Croc Nexus AI Technologies** is a Malaysia-based AI startup building two connected products:
 
 - **Croc Sentinel** — the site-facing product for devices, alarms, incidents, operators, and response records.
+- **Incident OS** — the response spine inside Sentinel: prepare → respond → prove.
 - **Croc AI Orchestrator** — the private coordination direction behind optional event analysis and response workflows.
 
 ---
@@ -142,6 +144,57 @@ This comparison is with **basic alarm deployments**, not every security product 
 The goal is not simply to create a louder alarm or another AI label. It is to connect **detection, operator context, guided response, and reviewable records** while keeping AI optional and people accountable.
 
 > **Availability today:** Croc Sentinel is a trial-stage, site-specific product, not a generally available turnkey service. Source review confirms that code paths exist; it does not confirm that every capability is enabled, release-ready, or field-validated. Each trial requires a written scope covering devices, notification channels, optional modules, and completed site tests.
+
+---
+
+<h2 id="incident-os">Incident OS — what we built</h2>
+
+**Incident OS** is the product spine of Croc Sentinel. It is the system that turns a device alarm into a prepared, coordinated, and reviewable response.
+
+### Concept
+
+| Phase | Plain question | What was built |
+|:------|:---------------|:---------------|
+| **Before** | Are we ready? | Response plans, readiness checks, optional drills |
+| **During** | Who goes, and what happens next? | Incident workspace, alerts, optional AI and dispatch |
+| **After** | What really happened? | Timeline, response summary, post-incident review |
+
+### Artifacts delivered
+
+| Kind | What it contains |
+|:-----|:-----------------|
+| **Product plans** | Master plan for Before / During / After atoms, deployment order, release gates |
+| **Reference matrices** | Glossary, capability matrix, console routes, API map, realtime ownership, screen matrix |
+| **Backend domains** | Alarm/event spine, incident BFF, readiness, response plans, optional AI / dispatch / swarm / drills / actuators |
+| **Console pages** | Overview, incidents, response, plans, readiness, drill, intelligence, orchestration, audit |
+| **Contracts** | Focused API and UI wiring tests that prove the modules exist and stay consistent |
+
+### Technical architecture (high level)
+
+```text
+Device alarm
+    → record event + notify first
+    → open shared incident workspace
+    → optional rules-first analysis (+ optional Orchestrator enrichment)
+    → optional assignment / status tracking
+    → timeline + response summary + post-incident review
+```
+
+Design rules:
+
+1. Alert first — optional AI must not block the basic alarm path.
+2. Rules before model output — score and reason stay reviewable.
+3. People stay in control — permissions and configured approval for high-impact steps.
+4. Modules are attachable — a site can run the core without every advanced feature.
+5. Disabled means unavailable — optional modules do not pretend to be live when off.
+
+### Status in one line
+
+- **Core Incident OS path** — built as the baseline response lifecycle.
+- **Advanced modules** — built in source, mostly default-off, enabled per deployment after validation.
+- **Full Advanced Live promotion** — not claimed; staging and field evidence remain incomplete.
+
+Full detail: **[Incident OS documentation](docs/INCIDENT_OS.md)**
 
 ---
 

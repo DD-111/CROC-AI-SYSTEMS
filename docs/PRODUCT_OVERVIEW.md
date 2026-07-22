@@ -11,6 +11,14 @@ Its current product direction includes:
 
 Croc Sentinel helps operators move from a device alarm to an organized incident record.
 
+Inside Sentinel, **Incident OS** is the response spine:
+
+- **Before** — prepare response rules and readiness checks
+- **During** — run the shared incident workspace and optional assisted response
+- **After** — keep timelines, response summaries, and post-incident reviews
+
+See [INCIDENT_OS.md](INCIDENT_OS.md) for artifacts, architecture, and capability status.
+
 ## How Sentinel and AI work together
 
 - **Sentinel handles the operational core:** device events, alarms, incidents, the web console, response rules, timelines, and records.
@@ -85,7 +93,7 @@ Future work includes production computer vision, real physical-resource integrat
 
 ## Docs
 
-[ARCHITECTURE.md](ARCHITECTURE.md) · [ORCHESTRATOR.md](ORCHESTRATOR.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md) · [VISION_AND_CONCEPTS.md](VISION_AND_CONCEPTS.md)
+[INCIDENT_OS.md](INCIDENT_OS.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [ORCHESTRATOR.md](ORCHESTRATOR.md) · [EXTENSIBILITY.md](EXTENSIBILITY.md) · [VISION_AND_CONCEPTS.md](VISION_AND_CONCEPTS.md)
 
 **Contact:** partnerships@crocnexus.com
 
