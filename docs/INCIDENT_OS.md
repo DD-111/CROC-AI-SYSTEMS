@@ -1,74 +1,70 @@
 # Incident OS
 
-**Incident OS** is the product spine of Croc Sentinel: the system that turns a device alarm into a prepared, coordinated, and reviewable response.
+**Detection tells you something happened.  
+Incident OS is built for the expensive minutes that come next.**
 
-This page explains, in plain language:
+Inside Croc Sentinel, Incident OS is the **response operating system**: one incident identity that carries the site from preparation, through live response, into a reviewable record.
 
-- what Incident OS is
-- what was built
-- which public artifacts describe it
-- how the technical architecture fits together
-- what is core, optional, experimental, or future
+This page explains:
+
+- the product idea (why it exists)
+- what was built (not only planned)
+- the artifacts and architecture behind it
+- what is core, attachable, experimental, or future
 
 It does **not** publish production source, credentials, or deployment runbooks.
 
 ---
 
-## 1. Product concept
+## 1. The idea — why “OS”, not “another alarm page”
 
-### Plain language
+Most security buying still concentrates on **detection**: more sensors, more cameras, more notifications.
 
-Most security products are good at **detection** — a sensor trips, a siren rings, a notification arrives.
+Sites do not usually fail because nobody heard the alarm. They lose time because the response is fragmented:
 
-Incident OS focuses on the harder part that comes after detection:
+- the plan is in someone’s head or a PDF
+- context is split across apps
+- AI, if any, sits beside the workflow instead of on the incident
+- after the night shift, nobody can reconstruct a clean story
 
-| Phase | Question | What Incident OS is for |
-|:------|:---------|:------------------------|
-| **Before** | Are we ready? | Response rules, readiness checks, drills |
-| **During** | Who goes, and what happens next? | Incident workspace, alerts, optional AI and dispatch |
+Incident OS is designed as the layer that owns that gap:
+
+| Phase | Operator question | Product job |
+|:------|:------------------|:------------|
+| **Before** | Are we ready for this shift? | Response plans, readiness gaps, optional drills |
+| **During** | Who goes, and what happens next? | Shared incident workspace, alerts, optional AI and dispatch |
 | **After** | What really happened? | Timeline, response summary, post-incident review |
 
-Incident OS is **not** “another louder alarm panel.”  
-It is also **not** a replacement for every camera platform, building system, or emergency service.
+So the metaphor is deliberate:
 
-It is the **response layer** that sits with Sentinel’s devices and console so operators share one incident picture.
+- **Sentinel** is the site product (devices, console, records)
+- **Incident OS** is the spine that makes response behave like a system, not a pile of screens
+- **Croc AI Orchestrator** is optional enrichment / coordination behind that spine
+- people remain accountable; AI assists; the alarm path does not wait for a model
 
-### How it relates to other Croc concepts
-
-| Concept | Role |
-|:--------|:-----|
-| **Croc Sentinel** | Site product: devices, alarms, console, records |
-| **Incident OS** | Inside Sentinel — Before / During / After response lifecycle |
-| **Croc AI Orchestrator** | Optional enrichment and coordination direction |
-| **Response plan** | Versioned response rules for event types |
-| **Proof of response** | Read-only summary assembled from available records |
-| **PIR** | Post-incident review after closure |
-| **Automatic Response Team** | Future / experimental multi-resource coordination idea (swarm) |
+Incident OS is **not** a replacement for every camera platform, building system, or emergency service.  
+It is the **response layer** that gives operators one shared incident picture.
 
 ---
 
-## 2. What was built
+## 2. What was built — product, not brochure
 
-Incident OS was built as a **three-phase product**, with a core path that always exists and advanced modules that can be enabled per deployment.
+Incident OS was implemented as a three-phase spine: a **core path that always exists in source**, plus **attachable modules** that can be enabled per deployment.
 
 ### Before — Response Readiness
 
-Built capabilities:
+Built so a site can prepare before the next alarm:
 
 - Import, version, and mark response rules as internally reviewed
 - Readiness score and gap list for configuration checks
-- Optional side-effect-free drills (simulation executors)
-- Bridges toward health / SOP / predictive checks when those modules are enabled
+- Optional side-effect-free drills
+- Bridges toward health / SOP / predictive checks when those modules are armed
 
-Operator surfaces:
-
-- Response plans console
-- Readiness console
-- Response drill console (when simulation is enabled)
+Operator surfaces: response plans, readiness, response drill (when simulation is enabled).
 
 ### During — Response Orchestration
 
-Built capabilities:
+Built so the night shift is not improvising from chat:
 
 - Alarm → incident list and incident workspace
 - Timeline of supported event and operator activity
@@ -80,36 +76,44 @@ Built capabilities:
 - Optional multi-resource coordination (incident cell / swarm)
 - Optional camera evidence when camera workflows are enabled
 
-Operator surfaces:
-
-- Home / overview
-- Incidents and incident detail
-- Response queue and siren tab
-- Intelligence console (AI)
-- Orchestration console (swarm / actuators, when enabled)
+Operator surfaces: overview, incidents, response queue / siren, intelligence, orchestration (when enabled).
 
 ### After — Proof of Response
 
-Built capabilities:
+Built so the story does not die with the shift:
 
 - Read-only response summary assembled from available records
 - Closure checks
 - Post-incident review drafts and submissions
 - Audit and export paths for supported activity
 
-Operator surfaces:
-
-- Incident workspace proof panel
-- Review form
-- Audit / activity history
+Operator surfaces: proof panel, review form, audit / activity history.
 
 ---
 
-## 3. Artifacts (what exists as deliverables)
+## 3. Why this can feel ordinary if written badly
 
-The private product repository contains several **classes of artifacts**. The public GitHub repo documents them at a high level; production code stays private.
+Incident OS is easy to undersell.
 
-### 3.1 Normative plans
+If you only list modules — “incidents, plans, readiness, optional AI” — it sounds like every SaaS ticket tool.
+
+The distinctive claim is the **closed loop under one incident identity**:
+
+1. prepare the response rules before the beep
+2. keep alert-first behavior when something happens
+3. put optional AI context on the same incident, without letting AI own the alarm
+4. track supported response steps when dispatch is enabled
+5. leave a timeline + summary + review that the next shift can open
+
+That is the product story. Feature inventory is only evidence that the story was engineered, not invented for a deck.
+
+---
+
+## 4. Artifacts (engineering deliverables)
+
+The private product repository contains several classes of artifacts. This public repo documents them at a high level; production code stays private.
+
+### 4.1 Normative plans
 
 | Artifact | What it defines |
 |:---------|:----------------|
@@ -118,7 +122,7 @@ The private product repository contains several **classes of artifacts**. The pu
 | Advanced authorization ledger | What may be claimed publicly vs what remains gated |
 | Security / performance / release plan | Staging and field evidence still required for Live promotion |
 
-### 3.2 Reference matrices (source of truth for editors and engineers)
+### 4.2 Reference matrices
 
 | Artifact | What it locks |
 |:---------|:--------------|
@@ -130,7 +134,7 @@ The private product repository contains several **classes of artifacts**. The pu
 | Dispatch correlation | How human dispatch and automation dispatch join without merging stores |
 | Screen / widget matrix | Which UI pieces are real, gated, or forbidden to fake |
 
-### 3.3 Backend domains
+### 4.3 Backend domains
 
 | Domain | Responsibility |
 |:-------|:---------------|
@@ -147,7 +151,7 @@ The private product repository contains several **classes of artifacts**. The pu
 | Durable jobs | Delayed work and failure queues when armed |
 | Metrics | Segment latency instrumentation |
 
-### 3.4 Console pages
+### 4.4 Console pages
 
 | Page | Phase |
 |:-----|:------|
@@ -162,21 +166,17 @@ The private product repository contains several **classes of artifacts**. The pu
 | Snapshots / cameras | Optional evidence |
 | Audit / activity | After / continuous |
 
-### 3.5 Contracts and verification
+### 4.5 Contracts and verification
 
-Private verification artifacts include:
+Private verification includes focused Incident OS contract tests, dashboard route / verify scripts, and staging / field checklists.
 
-- Focused Incident OS contract tests (API, UI wiring, capability matrices)
-- Dashboard route / verify scripts
-- Staging and field checklists (many advanced gates still open)
-
-Public takeaway: **repository delivery is substantial; full Live promotion of the Advanced profile is not claimed.**
+Public takeaway: **delivery is substantial; full Advanced Live promotion is not claimed.**
 
 ---
 
-## 4. Technical architecture
+## 5. Technical architecture
 
-### 4.1 Layered shape
+### 5.1 Layered shape
 
 ```text
 ┌──────────────────────────────────────────────────────────┐
@@ -200,7 +200,7 @@ Public takeaway: **repository delivery is substantial; full Live promotion of th
 └──────────────────────────────────────────────────────────┘
 ```
 
-### 4.2 Canonical flow
+### 5.2 Canonical flow
 
 ```text
 Supported device alarm
@@ -228,16 +228,16 @@ Timeline + response summary + closure + post-incident review
 Audit / export of supported records
 ```
 
-### 4.3 Design rules that shape the architecture
+### 5.3 Design rules that shape the architecture
 
 1. **Notify first** — basic alerting is not blocked by optional analysis.
 2. **Rules before model output** — baseline score and reason stay reviewable.
 3. **Human control** — high-impact optional actions use permissions and configured approval.
 4. **Join, don’t fake-merge** — human dispatch and automation dispatch stay separate stores, joined by correlation identifiers.
-5. **Fail closed on incomplete advanced bundles** — enabling AI/dispatch/swarm without required storage configuration is rejected rather than silently degraded into a false Live state.
-6. **Disabled means unavailable** — optional modules return not-found / unavailable UI when off, instead of pretending to be live.
+5. **Fail closed on incomplete advanced bundles** — incomplete AI / dispatch / swarm packs are rejected instead of faking Live.
+6. **Disabled means unavailable** — optional modules do not pretend to be live when off.
 
-### 4.4 Data and realtime (high level)
+### 5.4 Data and realtime (high level)
 
 | Concern | Approach |
 |:--------|:---------|
@@ -251,17 +251,15 @@ Audit / export of supported records
 
 ---
 
-## 5. Capability inventory and status
-
-Use these labels consistently:
+## 6. Capability inventory and status
 
 | Label | Meaning |
 |:------|:--------|
-| **Core / always available in source** | Mounted as baseline Incident OS path |
-| **Built, default off** | Implemented and contract-tested; needs flags, config, and site validation |
+| **Core** | Mounted as baseline Incident OS path in source |
+| **Built, default off** | Implemented and contract-tested; needs flags, config, site validation |
 | **Experimental** | Dry-run, mock, or incomplete operational integration |
 | **Future** | Direction only |
-| **Not release-complete** | Advanced Live promotion still requires staging / field evidence |
+| **Not release-complete** | Advanced Live promotion still needs staging / field evidence |
 
 ### Core
 
@@ -309,7 +307,7 @@ Public materials may describe **core Incident OS paths** and **built optional mo
 
 ---
 
-## 6. What operators see (console map)
+## 7. What operators see
 
 ```text
 Before
@@ -329,19 +327,6 @@ After
   ├── PIR              → post-incident review
   └── Audit            → supported activity history
 ```
-
----
-
-## 7. How this helps — and how it differs
-
-Incident OS is designed so that:
-
-- detection becomes a **shared incident**, not only a noise
-- optional AI can add **score + reason + recommendation** without owning the alarm
-- people keep **authority**
-- the site keeps a **working record** for review
-
-Compared with a basic alarm workflow, the main architectural difference is the closed Before → During → After loop, with optional modules attached to the same incident identity.
 
 ---
 

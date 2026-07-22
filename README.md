@@ -11,9 +11,9 @@
 <h1 align="center">Croc Sentinel</h1>
 
 <p align="center">
-  <strong>A browser-based incident-response platform for site operators, with optional AI assistance.</strong><br/>
-  <sub>Turn device alerts into clearer context, guided response, and reviewable records.</sub><br/>
-  <sub>A trial-stage product from Croc Nexus AI Technologies · a two-person AI startup in Malaysia.</sub>
+  <strong>Detection is the easy part. Response is where sites lose time.</strong><br/>
+  <sub>Croc Sentinel runs the shift <em>after</em> the alarm — prepare, respond together, leave a reviewable record.</sub><br/>
+  <sub>Trial-stage · Croc Nexus AI Technologies · two-person AI startup, Malaysia.</sub>
 </p>
 
 <p align="center">
@@ -51,15 +51,15 @@
 
 <h2 id="what-it-is">What is Croc Sentinel?</h2>
 
-An alarm can tell someone that something happened. The harder work comes next:
+An alarm can tell someone that something happened. The expensive work starts after that:
 
 - Which device or area is affected?
-- What information does the operator need?
-- Which response plan applies?
-- What did people and systems do?
-- What should be reviewed afterwards?
+- What does the operator need right now?
+- Which response plan applies on this shift?
+- What did people and systems already do?
+- What can the next shift review without rebuilding the night from memory?
 
-**Croc Sentinel brings these steps into one browser-based operations console.**
+**Croc Sentinel puts that work into one browser-based operations console** — with Incident OS as the response spine underneath.
 
 The current core receives supported device events, records alarms and incidents, shows them to authorized operators, runs configured alarm and notification paths, and keeps operational timelines and audit records.
 
@@ -147,52 +147,56 @@ The goal is not simply to create a louder alarm or another AI label. It is to co
 
 ---
 
-<h2 id="incident-os">Incident OS — what we built</h2>
+<h2 id="incident-os">Incident OS — the response operating system</h2>
 
-**Incident OS** is the product spine of Croc Sentinel. It is the system that turns a device alarm into a prepared, coordinated, and reviewable response.
+Most security stacks stop at the beep.
 
-### Concept
+A sensor trips. A siren rings. Someone gets a message. Then the hard part begins in chat threads, paper SOPs, separate camera apps, and memory:
 
-| Phase | Plain question | What was built |
-|:------|:---------------|:---------------|
-| **Before** | Are we ready? | Response plans, readiness checks, optional drills |
-| **During** | Who goes, and what happens next? | Incident workspace, alerts, optional AI and dispatch |
-| **After** | What really happened? | Timeline, response summary, post-incident review |
+- Who is closest?
+- Which plan applies on this shift?
+- What did we already try?
+- What can we prove afterwards?
 
-### Artifacts delivered
-
-| Kind | What it contains |
-|:-----|:-----------------|
-| **Product plans** | Master plan for Before / During / After atoms, deployment order, release gates |
-| **Reference matrices** | Glossary, capability matrix, console routes, API map, realtime ownership, screen matrix |
-| **Backend domains** | Alarm/event spine, incident BFF, readiness, response plans, optional AI / dispatch / swarm / drills / actuators |
-| **Console pages** | Overview, incidents, response, plans, readiness, drill, intelligence, orchestration, audit |
-| **Contracts** | Focused API and UI wiring tests that prove the modules exist and stay consistent |
-
-### Technical architecture (high level)
+**Incident OS is Sentinel’s answer to that gap.**  
+It is not another louder alarm panel. It is the product spine that treats response like an operating system: one incident identity, one console, one closed loop.
 
 ```text
-Device alarm
-    → record event + notify first
-    → open shared incident workspace
-    → optional rules-first analysis (+ optional Orchestrator enrichment)
-    → optional assignment / status tracking
-    → timeline + response summary + post-incident review
+BEFORE — prepare the shift
+  response plans · readiness gaps · optional drills
+
+DURING — run the response
+  shared incident workspace · alerts · optional AI context · optional dispatch
+
+AFTER — leave the record
+  timeline · response summary · post-incident review
 ```
 
-Design rules:
+### Why this is not “just another incident ticket tool”
 
-1. Alert first — optional AI must not block the basic alarm path.
-2. Rules before model output — score and reason stay reviewable.
-3. People stay in control — permissions and configured approval for high-impact steps.
-4. Modules are attachable — a site can run the core without every advanced feature.
-5. Disabled means unavailable — optional modules do not pretend to be live when off.
+| Ordinary pattern | Incident OS intent |
+|:-----------------|:-------------------|
+| Alarm product ends at notification | Notification is only the start of the incident |
+| AI is a separate chatbot or black-box score | Rules-first score + reason sit on the same incident; AI enrichment is optional and never owns the alarm |
+| Procedures live in people’s heads or PDFs | Versioned response plans live next to the live incident |
+| After-action is rebuilt from memory and screenshots | Timeline, summary, and review attach to the same incident record |
+| Advanced features fake “always on” | Modules attach when ready; when off, they stay unavailable |
 
-### Status in one line
+### What we actually shipped as work
 
-- **Core Incident OS path** — built as the baseline response lifecycle.
-- **Advanced modules** — built in source, mostly default-off, enabled per deployment after validation.
-- **Full Advanced Live promotion** — not claimed; staging and field evidence remain incomplete.
+Not a slide deck — a private product spine with:
+
+- **Plans and gates** for Before / During / After
+- **Reference matrices** (glossary, capability, routes, API, realtime ownership)
+- **Backend domains** for alarms, incidents, readiness, plans, plus attachable AI / dispatch / drills / coordination
+- **Operator consoles** for overview, incidents, response, plans, readiness, intelligence, orchestration, audit
+- **Contracts** that keep the modules wired instead of drifting into demo-only screens
+
+Architecture in one line:
+
+> Device alarm → notify first → shared incident workspace → optional analysis / dispatch → timeline + proof + review
+
+Honesty without killing the story: the **core loop is built**; advanced modules are mostly **default-off** and site-validated; we do **not** claim every advanced path is Live everywhere. Concept media (for example future drone ops) is labeled as concept.
 
 Full detail: **[Incident OS documentation](docs/INCIDENT_OS.md)**
 
